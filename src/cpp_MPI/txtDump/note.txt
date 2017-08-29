@@ -1,0 +1,7 @@
+
+
+this folder recieves txt formatted dump files from the parllel pbm
+
+if this folder is not present it will fail to write the output files
+
+

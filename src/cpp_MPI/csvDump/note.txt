@@ -1,0 +1,6 @@
+
+
+this folder receives the dump output from the parallelCpp 
+if folder is not included at run time the program will fail to write dump CSVs
+
+
