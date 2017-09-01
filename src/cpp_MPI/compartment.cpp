@@ -8,7 +8,7 @@
 
 using namespace std;
 
-#define INCLUDEBREAKAGE false
+#define INCLUDEBREAKAGE true
 #define DUMP2D(varName) dump2DData(varName, #varName)
 #define DUMP3D(varName) dump3DData(varName, #varName)
 #define DUMP4D(varName) dump4DData(varName, #varName)

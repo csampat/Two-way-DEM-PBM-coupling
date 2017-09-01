@@ -1,37 +1,51 @@
 Hello, I am mpi process # = 0
 Number of Compartments = 16
-Number of Processes = 2
+Number of Processes = 4
 Start to fill load with values...
 load[0] = 1
 load[1] = 1
+load[2] = 1
+load[3] = 1
 load[0] = 2
 load[1] = 2
+load[2] = 2
+Hello, I am mpi process # = 1
+Hello, I am mpi process # = 2
+Hello, I am mpi process # = 3
+load[3] = 2
 load[0] = 3
 load[1] = 3
+load[2] = 3
+load[3] = 3
 load[0] = 4
 load[1] = 4
-load[0] = 5
-load[1] = 5
-load[0] = 6
-Hello, I am mpi process # = 1
-load[1] = 6
-load[0] = 7
-load[1] = 7
-load[0] = 8
-load[1] = 8
+load[2] = 4
+load[3] = 4
 Start 2nd part of load calcs...
 Now copying load_rev into load...
-my process id = 1, core_low = 8, core_up = 16
+my process id = 3, core_low = 12, core_up = 16
 Start 2nd part of load calcs...
-load_rev[2] = 8
-load_rev[1] = 8
+Now copying load_rev into load...
+my process id = 1, core_low = 4, core_up = 8
+Start 2nd part of load calcs...
+Now copying load_rev into load...
+my process id = 2, core_low = 8, core_up = 12
+Start 2nd part of load calcs...
+load_rev[4] = 4
+load_rev[3] = 4
+load_rev[2] = 4
+load_rev[1] = 4
 load_rev[0] = 0
 Now copying load_rev into load...
 load[0] = 0
-load[1] = 8
-load[2] = 16
+load[1] = 4
+load[2] = 8
+load[3] = 12
+load[4] = 16
 now distribute core_low and core_up to each process
-my process id = 0, core_low = 0, core_up = 8
+my process id = 0, core_low = 0, core_up = 4
+LIGGGHTS data pointer created
+LIGGGHTS data pointer created
 LIGGGHTS data pointer created
 LIGGGHTS data pointer created
 maxAll = -1.79769e+308
@@ -41,7320 +55,3626 @@ maxofthree = -1.79769e+308
 time = 0
 timeStep = 0.5
 
-maxAll = -1.83673
+maxAll = -2.00876
 maxLiquid = -1.79769e+308
-maxGas = -1.83673
-maxofthree = -1.83673
+maxGas = 3.35519e+06
+maxofthree = 3.35519e+06
 time = 0.5
-timeStep = 0.5
+timeStep = 3.05176e-05
 
-maxAll = -0.879288
+maxAll = -1.99988
 maxLiquid = -1.79769e+308
-maxGas = -0.879288
-maxofthree = -0.879288
-time = 1
-timeStep = 0.5
+maxGas = 4.11199e+07
+maxofthree = 4.11199e+07
+time = 0.500031
+timeStep = 3.05176e-05
 
-maxAll = -0.560909
+maxAll = -1.99976
 maxLiquid = -1.79769e+308
-maxGas = -0.560909
-maxofthree = -0.560909
-time = 1.5
-timeStep = 0.5
+maxGas = 1.35278e+17
+maxofthree = 1.35278e+17
+time = 0.500061
+timeStep = 3.05176e-05
 
-maxAll = -0.402295
+maxAll = -1.99963
 maxLiquid = -1.79769e+308
-maxGas = -0.402295
-maxofthree = -0.402295
-time = 2
-timeStep = 0.5
+maxGas = 4.45042e+26
+maxofthree = 4.45042e+26
+time = 0.500092
+timeStep = 3.05176e-05
 
-maxAll = -0.307585
+maxAll = -1.99951
 maxLiquid = -1.79769e+308
-maxGas = -0.307585
-maxofthree = -0.307585
-time = 2.5
-timeStep = 0.5
+maxGas = 1.46412e+36
+maxofthree = 1.46412e+36
+time = 0.500122
+timeStep = 3.05176e-05
 
-maxAll = -0.244824
+maxAll = -1.99939
 maxLiquid = -1.79769e+308
-maxGas = -0.244824
-maxofthree = -0.244824
-time = 3
-timeStep = 0.5
+maxGas = 4.81671e+45
+maxofthree = 4.81671e+45
+time = 0.500153
+timeStep = 3.05176e-05
 
-maxAll = -0.200317
+maxAll = -1.99927
 maxLiquid = -1.79769e+308
-maxGas = -0.200317
-maxofthree = -0.200317
-time = 3.5
-timeStep = 0.5
+maxGas = 1.58462e+55
+maxofthree = 1.58462e+55
+time = 0.500183
+timeStep = 3.05176e-05
 
-maxAll = -0.167216
+maxAll = -1.99915
 maxLiquid = -1.79769e+308
-maxGas = -0.167216
-maxofthree = -0.167216
-time = 4
-timeStep = 0.5
+maxGas = 5.21315e+64
+maxofthree = 5.21315e+64
+time = 0.500214
+timeStep = 3.05176e-05
 
-maxAll = -0.141717
+maxAll = -1.99902
 maxLiquid = -1.79769e+308
-maxGas = -0.141717
-maxofthree = -0.141717
-time = 4.5
-timeStep = 0.5
+maxGas = 1.71504e+74
+maxofthree = 1.71504e+74
+time = 0.500244
+timeStep = 3.05176e-05
 
-maxAll = -0.121537
+maxAll = -1.9989
 maxLiquid = -1.79769e+308
-maxGas = -0.121537
-maxofthree = -0.121537
-time = 5
-timeStep = 0.5
+maxGas = 5.64221e+83
+maxofthree = 5.64221e+83
+time = 0.500275
+timeStep = 3.05176e-05
 
-maxAll = -0.105221
+maxAll = -1.99878
 maxLiquid = -1.79769e+308
-maxGas = -0.105221
-maxofthree = -0.105221
-time = 5.5
-timeStep = 0.5
+maxGas = 1.85619e+93
+maxofthree = 1.85619e+93
+time = 0.500305
+timeStep = 3.05176e-05
 
-maxAll = -0.091802
+maxAll = -1.99866
 maxLiquid = -1.79769e+308
-maxGas = -0.091802
-maxofthree = -0.091802
-time = 6
-timeStep = 0.5
+maxGas = 6.10658e+102
+maxofthree = 6.10658e+102
+time = 0.500336
+timeStep = 3.05176e-05
 
-maxAll = -0.0806079
+maxAll = -1.99854
 maxLiquid = -1.79769e+308
-maxGas = -0.0806079
-maxofthree = -0.0806079
-time = 6.5
-timeStep = 0.5
+maxGas = 2.00897e+112
+maxofthree = 2.00897e+112
+time = 0.500366
+timeStep = 3.05176e-05
 
-maxAll = -0.0711597
+maxAll = -1.99841
 maxLiquid = -1.79769e+308
-maxGas = -0.0711597
-maxofthree = -0.0711597
-time = 7
-timeStep = 0.5
+maxGas = 6.60918e+121
+maxofthree = 6.60918e+121
+time = 0.500397
+timeStep = 3.05176e-05
 
-maxAll = -0.0631054
+maxAll = -1.99829
 maxLiquid = -1.79769e+308
-maxGas = -0.0631054
-maxofthree = -0.0631054
-time = 7.5
-timeStep = 0.5
+maxGas = 2.17431e+131
+maxofthree = 2.17431e+131
+time = 0.500427
+timeStep = 3.05176e-05
 
-maxAll = -0.0561813
+maxAll = -1.99817
 maxLiquid = -1.79769e+308
-maxGas = -0.0561813
-maxofthree = -0.0561813
-time = 8
-timeStep = 0.5
+maxGas = 7.15314e+140
+maxofthree = 7.15314e+140
+time = 0.500458
+timeStep = 3.05176e-05
 
-maxAll = -0.0501853
+maxAll = -1.99805
 maxLiquid = -1.79769e+308
-maxGas = -0.0501853
-maxofthree = -0.0501853
-time = 8.5
-timeStep = 0.5
+maxGas = 24436.5
+maxofthree = 24436.5
+time = 0.500488
+timeStep = 3.05176e-05
 
-maxAll = -0.0449604
+maxAll = -1.99793
 maxLiquid = -1.79769e+308
-maxGas = -0.0449604
-maxofthree = -0.0449604
-time = 9
-timeStep = 0.5
+maxGas = 24436.5
+maxofthree = 24436.5
+time = 0.500519
+timeStep = 3.05176e-05
 
-maxAll = -0.0403824
+maxAll = -1.99781
 maxLiquid = -1.79769e+308
-maxGas = -0.0403824
-maxofthree = -0.0403824
-time = 9.5
-timeStep = 0.5
+maxGas = 24436.5
+maxofthree = 24436.5
+time = 0.500549
+timeStep = 3.05176e-05
 
-maxAll = -0.0363519
+maxAll = -1.99768
 maxLiquid = -1.79769e+308
-maxGas = -0.0363519
-maxofthree = -0.0363519
-time = 10
-timeStep = 0.5
+maxGas = 24436.5
+maxofthree = 24436.5
+time = 0.50058
+timeStep = 3.05176e-05
 
-maxAll = -0.0327884
+maxAll = -1.99756
 maxLiquid = -1.79769e+308
-maxGas = -0.0327884
-maxofthree = -0.0327884
-time = 10.5
-timeStep = 0.5
+maxGas = 24436.5
+maxofthree = 24436.5
+time = 0.50061
+timeStep = 3.05176e-05
 
-maxAll = -0.0296261
+maxAll = -1.99744
 maxLiquid = -1.79769e+308
-maxGas = -0.0296261
-maxofthree = -0.0296261
-time = 11
-timeStep = 0.5
+maxGas = 23893.5
+maxofthree = 23893.5
+time = 0.500641
+timeStep = 3.05176e-05
 
-maxAll = -0.0268105
+maxAll = -1.99732
 maxLiquid = -1.79769e+308
-maxGas = -0.0268105
-maxofthree = -0.0268105
-time = 11.5
-timeStep = 0.5
+maxGas = 19200.1
+maxofthree = 19200.1
+time = 0.500671
+timeStep = 3.05176e-05
 
-maxAll = -0.0242962
+maxAll = -1.9972
 maxLiquid = -1.79769e+308
-maxGas = -0.0242962
-maxofthree = -0.0242962
-time = 12
-timeStep = 0.5
+maxGas = 4960.86
+maxofthree = 4960.86
+time = 0.500702
+timeStep = 3.05176e-05
 
-maxAll = -0.022045
+maxAll = -1.99707
 maxLiquid = -1.79769e+308
-maxGas = -0.022045
-maxofthree = -0.022045
-time = 12.5
-timeStep = 0.5
+maxGas = 2518.87
+maxofthree = 2518.87
+time = 0.500732
+timeStep = 3.05176e-05
 
-maxAll = -0.0200247
+maxAll = -1.99695
 maxLiquid = -1.79769e+308
-maxGas = -0.0200247
-maxofthree = -0.0200247
-time = 13
-timeStep = 0.5
+maxGas = 1601.12
+maxofthree = 1601.12
+time = 0.500763
+timeStep = 6.10352e-05
 
-maxAll = -0.0182077
+maxAll = -1.99671
 maxLiquid = -1.79769e+308
-maxGas = -0.0182077
-maxofthree = -0.0182077
-time = 13.5
-timeStep = 0.5
+maxGas = 1704.73
+maxofthree = 1704.73
+time = 0.500824
+timeStep = 3.05176e-05
 
-maxAll = -0.0165705
+maxAll = -1.99658
 maxLiquid = -1.79769e+308
-maxGas = -0.0165705
-maxofthree = -0.0165705
-time = 14
-timeStep = 0.5
+maxGas = 554.642
+maxofthree = 554.642
+time = 0.500854
+timeStep = 0.00012207
 
-maxAll = -0.0150928
+maxAll = -1.9961
 maxLiquid = -1.79769e+308
-maxGas = -0.0150928
-maxofthree = -0.0150928
-time = 14.5
-timeStep = 0.5
+maxGas = 1208.66
+maxofthree = 1208.66
+time = 0.500977
+timeStep = 6.10352e-05
 
-maxAll = -0.0137569
+maxAll = -1.99586
 maxLiquid = -1.79769e+308
-maxGas = -0.0137569
-maxofthree = -0.0137569
-time = 15
-timeStep = 0.5
+maxGas = 278.304
+maxofthree = 278.304
+time = 0.501038
+timeStep = 0.000244141
 
-maxAll = -0.0125476
+maxAll = -1.99489
 maxLiquid = -1.79769e+308
-maxGas = -0.0125476
-maxofthree = -0.0125476
-time = 15.5
-timeStep = 0.5
+maxGas = 453.679
+maxofthree = 453.679
+time = 0.501282
+timeStep = 0.00012207
 
-maxAll = -0.0114514
+maxAll = -1.9944
 maxLiquid = -1.79769e+308
-maxGas = -0.0114514
-maxofthree = -0.0114514
-time = 16
-timeStep = 0.5
-
-maxAll = -0.0104568
-maxLiquid = -1.79769e+308
-maxGas = -0.0104568
-maxofthree = -0.0104568
-time = 16.5
-timeStep = 0.5
-
-maxAll = -0.0095532
-maxLiquid = -1.79769e+308
-maxGas = -0.0095532
-maxofthree = -0.0095532
-time = 17
-timeStep = 0.5
-
-maxAll = -0.00873164
-maxLiquid = -1.79769e+308
-maxGas = -0.00873164
-maxofthree = -0.00873164
-time = 17.5
-timeStep = 0.5
-
-maxAll = -0.007984
-maxLiquid = -1.79769e+308
-maxGas = -0.007984
-maxofthree = -0.007984
-time = 18
-timeStep = 0.5
-
-maxAll = -0.00730309
-maxLiquid = -1.79769e+308
-maxGas = -0.00730309
-maxofthree = -0.00730309
-time = 18.5
-timeStep = 0.5
-
-maxAll = -0.00668252
-maxLiquid = -1.79769e+308
-maxGas = -0.00668252
-maxofthree = -0.00668252
-time = 19
-timeStep = 0.5
-
-maxAll = -0.00611657
-maxLiquid = -1.79769e+308
-maxGas = -0.00611657
-maxofthree = -0.00611657
-time = 19.5
-timeStep = 0.5
-
-maxAll = -0.00560013
-maxLiquid = -1.79769e+308
-maxGas = -0.00560013
-maxofthree = -0.00560013
-time = 20
-timeStep = 0.5
-
-maxAll = -0.00512862
-maxLiquid = -1.79769e+308
-maxGas = -0.00512862
-maxofthree = -0.00512862
-time = 20.5
-timeStep = 0.5
-
-maxAll = -0.00469791
-maxLiquid = -1.79769e+308
-maxGas = -0.00469791
-maxofthree = -0.00469791
-time = 21
-timeStep = 0.5
-
-maxAll = -0.00430429
-maxLiquid = -1.79769e+308
-maxGas = -0.00430429
-maxofthree = -0.00430429
-time = 21.5
-timeStep = 0.5
-
-maxAll = -0.00394443
-maxLiquid = -1.79769e+308
-maxGas = -0.00394443
-maxofthree = -0.00394443
-time = 22
-timeStep = 0.5
-
-maxAll = -0.00361531
-maxLiquid = -1.79769e+308
-maxGas = -0.00361531
-maxofthree = -0.00361531
-time = 22.5
-timeStep = 0.5
-
-maxAll = -0.00331419
-maxLiquid = -1.79769e+308
-maxGas = -0.00331419
-maxofthree = -0.00331419
-time = 23
-timeStep = 0.5
-
-maxAll = -0.00303861
-maxLiquid = -1.79769e+308
-maxGas = -0.00303861
-maxofthree = -0.00303861
-time = 23.5
-timeStep = 0.5
-
-maxAll = -0.00278633
-maxLiquid = -1.79769e+308
-maxGas = -0.00278633
-maxofthree = -0.00278633
-time = 24
-timeStep = 0.5
-
-maxAll = -0.00255531
-maxLiquid = -1.79769e+308
-maxGas = -0.00255531
-maxofthree = -0.00255531
-time = 24.5
-timeStep = 0.5
-
-maxAll = -0.00234372
-maxLiquid = -1.79769e+308
-maxGas = -0.00234372
-maxofthree = -0.00234372
-time = 25
-timeStep = 0.5
-
-maxAll = 193.512
-maxLiquid = 176.107
-maxGas = 177.942
-maxofthree = 193.512
-time = 25.5
+maxGas = 127.549
+maxofthree = 127.549
+time = 0.501404
 timeStep = 0.000488281
 
-maxAll = 0.177704
-maxLiquid = 0.163009
-maxGas = 0.164767
-maxofthree = 0.177704
-time = 25.5005
-timeStep = 0.25
-
-maxAll = 92.9572
-maxLiquid = 85.0904
-maxGas = 85.9887
-maxofthree = 92.9572
-time = 25.7505
-timeStep = 0.000976562
-
-maxAll = 0.328766
-maxLiquid = 0.315933
-maxGas = 0.319375
-maxofthree = 0.328766
-time = 25.7515
-timeStep = 0.25
-
-maxAll = 87.7329
-maxLiquid = 80.7653
-maxGas = 81.6443
-maxofthree = 87.7329
-time = 26.0015
-timeStep = 0.000976562
-
-maxAll = 0.299192
-maxLiquid = 0.300951
-maxGas = 0.304318
-maxofthree = 0.304318
-time = 26.0024
-timeStep = 0.25
-
-maxAll = 83.6125
-maxLiquid = 77.332
-maxGas = 78.1994
-maxofthree = 83.6125
-time = 26.2524
-timeStep = 0.000976562
-
-maxAll = 0.274965
-maxLiquid = 0.288963
-maxGas = 0.292282
-maxofthree = 0.292282
-time = 26.2534
-timeStep = 0.25
-
-maxAll = 80.3128
-maxLiquid = 74.5634
-maxGas = 75.4263
-maxofthree = 80.3128
-time = 26.5034
-timeStep = 0.000976562
-
-maxAll = 0.254708
-maxLiquid = 0.279233
-maxGas = 0.282532
-maxofthree = 0.282532
-time = 26.5044
-timeStep = 0.25
-
-maxAll = 77.6391
-maxLiquid = 72.3019
-maxGas = 73.1669
-maxofthree = 77.6391
-time = 26.7544
-timeStep = 0.000976562
-
-maxAll = 0.237486
-maxLiquid = 0.271244
-maxGas = 0.274546
-maxofthree = 0.274546
-time = 26.7554
-timeStep = 0.25
-
-maxAll = 75.4524
-maxLiquid = 70.4345
-maxGas = 71.3077
-maxofthree = 75.4524
-time = 27.0054
-timeStep = 0.000976562
-
-maxAll = 0.22264
-maxLiquid = 0.264618
-maxGas = 0.267946
-maxofthree = 0.267946
-time = 27.0063
-timeStep = 0.25
-
-maxAll = 73.6508
-maxLiquid = 68.8775
-maxGas = 69.765
-maxofthree = 73.6508
-time = 27.2563
-timeStep = 0.000976562
-
-maxAll = 0.209695
-maxLiquid = 0.259071
-maxGas = 0.262448
-maxofthree = 0.262448
-time = 27.2573
-timeStep = 0.25
-
-maxAll = 72.1576
-maxLiquid = 67.5676
-maxGas = 68.4752
-maxofthree = 72.1576
-time = 27.5073
-timeStep = 0.000976562
-
-maxAll = 0.198295
-maxLiquid = 0.254389
-maxGas = 0.257836
-maxofthree = 0.257836
-time = 27.5083
-timeStep = 0.25
-
-maxAll = 70.9144
-maxLiquid = 66.456
-maxGas = 67.3897
-maxofthree = 70.9144
-time = 27.7583
-timeStep = 0.000976562
-
-maxAll = 0.18817
-maxLiquid = 0.250403
-maxGas = 0.253941
-maxofthree = 0.253941
-time = 27.7593
-timeStep = 0.25
-
-maxAll = 69.8755
-maxLiquid = 65.5044
-maxGas = 66.4699
-maxofthree = 69.8755
-time = 28.0093
-timeStep = 0.000976562
-
-maxAll = 0.179109
-maxLiquid = 0.246979
-maxGas = 0.25063
-maxofthree = 0.25063
-time = 28.0103
-timeStep = 0.25
-
-maxAll = 69.0047
-maxLiquid = 64.682
-maxGas = 65.6853
-maxofthree = 69.0047
-time = 28.2603
-timeStep = 0.000976562
-
-maxAll = 0.170948
-maxLiquid = 0.24401
-maxGas = 0.247795
-maxofthree = 0.247795
-time = 28.2612
-timeStep = 0.25
-
-maxAll = 68.2732
-maxLiquid = 63.964
-maxGas = 65.0111
-maxofthree = 68.2732
-time = 28.5112
-timeStep = 0.000976562
-
-maxAll = 0.163553
-maxLiquid = 0.241409
-maxGas = 0.24535
-maxofthree = 0.24535
-time = 28.5122
-timeStep = 0.25
-
-maxAll = 67.6578
-maxLiquid = 63.33
-maxGas = 64.4272
-maxofthree = 67.6578
-time = 28.7622
-timeStep = 0.000976562
-
-maxAll = 0.156818
-maxLiquid = 0.239104
-maxGas = 0.243222
-maxofthree = 0.243222
-time = 28.7632
-timeStep = 0.25
-
-maxAll = 67.1393
-maxLiquid = 62.7632
-maxGas = 63.9167
-maxofthree = 67.1393
-time = 29.0132
-timeStep = 0.000976562
-
-maxAll = 0.150655
-maxLiquid = 0.237034
-maxGas = 0.241352
-maxofthree = 0.241352
-time = 29.0142
-timeStep = 0.25
-
-maxAll = 66.7023
-maxLiquid = 62.2491
-maxGas = 63.4657
-maxofthree = 66.7023
-time = 29.2642
-timeStep = 0.000976562
-
-maxAll = 0.144991
-maxLiquid = 0.235149
-maxGas = 0.23969
-maxofthree = 0.23969
-time = 29.2651
-timeStep = 0.25
-
-maxAll = 66.3337
-maxLiquid = 61.7758
-maxGas = 63.0621
-maxofthree = 66.3337
-time = 29.5151
-timeStep = 0.000976562
-
-maxAll = 0.139766
-maxLiquid = 0.233404
-maxGas = 0.238192
-maxofthree = 0.238192
-time = 29.5161
-timeStep = 0.25
-
-maxAll = 66.0229
-maxLiquid = 61.3328
-maxGas = 62.6958
-maxofthree = 66.0229
-time = 29.7661
-timeStep = 0.000976562
-
-maxAll = 0.134928
-maxLiquid = 0.231764
-maxGas = 0.236822
-maxofthree = 0.236822
-time = 29.7671
-timeStep = 0.25
-
-maxAll = 65.761
-maxLiquid = 60.9109
-maxGas = 62.3578
-maxofthree = 65.761
-time = 30.0171
-timeStep = 0.000976562
-
-maxAll = 0.130434
-maxLiquid = 0.230193
-maxGas = 0.235545
-maxofthree = 0.235545
-time = 30.0181
-timeStep = 0.25
-
-maxAll = 65.5404
-maxLiquid = 60.5021
-maxGas = 62.0402
-maxofthree = 65.5404
-time = 30.2681
-timeStep = 0.000976562
-
-maxAll = 0.126247
-maxLiquid = 0.228664
-maxGas = 0.234335
-maxofthree = 0.234335
-time = 30.269
-timeStep = 0.25
-
-maxAll = 65.3548
-maxLiquid = 60.0992
-maxGas = 61.736
-maxofthree = 65.3548
-time = 30.519
-timeStep = 0.000976562
-
-maxAll = 0.122335
-maxLiquid = 0.22715
-maxGas = 0.233163
-maxofthree = 0.233163
-time = 30.52
-timeStep = 0.25
-
-maxAll = 65.199
-maxLiquid = 59.6957
-maxGas = 61.4388
-maxofthree = 65.199
-time = 30.77
-timeStep = 0.000976562
-
-maxAll = 0.118671
-maxLiquid = 0.225627
-maxGas = 0.232007
-maxofthree = 0.232007
-time = 30.771
-timeStep = 0.25
-
-maxAll = 65.0684
-maxLiquid = 59.2855
-maxGas = 61.1425
-maxofthree = 65.0684
-time = 31.021
-timeStep = 0.000976562
-
-maxAll = 0.11523
-maxLiquid = 0.224073
-maxGas = 0.230843
-maxofthree = 0.230843
-time = 31.022
-timeStep = 0.25
-
-maxAll = 64.9593
-maxLiquid = 58.8632
-maxGas = 60.8416
-maxofthree = 64.9593
-time = 31.272
-timeStep = 0.000976562
-
-maxAll = 0.111992
-maxLiquid = 0.222468
-maxGas = 0.229651
-maxofthree = 0.229651
-time = 31.2729
-timeStep = 0.25
-
-maxAll = 64.8684
-maxLiquid = 58.4234
-maxGas = 60.5308
-maxofthree = 64.8684
-time = 31.5229
-timeStep = 0.000976562
-
-maxAll = 0.108938
-maxLiquid = 0.220793
-maxGas = 0.228409
-maxofthree = 0.228409
-time = 31.5239
-timeStep = 0.25
-
-maxAll = 64.793
-maxLiquid = 57.9613
-maxGas = 60.2048
-maxofthree = 64.793
-time = 31.7739
-timeStep = 0.000976562
-
-maxAll = 0.106052
-maxLiquid = 0.219028
-maxGas = 0.227097
-maxofthree = 0.227097
-time = 31.7749
-timeStep = 0.25
-
-maxAll = 64.7307
-maxLiquid = 57.4722
-maxGas = 59.8584
-maxofthree = 64.7307
-time = 32.0249
-timeStep = 0.000976562
-
-maxAll = 0.10332
-maxLiquid = 0.217158
-maxGas = 0.225696
-maxofthree = 0.225696
-time = 32.0259
-timeStep = 0.25
-
-maxAll = 64.6796
-maxLiquid = 56.9515
-maxGas = 59.4866
-maxofthree = 64.6796
-time = 32.2759
-timeStep = 0.000976562
-
-maxAll = 0.100729
-maxLiquid = 0.215165
-maxGas = 0.224186
-maxofthree = 0.224186
-time = 32.2769
-timeStep = 0.25
-
-maxAll = 64.6381
-maxLiquid = 56.395
-maxGas = 59.0843
-maxofthree = 64.6381
-time = 32.5269
-timeStep = 0.000976562
-
-maxAll = 0.0982678
-maxLiquid = 0.213035
-maxGas = 0.222545
-maxofthree = 0.222545
-time = 32.5278
-timeStep = 0.25
-
-maxAll = 64.6046
-maxLiquid = 55.7985
-maxGas = 58.6461
-maxofthree = 64.6046
-time = 32.7778
-timeStep = 0.000976562
-
-maxAll = 0.0959259
-maxLiquid = 0.21075
-maxGas = 0.220755
-maxofthree = 0.220755
-time = 32.7788
-timeStep = 0.25
-
-maxAll = 64.5779
-maxLiquid = 55.1581
-maxGas = 58.1669
-maxofthree = 64.5779
-time = 33.0288
-timeStep = 0.000976562
-
-maxAll = 0.0936944
-maxLiquid = 0.208299
-maxGas = 0.218793
-maxofthree = 0.218793
-time = 33.0298
-timeStep = 0.25
-
-maxAll = 64.557
-maxLiquid = 54.4702
-maxGas = 57.6413
-maxofthree = 64.557
-time = 33.2798
-timeStep = 0.000976562
-
-maxAll = 0.0915649
-maxLiquid = 0.205667
-maxGas = 0.21664
-maxofthree = 0.21664
-time = 33.2808
-timeStep = 0.25
-
-maxAll = 64.5411
-maxLiquid = 53.7314
-maxGas = 57.0639
-maxofthree = 64.5411
-time = 33.5308
-timeStep = 0.000976562
-
-maxAll = 0.0895302
-maxLiquid = 0.202843
-maxGas = 0.214273
-maxofthree = 0.214273
-time = 33.5317
-timeStep = 0.25
-
-maxAll = 64.5293
-maxLiquid = 52.9386
-maxGas = 56.4293
-maxofthree = 64.5293
-time = 33.7817
-timeStep = 0.000976562
-
-maxAll = 0.0875835
-maxLiquid = 0.199815
-maxGas = 0.211672
-maxofthree = 0.211672
-time = 33.7827
-timeStep = 0.25
-
-maxAll = 64.521
-maxLiquid = 52.0891
-maxGas = 55.7321
-maxofthree = 64.521
-time = 34.0327
-timeStep = 0.000976562
-
-maxAll = 0.0857187
-maxLiquid = 0.196576
-maxGas = 0.208816
-maxofthree = 0.208816
-time = 34.0337
-timeStep = 0.25
-
-maxAll = 64.5156
-maxLiquid = 51.1809
-maxGas = 54.9671
-maxofthree = 64.5156
-time = 34.2837
-timeStep = 0.000976562
-
-maxAll = 0.0839302
-maxLiquid = 0.193117
-maxGas = 0.205684
-maxofthree = 0.205684
-time = 34.2847
-timeStep = 0.25
-
-maxAll = 64.5127
-maxLiquid = 50.2123
-maxGas = 54.1291
-maxofthree = 64.5127
-time = 34.5347
-timeStep = 0.000976562
-
-maxAll = 0.082213
-maxLiquid = 0.189435
-maxGas = 0.202259
-maxofthree = 0.202259
-time = 34.5356
-timeStep = 0.25
-
-maxAll = 64.5119
-maxLiquid = 49.1823
-maxGas = 53.2136
-maxofthree = 64.5119
-time = 34.7856
-timeStep = 0.000976562
-
-maxAll = 0.0805625
-maxLiquid = 0.185527
-maxGas = 0.198521
-maxofthree = 0.198521
-time = 34.7866
-timeStep = 0.25
-
-maxAll = 64.5128
-maxLiquid = 48.0907
-maxGas = 52.2164
-maxofthree = 64.5128
-time = 35.0366
-timeStep = 0.000976562
-
-maxAll = 0.0789743
-maxLiquid = 0.181394
-maxGas = 0.194457
-maxofthree = 0.194457
-time = 35.0376
-timeStep = 0.25
-
-maxAll = 64.5151
-maxLiquid = 46.9383
-maxGas = 51.134
-maxofthree = 64.5151
-time = 35.2876
-timeStep = 0.000976562
-
-maxAll = 0.0774448
-maxLiquid = 0.17704
-maxGas = 0.190054
-maxofthree = 0.190054
-time = 35.2886
-timeStep = 0.25
-
-maxAll = 64.5187
-maxLiquid = 45.7263
-maxGas = 49.9639
-maxofthree = 64.5187
-time = 35.5386
-timeStep = 0.000976562
-
-maxAll = 0.0759702
-maxLiquid = 0.172472
-maxGas = 0.185305
-maxofthree = 0.185305
-time = 35.5396
-timeStep = 0.25
-
-maxAll = 64.5232
-maxLiquid = 44.4574
-maxGas = 48.7046
-maxofthree = 64.5232
-time = 35.7896
-timeStep = 0.000976562
-
-maxAll = 0.0745473
-maxLiquid = 0.167702
-maxGas = 0.180206
-maxofthree = 0.180206
-time = 35.7905
-timeStep = 0.25
-
-maxAll = 64.5285
-maxLiquid = 43.1349
-maxGas = 47.3559
-maxofthree = 64.5285
-time = 36.0405
-timeStep = 0.000976562
-
-maxAll = 0.0731731
-maxLiquid = 0.162742
-maxGas = 0.174759
-maxofthree = 0.174759
-time = 36.0415
-timeStep = 0.25
-
-maxAll = 64.5344
-maxLiquid = 41.7633
-maxGas = 45.9191
-maxofthree = 64.5344
-time = 36.2915
-timeStep = 0.000976562
-
-maxAll = 0.0718447
-maxLiquid = 0.157613
-maxGas = 0.168973
-maxofthree = 0.168973
-time = 36.2925
-timeStep = 0.25
-
-maxAll = 64.5409
-maxLiquid = 40.3479
-maxGas = 44.3971
-maxofthree = 64.5409
-time = 36.5425
-timeStep = 0.000976562
-
-maxAll = 0.0705595
-maxLiquid = 0.152335
-maxGas = 0.162862
-maxofthree = 0.162862
-time = 36.5435
-timeStep = 0.25
-
-maxAll = 64.5478
-maxLiquid = 38.895
-maxGas = 42.7948
-maxofthree = 64.5478
-time = 36.7935
-timeStep = 0.000976562
-
-maxAll = 0.0693153
-maxLiquid = 0.146933
-maxGas = 0.156449
-maxofthree = 0.156449
-time = 36.7944
-timeStep = 0.25
-
-maxAll = 64.555
-maxLiquid = 37.4116
-maxGas = 41.1187
-maxofthree = 64.555
-time = 37.0444
-timeStep = 0.000976562
-
-maxAll = 0.0681096
-maxLiquid = 0.141433
-maxGas = 0.149763
-maxofthree = 0.149763
-time = 37.0454
-timeStep = 0.25
-
-maxAll = 64.5624
-maxLiquid = 35.9055
-maxGas = 39.3771
-maxofthree = 64.5624
-time = 37.2954
-timeStep = 0.000976562
-
-maxAll = 0.0669405
-maxLiquid = 0.135867
-maxGas = 0.14284
-maxofthree = 0.14284
-time = 37.2964
-timeStep = 0.25
-
-maxAll = 64.57
-maxLiquid = 34.3849
-maxGas = 37.5802
-maxofthree = 64.57
-time = 37.5464
-timeStep = 0.000976562
-
-maxAll = 0.065806
-maxLiquid = 0.130264
-maxGas = 0.135917
-maxofthree = 0.135917
-time = 37.5474
-timeStep = 0.25
-
-maxAll = 64.5778
-maxLiquid = 33.0832
-maxGas = 35.7395
-maxofthree = 64.5778
-time = 37.7974
-timeStep = 0.000976562
-
-maxAll = 0.0647043
-maxLiquid = 0.126536
-maxGas = 0.135038
-maxofthree = 0.135038
-time = 37.7983
-timeStep = 0.25
-
-maxAll = 64.5856
-maxLiquid = 32.7891
-maxGas = 35.1585
-maxofthree = 64.5856
-time = 38.0483
-timeStep = 0.000976562
-
-maxAll = 0.0636337
-maxLiquid = 0.125412
-maxGas = 0.134104
-maxofthree = 0.134104
-time = 38.0493
-timeStep = 0.25
-
-maxAll = 64.5934
-maxLiquid = 32.4821
-maxGas = 34.9082
-maxofthree = 64.5934
-time = 38.2993
-timeStep = 0.000976562
-
-maxAll = 0.0626373
-maxLiquid = 0.124239
-maxGas = 0.133113
-maxofthree = 0.133113
-time = 38.3003
-timeStep = 0.25
-
-maxAll = 64.6012
-maxLiquid = 32.1622
-maxGas = 34.643
-maxofthree = 64.6012
-time = 38.5503
-timeStep = 0.000976562
-
-maxAll = 0.0617599
-maxLiquid = 0.123018
-maxGas = 0.132064
-maxofthree = 0.132064
-time = 38.5513
-timeStep = 0.25
-
-maxAll = 64.609
-maxLiquid = 31.8296
-maxGas = 34.3628
-maxofthree = 64.609
-time = 38.8013
-timeStep = 0.000976562
-
-maxAll = 0.0609087
-maxLiquid = 0.121749
-maxGas = 0.130956
-maxofthree = 0.130956
-time = 38.8022
-timeStep = 0.25
-
-maxAll = 64.6168
-maxLiquid = 31.4843
-maxGas = 34.067
-maxofthree = 64.6168
-time = 39.0522
-timeStep = 0.000976562
-
-maxAll = 0.0600826
-maxLiquid = 0.120433
-maxGas = 0.129786
-maxofthree = 0.129786
-time = 39.0532
-timeStep = 0.25
-
-maxAll = 64.6245
-maxLiquid = 31.1264
-maxGas = 33.7555
-maxofthree = 64.6245
-time = 39.3032
-timeStep = 0.000976562
-
-maxAll = 0.0592803
-maxLiquid = 0.119069
-maxGas = 0.128555
-maxofthree = 0.128555
-time = 39.3042
-timeStep = 0.25
-
-maxAll = 64.6321
-maxLiquid = 30.7561
-maxGas = 33.4278
-maxofthree = 64.6321
-time = 39.5542
-timeStep = 0.000976562
-
-maxAll = 0.058501
-maxLiquid = 0.117659
-maxGas = 0.12726
-maxofthree = 0.12726
-time = 39.5552
-timeStep = 0.25
-
-maxAll = 64.6396
-maxLiquid = 30.3736
-maxGas = 33.0837
-maxofthree = 64.6396
-time = 39.8052
-timeStep = 0.000976562
-
-maxAll = 0.0577435
-maxLiquid = 0.116203
-maxGas = 0.1259
-maxofthree = 0.1259
-time = 39.8062
-timeStep = 0.25
-
-maxAll = 64.6471
-maxLiquid = 29.9791
-maxGas = 32.7229
-maxofthree = 64.6471
-time = 40.0562
-timeStep = 0.000976562
-
-maxAll = 0.057007
-maxLiquid = 0.114703
-maxGas = 0.124475
-maxofthree = 0.124475
-time = 40.0571
-timeStep = 0.25
-
-maxAll = 64.6544
-maxLiquid = 29.573
-maxGas = 32.3452
-maxofthree = 64.6544
-time = 40.3071
-timeStep = 0.000976562
-
-maxAll = 0.0562906
-maxLiquid = 0.11316
-maxGas = 0.122983
-maxofthree = 0.122983
-time = 40.3081
-timeStep = 0.25
-
-maxAll = 64.6616
-maxLiquid = 29.1555
-maxGas = 31.9504
-maxofthree = 64.6616
-time = 40.5581
-timeStep = 0.000976562
-
-maxAll = 0.0555934
-maxLiquid = 0.111574
-maxGas = 0.121424
-maxofthree = 0.121424
-time = 40.5591
-timeStep = 0.25
-
-maxAll = 64.6687
-maxLiquid = 28.7271
-maxGas = 31.5383
-maxofthree = 64.6687
-time = 40.8091
-timeStep = 0.000976562
-
-maxAll = 0.0549147
-maxLiquid = 0.109948
-maxGas = 0.119797
-maxofthree = 0.119797
-time = 40.8101
-timeStep = 0.25
-
-maxAll = 64.6757
-maxLiquid = 28.2881
-maxGas = 31.1089
-maxofthree = 64.6757
-time = 41.0601
-timeStep = 0.000976562
-
-maxAll = 0.0542537
-maxLiquid = 0.108283
-maxGas = 0.118103
-maxofthree = 0.118103
-time = 41.061
-timeStep = 0.25
-
-maxAll = 64.6825
-maxLiquid = 27.839
-maxGas = 30.6623
-maxofthree = 64.6825
-time = 41.311
-timeStep = 0.000976562
-
-maxAll = 0.0536097
-maxLiquid = 0.106581
-maxGas = 0.116341
-maxofthree = 0.116341
-time = 41.312
-timeStep = 0.25
-
-maxAll = 64.6893
-maxLiquid = 27.3804
-maxGas = 30.1983
-maxofthree = 64.6893
-time = 41.562
-timeStep = 0.000976562
-
-maxAll = 0.0529821
-maxLiquid = 0.104844
-maxGas = 0.114511
-maxofthree = 0.114511
-time = 41.563
-timeStep = 0.25
-
-maxAll = 64.6959
-maxLiquid = 26.9128
-maxGas = 29.7173
-maxofthree = 64.6959
-time = 41.813
-timeStep = 0.000976562
-
-maxAll = 0.0523702
-maxLiquid = 0.103074
-maxGas = 0.112615
-maxofthree = 0.112615
-time = 41.814
-timeStep = 0.25
-
-maxAll = 64.7024
-maxLiquid = 26.4369
-maxGas = 29.2194
-maxofthree = 64.7024
-time = 42.064
-timeStep = 0.000976562
-
-maxAll = 0.0517735
-maxLiquid = 0.101274
-maxGas = 0.110653
-maxofthree = 0.110653
-time = 42.0649
-timeStep = 0.25
-
-maxAll = 64.7088
-maxLiquid = 25.9532
-maxGas = 28.7049
-maxofthree = 64.7088
-time = 42.3149
-timeStep = 0.000976562
-
-maxAll = 0.0511913
-maxLiquid = 0.0994466
-maxGas = 0.108627
-maxofthree = 0.108627
-time = 42.3159
-timeStep = 0.25
-
-maxAll = 64.7151
-maxLiquid = 25.4625
-maxGas = 28.4955
-maxofthree = 64.7151
-time = 42.5659
-timeStep = 0.000976562
-
-maxAll = 0.0506231
-maxLiquid = 0.0975936
-maxGas = 0.107826
-maxofthree = 0.107826
-time = 42.5669
-timeStep = 0.25
-
-maxAll = 64.7212
-maxLiquid = 24.9778
-maxGas = 28.3851
-maxofthree = 64.7212
-time = 42.8169
-timeStep = 0.000976562
-
-maxAll = 0.0500684
-maxLiquid = 0.0957184
-maxGas = 0.107405
-maxofthree = 0.107405
-time = 42.8179
-timeStep = 0.25
-
-maxAll = 64.7273
-maxLiquid = 24.7752
-maxGas = 28.2672
-maxofthree = 64.7273
-time = 43.0679
-timeStep = 0.000976562
-
-maxAll = 0.0495268
-maxLiquid = 0.0938238
-maxGas = 0.106956
-maxofthree = 0.106956
-time = 43.0688
-timeStep = 0.25
-
-maxAll = 64.7332
-maxLiquid = 24.5652
-maxGas = 28.1414
-maxofthree = 64.7332
-time = 43.3188
-timeStep = 0.000976562
-
-maxAll = 0.0489977
-maxLiquid = 0.092149
-maxGas = 0.106479
-maxofthree = 0.106479
-time = 43.3198
-timeStep = 0.25
-
-maxAll = 64.739
-maxLiquid = 24.3478
-maxGas = 28.0076
-maxofthree = 64.739
-time = 43.5698
-timeStep = 0.000976562
-
-maxAll = 0.0484807
-maxLiquid = 0.0912988
-maxGas = 0.105971
-maxofthree = 0.105971
-time = 43.5708
-timeStep = 0.25
-
-maxAll = 64.7448
-maxLiquid = 24.1232
-maxGas = 27.8656
-maxofthree = 64.7448
-time = 43.8208
-timeStep = 0.000976562
-
-maxAll = 0.0479754
-maxLiquid = 0.0904209
-maxGas = 0.105433
-maxofthree = 0.105433
-time = 43.8218
-timeStep = 0.25
-
-maxAll = 64.7504
-maxLiquid = 23.8913
-maxGas = 27.7152
-maxofthree = 64.7504
-time = 44.0718
-timeStep = 0.000976562
-
-maxAll = 0.0474814
-maxLiquid = 0.0895157
-maxGas = 0.104863
-maxofthree = 0.104863
-time = 44.0728
-timeStep = 0.25
-
-maxAll = 64.7559
-maxLiquid = 23.6524
-maxGas = 27.556
-maxofthree = 64.7559
-time = 44.3228
-timeStep = 0.000976562
-
-maxAll = 0.0469983
-maxLiquid = 0.0885836
-maxGas = 0.104261
-maxofthree = 0.104261
-time = 44.3237
-timeStep = 0.25
-
-maxAll = 64.7614
-maxLiquid = 23.4064
-maxGas = 27.388
-maxofthree = 64.7614
-time = 44.5737
-timeStep = 0.000976562
-
-maxAll = 0.0465257
-maxLiquid = 0.087625
-maxGas = 0.103625
-maxofthree = 0.103625
-time = 44.5747
-timeStep = 0.25
-
-maxAll = 64.7667
-maxLiquid = 23.1537
-maxGas = 27.2108
-maxofthree = 64.7667
-time = 44.8247
-timeStep = 0.000976562
-
-maxAll = 0.0460634
-maxLiquid = 0.0866406
-maxGas = 0.102956
-maxofthree = 0.102956
-time = 44.8257
-timeStep = 0.25
-
-maxAll = 64.7719
-maxLiquid = 22.8942
-maxGas = 27.0243
-maxofthree = 64.7719
-time = 45.0757
-timeStep = 0.000976562
-
-maxAll = 0.0456108
-maxLiquid = 0.0856309
-maxGas = 0.102252
-maxofthree = 0.102252
-time = 45.0767
-timeStep = 0.25
-
-maxAll = 64.7771
-maxLiquid = 22.6281
-maxGas = 26.8281
-maxofthree = 64.7771
-time = 45.3267
-timeStep = 0.000976562
-
-maxAll = 0.0451679
-maxLiquid = 0.0845965
-maxGas = 0.101513
-maxofthree = 0.101513
-time = 45.3276
-timeStep = 0.25
-
-maxAll = 64.7821
-maxLiquid = 22.3557
-maxGas = 26.6222
-maxofthree = 64.7821
-time = 45.5776
-timeStep = 0.000976562
-
-maxAll = 0.0447341
-maxLiquid = 0.0835381
-maxGas = 0.100737
-maxofthree = 0.100737
-time = 45.5786
-timeStep = 0.25
-
-maxAll = 64.7871
-maxLiquid = 22.0772
-maxGas = 26.4063
-maxofthree = 64.7871
-time = 45.8286
-timeStep = 0.000976562
-
-maxAll = 0.0443093
-maxLiquid = 0.0824566
-maxGas = 0.0999237
-maxofthree = 0.0999237
-time = 45.8296
-timeStep = 0.25
-
-maxAll = 64.792
-maxLiquid = 21.7927
-maxGas = 26.1802
-maxofthree = 64.792
-time = 46.0796
-timeStep = 0.000976562
-
-maxAll = 0.0438931
-maxLiquid = 0.0813529
-maxGas = 0.0990728
-maxofthree = 0.0990728
-time = 46.0806
-timeStep = 0.25
-
-maxAll = 64.7968
-maxLiquid = 21.5024
-maxGas = 25.9436
-maxofthree = 64.7968
-time = 46.3306
-timeStep = 0.000976562
-
-maxAll = 0.0434853
-maxLiquid = 0.0802279
-maxGas = 0.0981834
-maxofthree = 0.0981834
-time = 46.3315
-timeStep = 0.25
-
-maxAll = 64.8016
-maxLiquid = 21.2068
-maxGas = 25.6965
-maxofthree = 64.8016
-time = 46.5815
-timeStep = 0.000976562
-
-maxAll = 0.0430857
-maxLiquid = 0.0790826
-maxGas = 0.097255
-maxofthree = 0.097255
-time = 46.5825
-timeStep = 0.25
-
-maxAll = 64.8062
-maxLiquid = 20.906
-maxGas = 25.4387
-maxofthree = 64.8062
-time = 46.8325
-timeStep = 0.000976562
-
-maxAll = 0.0426939
-maxLiquid = 0.0779182
-maxGas = 0.096287
-maxofthree = 0.096287
-time = 46.8335
-timeStep = 0.25
-
-maxAll = 64.8108
-maxLiquid = 20.6003
-maxGas = 25.1701
-maxofthree = 64.8108
-time = 47.0835
-timeStep = 0.000976562
-
-maxAll = 0.0423098
-maxLiquid = 0.0767357
-maxGas = 0.095279
-maxofthree = 0.095279
-time = 47.0845
-timeStep = 0.25
-
-maxAll = 64.8153
-maxLiquid = 20.29
-maxGas = 24.8905
-maxofthree = 64.8153
-time = 47.3345
-timeStep = 0.000976562
-
-maxAll = 0.0419331
-maxLiquid = 0.0755364
-maxGas = 0.0942307
-maxofthree = 0.0942307
-time = 47.3354
-timeStep = 0.25
-
-maxAll = 64.8198
-maxLiquid = 19.9756
-maxGas = 24.6
-maxofthree = 64.8198
-time = 47.5854
-timeStep = 0.000976562
-
-maxAll = 0.0415636
-maxLiquid = 0.0743216
-maxGas = 0.0931419
-maxofthree = 0.0931419
-time = 47.5864
-timeStep = 0.25
-
-maxAll = 64.8242
-maxLiquid = 19.6572
-maxGas = 24.2984
-maxofthree = 64.8242
-time = 47.8364
-timeStep = 0.000976562
-
-maxAll = 0.041201
-maxLiquid = 0.0730927
-maxGas = 0.0920126
-maxofthree = 0.0920126
-time = 47.8374
-timeStep = 0.25
-
-maxAll = 64.8285
-maxLiquid = 19.3353
-maxGas = 23.9857
-maxofthree = 64.8285
-time = 48.0874
-timeStep = 0.000976562
-
-maxAll = 0.0408453
-maxLiquid = 0.071851
-maxGas = 0.0908426
-maxofthree = 0.0908426
-time = 48.0884
-timeStep = 0.25
-
-maxAll = 64.8327
-maxLiquid = 19.0103
-maxGas = 23.662
-maxofthree = 64.8327
-time = 48.3384
-timeStep = 0.000976562
-
-maxAll = 0.0404961
-maxLiquid = 0.0706475
-maxGas = 0.0896323
-maxofthree = 0.0896323
-time = 48.3394
-timeStep = 0.25
-
-maxAll = 64.8369
-maxLiquid = 18.7144
-maxGas = 23.3273
-maxofthree = 64.8369
-time = 48.5894
-timeStep = 0.000976562
-
-maxAll = 0.0401534
-maxLiquid = 0.0695604
-maxGas = 0.0883819
-maxofthree = 0.0883819
-time = 48.5903
-timeStep = 0.25
-
-maxAll = 64.841
-maxLiquid = 18.43
-maxGas = 22.9817
-maxofthree = 64.841
-time = 48.8403
-timeStep = 0.000976562
-
-maxAll = 0.0398168
-maxLiquid = 0.0684626
-maxGas = 0.0870919
-maxofthree = 0.0870919
-time = 48.8413
-timeStep = 0.25
-
-maxAll = 64.8451
-maxLiquid = 18.1428
-maxGas = 22.6255
-maxofthree = 64.8451
-time = 49.0913
-timeStep = 0.000976562
-
-maxAll = 0.0394864
-maxLiquid = 0.0676839
-maxGas = 0.085763
-maxofthree = 0.085763
-time = 49.0923
-timeStep = 0.25
-
-maxAll = 64.8491
-maxLiquid = 17.8533
-maxGas = 22.2588
-maxofthree = 64.8491
-time = 49.3423
-timeStep = 0.000976562
-
-maxAll = 0.0391618
-maxLiquid = 0.0670351
-maxGas = 0.084396
-maxofthree = 0.084396
-time = 49.3433
-timeStep = 0.25
-
-maxAll = 64.853
-maxLiquid = 17.5617
-maxGas = 21.9421
-maxofthree = 64.853
-time = 49.5933
-timeStep = 0.000976562
-
-maxAll = 0.0388429
-maxLiquid = 0.0663799
-maxGas = 0.0833856
-maxofthree = 0.0833856
-time = 49.5942
-timeStep = 0.25
-
-maxAll = 64.8569
-maxLiquid = 17.3556
-maxGas = 21.9009
-maxofthree = 64.8569
-time = 49.8442
-timeStep = 0.000976562
-
-maxAll = 0.0385296
-maxLiquid = 0.0657185
-maxGas = 0.0832258
-maxofthree = 0.0832258
-time = 49.8452
-timeStep = 0.25
-
-maxAll = 64.8607
-maxLiquid = 17.2252
-maxGas = 21.8575
-maxofthree = 64.8607
-time = 50.0952
-timeStep = 0.000976562
-
-maxAll = 0.0382217
-maxLiquid = 0.0650511
-maxGas = 0.0830471
-maxofthree = 0.0830471
-time = 50.0962
-timeStep = 0.25
-
-maxAll = 64.8645
-maxLiquid = 17.0904
-maxGas = 21.8089
-maxofthree = 64.8645
-time = 50.3462
-timeStep = 0.000976562
-
-maxAll = 0.0379191
-maxLiquid = 0.0643781
-maxGas = 0.082849
-maxofthree = 0.082849
-time = 50.3472
-timeStep = 0.25
-
-maxAll = 64.8682
-maxLiquid = 16.9511
-maxGas = 21.7551
-maxofthree = 64.8682
-time = 50.5972
-timeStep = 0.000976562
-
-maxAll = 0.0376216
-maxLiquid = 0.0637229
-maxGas = 0.0826313
-maxofthree = 0.0826313
-time = 50.5981
-timeStep = 0.25
-
-maxAll = 64.8719
-maxLiquid = 16.8075
-maxGas = 21.696
-maxofthree = 64.8719
-time = 50.8481
-timeStep = 0.000976562
-
-maxAll = 0.0373291
-maxLiquid = 0.063155
-maxGas = 0.0823934
-maxofthree = 0.0823934
-time = 50.8491
-timeStep = 0.25
-
-maxAll = 64.8755
-maxLiquid = 16.6597
-maxGas = 21.6315
-maxofthree = 64.8755
-time = 51.0991
-timeStep = 0.000976562
-
-maxAll = 0.0370415
-maxLiquid = 0.0625713
-maxGas = 0.082135
-maxofthree = 0.082135
-time = 51.1001
-timeStep = 0.25
-
-maxAll = 64.879
-maxLiquid = 16.5077
-maxGas = 21.5614
-maxofthree = 64.879
-time = 51.3501
-timeStep = 0.000976562
-
-maxAll = 0.0367586
-maxLiquid = 0.0619724
-maxGas = 0.0818557
-maxofthree = 0.0818557
-time = 51.3511
-timeStep = 0.25
-
-maxAll = 64.8826
-maxLiquid = 16.3518
-maxGas = 21.4857
-maxofthree = 64.8826
-time = 51.6011
-timeStep = 0.000976562
-
-maxAll = 0.0364804
-maxLiquid = 0.0613585
-maxGas = 0.0815551
-maxofthree = 0.0815551
-time = 51.6021
-timeStep = 0.25
-
-maxAll = 64.886
-maxLiquid = 16.192
-maxGas = 21.4043
-maxofthree = 64.886
-time = 51.8521
-timeStep = 0.000976562
-
-maxAll = 0.0362067
-maxLiquid = 0.0607303
-maxGas = 0.0812328
-maxofthree = 0.0812328
-time = 51.853
-timeStep = 0.25
-
-maxAll = 64.8894
-maxLiquid = 16.0285
-maxGas = 21.317
-maxofthree = 64.8894
-time = 52.103
-timeStep = 0.000976562
-
-maxAll = 0.0359373
-maxLiquid = 0.0600882
-maxGas = 0.0808883
-maxofthree = 0.0808883
-time = 52.104
-timeStep = 0.25
-
-maxAll = 64.8928
-maxLiquid = 15.8614
-maxGas = 21.2237
-maxofthree = 64.8928
-time = 52.354
-timeStep = 0.000976562
-
-maxAll = 0.0356723
-maxLiquid = 0.0594328
-maxGas = 0.0805212
-maxofthree = 0.0805212
-time = 52.355
-timeStep = 0.25
-
-maxAll = 64.8961
-maxLiquid = 15.6908
-maxGas = 21.1244
-maxofthree = 64.8961
-time = 52.605
-timeStep = 0.000976562
-
-maxAll = 0.0354114
-maxLiquid = 0.0587646
-maxGas = 0.0801312
-maxofthree = 0.0801312
-time = 52.606
-timeStep = 0.25
-
-maxAll = 64.8994
-maxLiquid = 15.517
-maxGas = 21.0188
-maxofthree = 64.8994
-time = 52.856
-timeStep = 0.000976562
-
-maxAll = 0.0351546
-maxLiquid = 0.0580842
-maxGas = 0.0797179
-maxofthree = 0.0797179
-time = 52.8569
-timeStep = 0.25
-
-maxAll = 64.9027
-maxLiquid = 15.34
-maxGas = 20.9071
-maxofthree = 64.9027
-time = 53.1069
-timeStep = 0.000976562
-
-maxAll = 0.0349018
-maxLiquid = 0.0573922
-maxGas = 0.0792808
-maxofthree = 0.0792808
-time = 53.1079
-timeStep = 0.25
-
-maxAll = 64.9059
-maxLiquid = 15.16
-maxGas = 20.7889
-maxofthree = 64.9059
-time = 53.3579
-timeStep = 0.000976562
-
-maxAll = 0.0346529
-maxLiquid = 0.0566893
-maxGas = 0.0788197
-maxofthree = 0.0788197
-time = 53.3589
-timeStep = 0.25
-
-maxAll = 64.909
-maxLiquid = 14.9772
-maxGas = 20.6643
-maxofthree = 64.909
-time = 53.6089
-timeStep = 0.000976562
-
-maxAll = 0.0344078
-maxLiquid = 0.0559761
-maxGas = 0.0783342
-maxofthree = 0.0783342
-time = 53.6099
-timeStep = 0.25
-
-maxAll = 64.9121
-maxLiquid = 14.7917
-maxGas = 20.5331
-maxofthree = 64.9121
-time = 53.8599
-timeStep = 0.000976562
-
-maxAll = 0.0341664
-maxLiquid = 0.0554535
-maxGas = 0.077824
-maxofthree = 0.077824
-time = 53.8608
-timeStep = 0.25
-
-maxAll = 64.9152
-maxLiquid = 14.6038
-maxGas = 20.3953
-maxofthree = 64.9152
-time = 54.1108
-timeStep = 0.000976562
-
-maxAll = 0.0339285
-maxLiquid = 0.0549431
-maxGas = 0.0772887
-maxofthree = 0.0772887
-time = 54.1118
-timeStep = 0.25
-
-maxAll = 64.9182
-maxLiquid = 14.4671
-maxGas = 20.2507
-maxofthree = 64.9182
-time = 54.3618
-timeStep = 0.000976562
-
-maxAll = 0.0336943
-maxLiquid = 0.0544254
-maxGas = 0.0767282
-maxofthree = 0.0767282
-time = 54.3628
-timeStep = 0.25
-
-maxAll = 64.9212
-maxLiquid = 14.3324
-maxGas = 20.0994
-maxofthree = 64.9212
-time = 54.6128
-timeStep = 0.000976562
-
-maxAll = 0.0334634
-maxLiquid = 0.0539007
-maxGas = 0.0761421
-maxofthree = 0.0761421
-time = 54.6138
-timeStep = 0.25
-
-maxAll = 64.9242
-maxLiquid = 14.196
-maxGas = 19.9413
-maxofthree = 64.9242
-time = 54.8638
-timeStep = 0.000976562
-
-maxAll = 0.033236
-maxLiquid = 0.0533694
-maxGas = 0.0755304
-maxofthree = 0.0755304
-time = 54.8647
-timeStep = 0.25
-
-maxAll = 64.9271
-maxLiquid = 14.0579
-maxGas = 19.7763
-maxofthree = 64.9271
-time = 55.1147
-timeStep = 0.000976562
-
-maxAll = 0.0330118
-maxLiquid = 0.0528317
-maxGas = 0.0748928
-maxofthree = 0.0748928
-time = 55.1157
-timeStep = 0.25
-
-maxAll = 64.93
-maxLiquid = 13.9181
-maxGas = 19.6044
-maxofthree = 64.93
-time = 55.3657
-timeStep = 0.000976562
-
-maxAll = 0.0327909
-maxLiquid = 0.052288
-maxGas = 0.0742293
-maxofthree = 0.0742293
-time = 55.3667
-timeStep = 0.25
-
-maxAll = 64.9328
-maxLiquid = 13.7768
-maxGas = 19.4256
-maxofthree = 64.9328
-time = 55.6167
-timeStep = 0.000976562
-
-maxAll = 0.0325731
-maxLiquid = 0.0517384
-maxGas = 0.0735398
-maxofthree = 0.0735398
-time = 55.6177
-timeStep = 0.25
-
-maxAll = 64.9356
-maxLiquid = 13.634
-maxGas = 19.2398
-maxofthree = 64.9356
-time = 55.8677
-timeStep = 0.000976562
-
-maxAll = 0.0323584
-maxLiquid = 0.0511834
-maxGas = 0.0728242
-maxofthree = 0.0728242
-time = 55.8687
-timeStep = 0.25
-
-maxAll = 64.9384
-maxLiquid = 13.4899
-maxGas = 19.0471
-maxofthree = 64.9384
-time = 56.1187
-timeStep = 0.000976562
-
-maxAll = 0.0321467
-maxLiquid = 0.0506232
-maxGas = 0.0720828
-maxofthree = 0.0720828
-time = 56.1196
-timeStep = 0.25
-
-maxAll = 64.9411
-maxLiquid = 13.3444
-maxGas = 18.8475
-maxofthree = 64.9411
-time = 56.3696
-timeStep = 0.000976562
-
-maxAll = 0.0319379
-maxLiquid = 0.0500582
-maxGas = 0.0713154
-maxofthree = 0.0713154
-time = 56.3706
-timeStep = 0.25
-
-maxAll = 64.9438
-maxLiquid = 13.1977
-maxGas = 18.641
-maxofthree = 64.9438
-time = 56.6206
-timeStep = 0.000976562
-
-maxAll = 0.031732
-maxLiquid = 0.0494888
-maxGas = 0.0710695
-maxofthree = 0.0710695
-time = 56.6216
-timeStep = 0.25
-
-maxAll = 64.9465
-maxLiquid = 13.0499
-maxGas = 18.4672
-maxofthree = 64.9465
-time = 56.8716
-timeStep = 0.000976562
-
-maxAll = 0.031529
-maxLiquid = 0.0489151
-maxGas = 0.0709182
-maxofthree = 0.0709182
-time = 56.8726
-timeStep = 0.25
-
-maxAll = 64.9491
-maxLiquid = 12.9011
-maxGas = 18.4261
-maxofthree = 64.9491
-time = 57.1226
-timeStep = 0.000976562
-
-maxAll = 0.0313287
-maxLiquid = 0.0485907
-maxGas = 0.0707499
-maxofthree = 0.0707499
-time = 57.1235
-timeStep = 0.25
-
-maxAll = 64.9517
-maxLiquid = 12.7513
-maxGas = 18.3804
-maxofthree = 64.9517
-time = 57.3735
-timeStep = 0.000976562
-
-maxAll = 0.031131
-maxLiquid = 0.0483136
-maxGas = 0.0705644
-maxofthree = 0.0705644
-time = 57.3745
-timeStep = 0.25
-
-maxAll = 64.9543
-maxLiquid = 12.6006
-maxGas = 18.33
-maxofthree = 64.9543
-time = 57.6245
-timeStep = 0.000976562
-
-maxAll = 0.0309361
-maxLiquid = 0.0480339
-maxGas = 0.0703612
-maxofthree = 0.0703612
-time = 57.6255
-timeStep = 0.25
-
-maxAll = 64.9568
-maxLiquid = 12.4492
-maxGas = 18.2749
-maxofthree = 64.9568
-time = 57.8755
-timeStep = 0.000976562
-
-maxAll = 0.0307437
-maxLiquid = 0.0477516
-maxGas = 0.0701402
-maxofthree = 0.0701402
-time = 57.8765
-timeStep = 0.25
-
-maxAll = 64.9594
-maxLiquid = 12.2972
-maxGas = 18.215
-maxofthree = 64.9594
-time = 58.1265
-timeStep = 0.000976562
-
-maxAll = 0.0305538
-maxLiquid = 0.0474668
-maxGas = 0.0699011
-maxofthree = 0.0699011
-time = 58.1274
-timeStep = 0.25
-
-maxAll = 64.9618
-maxLiquid = 12.1445
-maxGas = 18.1502
-maxofthree = 64.9618
-time = 58.3774
-timeStep = 0.000976562
-
-maxAll = 0.0303664
-maxLiquid = 0.0471796
-maxGas = 0.0696436
-maxofthree = 0.0696436
-time = 58.3784
-timeStep = 0.25
-
-maxAll = 64.9643
-maxLiquid = 11.9914
-maxGas = 18.0805
-maxofthree = 64.9643
-time = 58.6284
-timeStep = 0.000976562
-
-maxAll = 0.0301815
-maxLiquid = 0.04689
-maxGas = 0.0693675
-maxofthree = 0.0693675
-time = 58.6294
-timeStep = 0.25
-
-maxAll = 64.9667
-maxLiquid = 11.8668
-maxGas = 18.0057
-maxofthree = 64.9667
-time = 58.8794
-timeStep = 0.000976562
-
-maxAll = 0.0299989
-maxLiquid = 0.046598
-maxGas = 0.0690725
-maxofthree = 0.0690725
-time = 58.8804
-timeStep = 0.25
-
-maxAll = 64.9691
-maxLiquid = 11.7895
-maxGas = 17.9292
-maxofthree = 64.9691
-time = 59.1304
-timeStep = 0.000976562
-
-maxAll = 0.0298186
-maxLiquid = 0.0463038
-maxGas = 0.0687583
-maxofthree = 0.0687583
-time = 59.1313
-timeStep = 0.25
-
-maxAll = 64.9714
-maxLiquid = 11.7117
-maxGas = 17.8534
-maxofthree = 64.9714
-time = 59.3813
-timeStep = 0.000976562
-
-maxAll = 0.0296407
-maxLiquid = 0.0460074
-maxGas = 0.0684249
-maxofthree = 0.0684249
-time = 59.3823
-timeStep = 0.25
-
-maxAll = 64.9737
-maxLiquid = 11.6333
-maxGas = 17.7726
-maxofthree = 64.9737
-time = 59.6323
-timeStep = 0.000976562
-
-maxAll = 0.0294649
-maxLiquid = 0.0457088
-maxGas = 0.0680718
-maxofthree = 0.0680718
-time = 59.6333
-timeStep = 0.25
-
-maxAll = 64.976
-maxLiquid = 11.5544
-maxGas = 17.6868
-maxofthree = 64.976
-time = 59.8833
-timeStep = 0.000976562
-
-maxAll = 0.0292914
-maxLiquid = 0.0454081
-maxGas = 0.067699
-maxofthree = 0.067699
-time = 59.8843
-timeStep = 0.25
-
-maxAll = 64.9783
-maxLiquid = 11.4749
-maxGas = 17.5959
-maxofthree = 64.9783
-time = 60.1343
-timeStep = 0.000976562
-
-maxAll = 0.02912
-maxLiquid = 0.0451053
-maxGas = 0.0673063
-maxofthree = 0.0673063
-time = 60.1353
-timeStep = 0.25
-
-maxAll = 64.9805
-maxLiquid = 11.3949
-maxGas = 17.4999
-maxofthree = 64.9805
-time = 60.3853
-timeStep = 0.000976562
-
-maxAll = 0.0289507
-maxLiquid = 0.0448007
-maxGas = 0.0668935
-maxofthree = 0.0668935
-time = 60.3862
-timeStep = 0.25
-
-maxAll = 64.9827
-maxLiquid = 11.3145
-maxGas = 17.3987
-maxofthree = 64.9827
-time = 60.6362
-timeStep = 0.000976562
-
-maxAll = 0.0287835
-maxLiquid = 0.0444941
-maxGas = 0.0664664
-maxofthree = 0.0664664
-time = 60.6372
-timeStep = 0.25
-
-maxAll = 64.9849
-maxLiquid = 11.2335
-maxGas = 17.2922
-maxofthree = 64.9849
-time = 60.8872
-timeStep = 0.000976562
-
-maxAll = 0.0286183
-maxLiquid = 0.0441856
-maxGas = 0.0660533
-maxofthree = 0.0660533
-time = 60.8882
-timeStep = 0.25
-
-maxAll = 64.9871
-maxLiquid = 11.1521
-maxGas = 17.1806
-maxofthree = 64.9871
-time = 61.1382
-timeStep = 0.000976562
-
-maxAll = 0.028455
-maxLiquid = 0.0438754
-maxGas = 0.0656205
-maxofthree = 0.0656205
-time = 61.1392
-timeStep = 0.25
-
-maxAll = 64.9892
-maxLiquid = 11.0703
-maxGas = 17.0636
-maxofthree = 64.9892
-time = 61.3892
-timeStep = 0.000976562
-
-maxAll = 0.0282938
-maxLiquid = 0.0435635
-maxGas = 0.0651679
-maxofthree = 0.0651679
-time = 61.3901
-timeStep = 0.25
-
-maxAll = 64.9913
-maxLiquid = 10.988
-maxGas = 16.9413
-maxofthree = 64.9913
-time = 61.6401
-timeStep = 0.000976562
-
-maxAll = 0.0281344
-maxLiquid = 0.04325
-maxGas = 0.0646955
-maxofthree = 0.0646955
-time = 61.6411
-timeStep = 0.25
-
-maxAll = 64.9934
-maxLiquid = 10.9053
-maxGas = 16.8137
-maxofthree = 64.9934
-time = 61.8911
-timeStep = 0.000976562
-
-maxAll = 0.0279769
-maxLiquid = 0.0429348
-maxGas = 0.0642031
-maxofthree = 0.0642031
-time = 61.8921
-timeStep = 0.25
-
-maxAll = 64.9954
-maxLiquid = 10.8222
-maxGas = 16.6808
-maxofthree = 64.9954
-time = 62.1421
-timeStep = 0.000976562
-
-maxAll = 0.0278212
-maxLiquid = 0.0426182
-maxGas = 0.0636908
-maxofthree = 0.0636908
-time = 62.1431
-timeStep = 0.25
-
-maxAll = 64.9974
-maxLiquid = 10.7388
-maxGas = 16.5425
-maxofthree = 64.9974
-time = 62.3931
-timeStep = 0.000976562
-
-maxAll = 0.0276674
-maxLiquid = 0.0423001
-maxGas = 0.0635023
-maxofthree = 0.0635023
-time = 62.394
-timeStep = 0.25
-
-maxAll = 64.9994
-maxLiquid = 10.6549
-maxGas = 16.399
-maxofthree = 64.9994
-time = 62.644
-timeStep = 0.000976562
-
-maxAll = 0.0275153
-maxLiquid = 0.0419806
-maxGas = 0.063382
-maxofthree = 0.063382
-time = 62.645
-timeStep = 0.25
-
-maxAll = 65.0014
-maxLiquid = 10.5708
-maxGas = 16.348
-maxofthree = 65.0014
-time = 62.895
-timeStep = 0.000976562
-
-maxAll = 0.0273649
-maxLiquid = 0.0416598
-maxGas = 0.0632468
-maxofthree = 0.0632468
-time = 62.896
-timeStep = 0.25
-
-maxAll = 65.0034
-maxLiquid = 10.4863
-maxGas = 16.3113
-maxofthree = 65.0034
-time = 63.146
-timeStep = 0.000976562
-
-maxAll = 0.0272162
-maxLiquid = 0.0413379
-maxGas = 0.0630966
-maxofthree = 0.0630966
-time = 63.147
-timeStep = 0.25
-
-maxAll = 65.0053
-maxLiquid = 10.4015
-maxGas = 16.2704
-maxofthree = 65.0053
-time = 63.397
-timeStep = 0.000976562
-
-maxAll = 0.0270692
-maxLiquid = 0.0410147
-maxGas = 0.0629311
-maxofthree = 0.0629311
-time = 63.3979
-timeStep = 0.25
-
-maxAll = 65.0072
-maxLiquid = 10.3219
-maxGas = 16.2255
-maxofthree = 65.0072
-time = 63.6479
-timeStep = 0.000976562
-
-maxAll = 0.0269239
-maxLiquid = 0.0406905
-maxGas = 0.0627501
-maxofthree = 0.0627501
-time = 63.6489
-timeStep = 0.25
-
-maxAll = 65.0091
-maxLiquid = 10.2647
-maxGas = 16.1764
-maxofthree = 65.0091
-time = 63.8989
-timeStep = 0.000976562
-
-maxAll = 0.0267802
-maxLiquid = 0.0403652
-maxGas = 0.0625535
-maxofthree = 0.0625535
-time = 63.8999
-timeStep = 0.25
-
-maxAll = 65.0109
-maxLiquid = 10.2067
-maxGas = 16.123
-maxofthree = 65.0109
-time = 64.1499
-timeStep = 0.000976562
-
-maxAll = 0.026638
-maxLiquid = 0.040039
-maxGas = 0.062341
-maxofthree = 0.062341
-time = 64.1509
-timeStep = 0.25
-
-maxAll = 65.0127
-maxLiquid = 10.1478
-maxGas = 16.0654
-maxofthree = 65.0127
-time = 64.4009
-timeStep = 0.000976562
-
-maxAll = 0.0264974
-maxLiquid = 0.039712
-maxGas = 0.0621125
-maxofthree = 0.0621125
-time = 64.4019
-timeStep = 0.25
-
-maxAll = 65.0145
-maxLiquid = 10.0882
-maxGas = 16.0034
-maxofthree = 65.0145
-time = 64.6519
-timeStep = 0.000976562
-
-maxAll = 0.0263583
-maxLiquid = 0.0393842
-maxGas = 0.0618678
-maxofthree = 0.0618678
-time = 64.6528
-timeStep = 0.25
-
-maxAll = 65.0163
-maxLiquid = 10.0278
-maxGas = 15.9371
-maxofthree = 65.0163
-time = 64.9028
-timeStep = 0.000976562
-
-maxAll = 0.0262207
-maxLiquid = 0.0390557
-maxGas = 0.0616068
-maxofthree = 0.0616068
-time = 64.9038
-timeStep = 0.25
-
-maxAll = 65.0181
-maxLiquid = 9.96669
-maxGas = 15.8664
-maxofthree = 65.0181
-time = 65.1538
-timeStep = 0.000976562
-
-maxAll = 0.0260846
-maxLiquid = 0.0387265
-maxGas = 0.0613292
-maxofthree = 0.0613292
-time = 65.1548
-timeStep = 0.25
-
-maxAll = 65.0198
-maxLiquid = 9.90483
-maxGas = 15.7913
-maxofthree = 65.0198
-time = 65.4048
-timeStep = 0.000976562
-
-maxAll = 0.0259499
-maxLiquid = 0.0383968
-maxGas = 0.0610351
-maxofthree = 0.0610351
-time = 65.4058
-timeStep = 0.25
-
-maxAll = 65.0216
-maxLiquid = 9.84225
-maxGas = 15.7116
-maxofthree = 65.0216
-time = 65.6558
-timeStep = 0.000976562
-
-maxAll = 0.0258167
-maxLiquid = 0.0380666
-maxGas = 0.0607241
-maxofthree = 0.0607241
-time = 65.6567
-timeStep = 0.25
-
-maxAll = 65.0233
-maxLiquid = 9.77899
-maxGas = 15.6275
-maxofthree = 65.0233
-time = 65.9067
-timeStep = 0.000976562
-
-maxAll = 0.0256848
-maxLiquid = 0.037736
-maxGas = 0.0603963
-maxofthree = 0.0603963
-time = 65.9077
-timeStep = 0.25
-
-maxAll = 65.0249
-maxLiquid = 9.71505
-maxGas = 15.5388
-maxofthree = 65.0249
-time = 66.1577
-timeStep = 0.000976562
-
-maxAll = 0.0255543
-maxLiquid = 0.0374051
-maxGas = 0.0600515
-maxofthree = 0.0600515
-time = 66.1587
-timeStep = 0.25
-
-maxAll = 65.0266
-maxLiquid = 9.65047
-maxGas = 15.4456
-maxofthree = 65.0266
-time = 66.4087
-timeStep = 0.000976562
-
-maxAll = 0.0254252
-maxLiquid = 0.037074
-maxGas = 0.0596897
-maxofthree = 0.0596897
-time = 66.4097
-timeStep = 0.25
-
-maxAll = 65.0282
-maxLiquid = 9.58525
-maxGas = 15.3478
-maxofthree = 65.0282
-time = 66.6597
-timeStep = 0.000976562
-
-maxAll = 0.0252973
-maxLiquid = 0.0367427
-maxGas = 0.0593108
-maxofthree = 0.0593108
-time = 66.6606
-timeStep = 0.25
-
-maxAll = 65.0298
-maxLiquid = 9.51943
-maxGas = 15.2454
-maxofthree = 65.0298
-time = 66.9106
-timeStep = 0.000976562
-
-maxAll = 0.0251708
-maxLiquid = 0.0364114
-maxGas = 0.0589147
-maxofthree = 0.0589147
-time = 66.9116
-timeStep = 0.25
-
-maxAll = 65.0314
-maxLiquid = 9.45301
-maxGas = 15.1384
-maxofthree = 65.0314
-time = 67.1616
-timeStep = 0.000976562
-
-maxAll = 0.0250456
-maxLiquid = 0.03608
-maxGas = 0.0585015
-maxofthree = 0.0585015
-time = 67.1626
-timeStep = 0.25
-
-maxAll = 65.033
-maxLiquid = 9.38603
-maxGas = 15.0268
-maxofthree = 65.033
-time = 67.4126
-timeStep = 0.000976562
-
-maxAll = 0.0249216
-maxLiquid = 0.0357488
-maxGas = 0.0580711
-maxofthree = 0.0580711
-time = 67.4136
-timeStep = 0.25
-
-maxAll = 65.0346
-maxLiquid = 9.3185
-maxGas = 14.9106
-maxofthree = 65.0346
-time = 67.6636
-timeStep = 0.000976562
-
-maxAll = 0.0247988
-maxLiquid = 0.0354177
-maxGas = 0.0576237
-maxofthree = 0.0576237
-time = 67.6646
-timeStep = 0.25
-
-maxAll = 65.0361
-maxLiquid = 9.25046
-maxGas = 14.7898
-maxofthree = 65.0361
-time = 67.9146
-timeStep = 0.000976562
-
-maxAll = 0.0246773
-maxLiquid = 0.0350868
-maxGas = 0.0571592
-maxofthree = 0.0571592
-time = 67.9155
-timeStep = 0.25
-
-maxAll = 65.0376
-maxLiquid = 9.18191
-maxGas = 14.6645
-maxofthree = 65.0376
-time = 68.1655
-timeStep = 0.000976562
-
-maxAll = 0.0245569
-maxLiquid = 0.0347577
-maxGas = 0.0566778
-maxofthree = 0.0566778
-time = 68.1665
-timeStep = 0.25
-
-maxAll = 65.0391
-maxLiquid = 9.11288
-maxGas = 14.6057
-maxofthree = 65.0391
-time = 68.4165
-timeStep = 0.000976562
-
-maxAll = 0.0244378
-maxLiquid = 0.0345863
-maxGas = 0.0565153
-maxofthree = 0.0565153
-time = 68.4175
-timeStep = 0.25
-
-maxAll = 65.0406
-maxLiquid = 9.0434
-maxGas = 14.5802
-maxofthree = 65.0406
-time = 68.6675
-timeStep = 0.000976562
-
-maxAll = 0.0243197
-maxLiquid = 0.0344523
-maxGas = 0.0564094
-maxofthree = 0.0564094
-time = 68.6685
-timeStep = 0.25
-
-maxAll = 65.0421
-maxLiquid = 8.97349
-maxGas = 14.5513
-maxofthree = 65.0421
-time = 68.9185
-timeStep = 0.000976562
-
-maxAll = 0.0242028
-maxLiquid = 0.0343175
-maxGas = 0.0562907
-maxofthree = 0.0562907
-time = 68.9194
-timeStep = 0.25
-
-maxAll = 65.0435
-maxLiquid = 8.90317
-maxGas = 14.5189
-maxofthree = 65.0435
-time = 69.1694
-timeStep = 0.000976562
-
-maxAll = 0.0240871
-maxLiquid = 0.0341819
-maxGas = 0.0561592
-maxofthree = 0.0561592
-time = 69.1704
-timeStep = 0.25
-
-maxAll = 65.0449
-maxLiquid = 8.83247
-maxGas = 14.483
-maxofthree = 65.0449
-time = 69.4204
-timeStep = 0.000976562
-
-maxAll = 0.0239724
-maxLiquid = 0.0340455
-maxGas = 0.0560146
-maxofthree = 0.0560146
-time = 69.4214
-timeStep = 0.25
-
-maxAll = 65.0463
-maxLiquid = 8.76141
-maxGas = 14.4436
-maxofthree = 65.0463
-time = 69.6714
-timeStep = 0.000976562
-
-maxAll = 0.0238588
-maxLiquid = 0.0339083
-maxGas = 0.0558568
-maxofthree = 0.0558568
-time = 69.6724
-timeStep = 0.25
-
-maxAll = 65.0477
-maxLiquid = 8.69002
-maxGas = 14.4007
-maxofthree = 65.0477
-time = 69.9224
-timeStep = 0.000976562
-
-maxAll = 0.0237463
-maxLiquid = 0.0337704
-maxGas = 0.0556857
-maxofthree = 0.0556857
-time = 69.9233
-timeStep = 0.25
-
-maxAll = 65.0491
-maxLiquid = 8.61831
-maxGas = 14.3541
-maxofthree = 65.0491
-time = 70.1733
-timeStep = 0.000976562
-
-maxAll = 0.0236348
-maxLiquid = 0.0336317
-maxGas = 0.0555011
-maxofthree = 0.0555011
-time = 70.1743
-timeStep = 0.25
-
-maxAll = 65.0504
-maxLiquid = 8.54632
-maxGas = 14.3039
-maxofthree = 65.0504
-time = 70.4243
-timeStep = 0.000976562
-
-maxAll = 0.0235243
-maxLiquid = 0.0334923
-maxGas = 0.0553031
-maxofthree = 0.0553031
-time = 70.4253
-timeStep = 0.25
-
-maxAll = 65.0518
-maxLiquid = 8.47406
-maxGas = 14.2501
-maxofthree = 65.0518
-time = 70.6753
-timeStep = 0.000976562
-
-maxAll = 0.0234148
-maxLiquid = 0.0333521
-maxGas = 0.0550914
-maxofthree = 0.0550914
-time = 70.6763
-timeStep = 0.25
-
-maxAll = 65.0531
-maxLiquid = 8.40157
-maxGas = 14.1926
-maxofthree = 65.0531
-time = 70.9263
-timeStep = 0.000976562
-
-maxAll = 0.0233064
-maxLiquid = 0.0332113
-maxGas = 0.0548659
-maxofthree = 0.0548659
-time = 70.9272
-timeStep = 0.25
-
-maxAll = 65.0544
-maxLiquid = 8.33426
-maxGas = 14.1314
-maxofthree = 65.0544
-time = 71.1772
-timeStep = 0.000976562
-
-maxAll = 0.0231989
-maxLiquid = 0.0330698
-maxGas = 0.0546266
-maxofthree = 0.0546266
-time = 71.1782
-timeStep = 0.25
-
-maxAll = 65.0557
-maxLiquid = 8.29679
-maxGas = 14.0665
-maxofthree = 65.0557
-time = 71.4282
-timeStep = 0.000976562
-
-maxAll = 0.0230924
-maxLiquid = 0.0329276
-maxGas = 0.0543734
-maxofthree = 0.0543734
-time = 71.4292
-timeStep = 0.25
-
-maxAll = 65.057
-maxLiquid = 8.25917
-maxGas = 13.9978
-maxofthree = 65.057
-time = 71.6792
-timeStep = 0.000976562
-
-maxAll = 0.0229868
-maxLiquid = 0.0327848
-maxGas = 0.0541062
-maxofthree = 0.0541062
-time = 71.6802
-timeStep = 0.25
-
-maxAll = 65.0582
-maxLiquid = 8.22138
-maxGas = 13.9253
-maxofthree = 65.0582
-time = 71.9302
-timeStep = 0.000976562
-
-maxAll = 0.0228822
-maxLiquid = 0.0326413
-maxGas = 0.0538249
-maxofthree = 0.0538249
-time = 71.9312
-timeStep = 0.25
-
-maxAll = 65.0594
-maxLiquid = 8.18343
-maxGas = 13.8491
-maxofthree = 65.0594
-time = 72.1812
-timeStep = 0.000976562
-
-maxAll = 0.0227785
-maxLiquid = 0.0324972
-maxGas = 0.0535296
-maxofthree = 0.0535296
-time = 72.1821
-timeStep = 0.25
-
-maxAll = 65.0607
-maxLiquid = 8.14534
-maxGas = 13.769
-maxofthree = 65.0607
-time = 72.4321
-timeStep = 0.000976562
-
-maxAll = 0.0226756
-maxLiquid = 0.0323525
-maxGas = 0.0532201
-maxofthree = 0.0532201
-time = 72.4331
-timeStep = 0.25
-
-maxAll = 65.0619
-maxLiquid = 8.10709
-maxGas = 13.6852
-maxofthree = 65.0619
-time = 72.6831
-timeStep = 0.000976562
-
-maxAll = 0.0225737
-maxLiquid = 0.0322072
-maxGas = 0.0528966
-maxofthree = 0.0528966
-time = 72.6841
-timeStep = 0.25
-
-maxAll = 65.0631
-maxLiquid = 8.06869
-maxGas = 13.5976
-maxofthree = 65.0631
-time = 72.9341
-timeStep = 0.000976562
-
-maxAll = 0.0224727
-maxLiquid = 0.0320613
-maxGas = 0.0525589
-maxofthree = 0.0525589
-time = 72.9351
-timeStep = 0.25
-
-maxAll = 65.0642
-maxLiquid = 8.03016
-maxGas = 13.5062
-maxofthree = 65.0642
-time = 73.1851
-timeStep = 0.000976562
-
-maxAll = 0.0223725
-maxLiquid = 0.0319149
-maxGas = 0.0522071
-maxofthree = 0.0522071
-time = 73.186
-timeStep = 0.25
-
-maxAll = 65.0654
-maxLiquid = 7.99148
-maxGas = 13.411
-maxofthree = 65.0654
-time = 73.436
-timeStep = 0.000976562
-
-maxAll = 0.0222731
-maxLiquid = 0.0317679
-maxGas = 0.0518412
-maxofthree = 0.0518412
-time = 73.437
-timeStep = 0.25
-
-maxAll = 65.0665
-maxLiquid = 7.95267
-maxGas = 13.312
-maxofthree = 65.0665
-time = 73.687
-timeStep = 0.000976562
-
-maxAll = 0.0221746
-maxLiquid = 0.0316204
-maxGas = 0.0514613
-maxofthree = 0.0514613
-time = 73.688
-timeStep = 0.25
-
-maxAll = 65.0677
-maxLiquid = 7.91373
-maxGas = 13.2093
-maxofthree = 65.0677
-time = 73.938
-timeStep = 0.000976562
-
-maxAll = 0.022077
-maxLiquid = 0.0314723
-maxGas = 0.0510675
-maxofthree = 0.0510675
-time = 73.939
-timeStep = 0.25
-
-maxAll = 65.0688
-maxLiquid = 7.87465
-maxGas = 13.1028
-maxofthree = 65.0688
-time = 74.189
-timeStep = 0.000976562
-
-maxAll = 0.0219801
-maxLiquid = 0.0313237
-maxGas = 0.0507429
-maxofthree = 0.0507429
-time = 74.1899
-timeStep = 0.25
-
-maxAll = 65.0699
-maxLiquid = 7.83546
-maxGas = 13.0457
-maxofthree = 65.0699
-time = 74.4399
-timeStep = 0.000976562
-
-maxAll = 0.021884
-maxLiquid = 0.0311747
-maxGas = 0.0506658
-maxofthree = 0.0506658
-time = 74.4409
-timeStep = 0.25
-
-maxAll = 65.071
-maxLiquid = 7.79614
-maxGas = 13.0245
-maxofthree = 65.071
-time = 74.6909
-timeStep = 0.000976562
-
-maxAll = 0.0217887
-maxLiquid = 0.0310251
-maxGas = 0.050578
-maxofthree = 0.050578
-time = 74.6919
-timeStep = 0.25
-
-maxAll = 65.0721
-maxLiquid = 7.7567
-maxGas = 13.0004
-maxofthree = 65.0721
-time = 74.9419
-timeStep = 0.000976562
-
-maxAll = 0.0216942
-maxLiquid = 0.0308751
-maxGas = 0.0504795
-maxofthree = 0.0504795
-time = 74.9429
-timeStep = 0.25
-
-maxAll = 65.0731
-maxLiquid = 7.71715
-maxGas = 12.9735
-maxofthree = 65.0731
-time = 75.1929
-timeStep = 0.000976562
-
-maxAll = 0.0216005
-maxLiquid = 0.0307246
-maxGas = 0.0503702
-maxofthree = 0.0503702
-time = 75.1938
-timeStep = 0.25
-
-maxAll = 65.0742
-maxLiquid = 7.67748
-maxGas = 12.9436
-maxofthree = 65.0742
-time = 75.4438
-timeStep = 0.000976562
-
-maxAll = 0.0215074
-maxLiquid = 0.0305737
-maxGas = 0.0502499
-maxofthree = 0.0502499
-time = 75.4448
-timeStep = 0.25
-
-maxAll = 65.0752
-maxLiquid = 7.63771
-maxGas = 12.9108
-maxofthree = 65.0752
-time = 75.6948
-timeStep = 0.000976562
-
-maxAll = 0.0214152
-maxLiquid = 0.0304223
-maxGas = 0.0501186
-maxofthree = 0.0501186
-time = 75.6958
-timeStep = 0.25
-
-maxAll = 65.0762
-maxLiquid = 7.59783
-maxGas = 12.8749
-maxofthree = 65.0762
-time = 75.9458
-timeStep = 0.000976562
-
-maxAll = 0.0213236
-maxLiquid = 0.0302706
-maxGas = 0.0499762
-maxofthree = 0.0499762
-time = 75.9468
-timeStep = 0.25
-
-maxAll = 65.0772
-maxLiquid = 7.55785
-maxGas = 12.8361
-maxofthree = 65.0772
-time = 76.1968
-timeStep = 0.000976562
-
-maxAll = 0.0212328
-maxLiquid = 0.0301184
-maxGas = 0.0498226
-maxofthree = 0.0498226
-time = 76.1978
-timeStep = 0.25
-
-maxAll = 65.0782
-maxLiquid = 7.51778
-maxGas = 12.7942
-maxofthree = 65.0782
-time = 76.4478
-timeStep = 0.000976562
-
-maxAll = 0.0211427
-maxLiquid = 0.0299658
-maxGas = 0.0496577
-maxofthree = 0.0496577
-time = 76.4487
-timeStep = 0.25
-
-maxAll = 65.0792
-maxLiquid = 7.47761
-maxGas = 12.7493
-maxofthree = 65.0792
-time = 76.6987
-timeStep = 0.000976562
-
-maxAll = 0.0210533
-maxLiquid = 0.0298129
-maxGas = 0.0494816
-maxofthree = 0.0494816
-time = 76.6997
-timeStep = 0.25
-
-maxAll = 65.0802
-maxLiquid = 7.43735
-maxGas = 12.7014
-maxofthree = 65.0802
-time = 76.9497
-timeStep = 0.000976562
-
-maxAll = 0.0209646
-maxLiquid = 0.0296595
-maxGas = 0.049294
-maxofthree = 0.049294
-time = 76.9507
-timeStep = 0.25
-
-maxAll = 65.0811
-maxLiquid = 7.397
-maxGas = 12.6503
-maxofthree = 65.0811
-time = 77.2007
-timeStep = 0.000976562
-
-maxAll = 0.0208765
-maxLiquid = 0.0295059
-maxGas = 0.0490949
-maxofthree = 0.0490949
-time = 77.2017
-timeStep = 0.25
-
-maxAll = 65.0821
-maxLiquid = 7.35656
-maxGas = 12.5962
-maxofthree = 65.0821
-time = 77.4517
-timeStep = 0.000976562
-
-maxAll = 0.0207891
-maxLiquid = 0.0293519
-maxGas = 0.0488844
-maxofthree = 0.0488844
-time = 77.4526
-timeStep = 0.25
-
-maxAll = 65.083
-maxLiquid = 7.31605
-maxGas = 12.539
-maxofthree = 65.083
-time = 77.7026
-timeStep = 0.000976562
-
-maxAll = 0.0207024
-maxLiquid = 0.0291976
-maxGas = 0.0486623
-maxofthree = 0.0486623
-time = 77.7036
-timeStep = 0.25
-
-maxAll = 65.0839
-maxLiquid = 7.27546
-maxGas = 12.4786
-maxofthree = 65.0839
-time = 77.9536
-timeStep = 0.000976562
-
-maxAll = 0.0206163
-maxLiquid = 0.0290429
-maxGas = 0.0484286
-maxofthree = 0.0484286
-time = 77.9546
-timeStep = 0.25
-
-maxAll = 65.0848
-maxLiquid = 7.23479
-maxGas = 12.4152
-maxofthree = 65.0848
-time = 78.2046
-timeStep = 0.000976562
-
-maxAll = 0.0205309
-maxLiquid = 0.028888
-maxGas = 0.0481834
-maxofthree = 0.0481834
-time = 78.2056
-timeStep = 0.25
-
-maxAll = 65.0857
-maxLiquid = 7.19405
-maxGas = 12.3486
-maxofthree = 65.0857
-time = 78.4556
-timeStep = 0.000976562
-
-maxAll = 0.020446
-maxLiquid = 0.0287328
-maxGas = 0.0479265
-maxofthree = 0.0479265
-time = 78.4565
-timeStep = 0.25
-
-maxAll = 65.0866
-maxLiquid = 7.15325
-maxGas = 12.2788
-maxofthree = 65.0866
-time = 78.7065
-timeStep = 0.000976562
-
-maxAll = 0.0203618
-maxLiquid = 0.0285773
-maxGas = 0.0476581
-maxofthree = 0.0476581
-time = 78.7075
-timeStep = 0.25
-
-maxAll = 65.0875
-maxLiquid = 7.11239
-maxGas = 12.206
-maxofthree = 65.0875
-time = 78.9575
-timeStep = 0.000976562
-
-maxAll = 0.0202783
-maxLiquid = 0.0284216
-maxGas = 0.0473781
-maxofthree = 0.0473781
-time = 78.9585
-timeStep = 0.25
-
-maxAll = 65.0883
-maxLiquid = 7.07146
-maxGas = 12.13
-maxofthree = 65.0883
-time = 79.2085
-timeStep = 0.000976562
-
-maxAll = 0.0201953
-maxLiquid = 0.0282656
-maxGas = 0.0470865
-maxofthree = 0.0470865
-time = 79.2095
-timeStep = 0.25
-
-maxAll = 65.0892
-maxLiquid = 7.03048
-maxGas = 12.051
-maxofthree = 65.0892
-time = 79.4595
-timeStep = 0.000976562
-
-maxAll = 0.0201129
-maxLiquid = 0.0281094
-maxGas = 0.0469223
-maxofthree = 0.0469223
-time = 79.4604
-timeStep = 0.25
-
-maxAll = 65.09
-maxLiquid = 6.98945
-maxGas = 11.9688
-maxofthree = 65.09
-time = 79.7104
-timeStep = 0.000976562
-
-maxAll = 0.020031
-maxLiquid = 0.027953
-maxGas = 0.0468556
-maxofthree = 0.0468556
-time = 79.7114
-timeStep = 0.25
-
-maxAll = 65.0908
-maxLiquid = 6.94837
-maxGas = 11.8997
-maxofthree = 65.0908
-time = 79.9614
-timeStep = 0.000976562
-
-maxAll = 0.0199498
-maxLiquid = 0.0277964
-maxGas = 0.0467794
-maxofthree = 0.0467794
-time = 79.9624
-timeStep = 0.25
-
-maxAll = 65.0916
-maxLiquid = 6.90724
-maxGas = 11.8788
-maxofthree = 65.0916
-time = 80.2124
-timeStep = 0.000976562
-
-maxAll = 0.0198691
-maxLiquid = 0.0276397
-maxGas = 0.0466937
-maxofthree = 0.0466937
-time = 80.2134
-timeStep = 0.25
-
-maxAll = 65.0925
-maxLiquid = 6.86608
-maxGas = 11.8554
-maxofthree = 65.0925
-time = 80.4634
-timeStep = 0.000976562
-
-maxAll = 0.019789
-maxLiquid = 0.0274827
-maxGas = 0.0465983
-maxofthree = 0.0465983
-time = 80.4644
-timeStep = 0.25
-
-maxAll = 65.0932
-maxLiquid = 6.82487
-maxGas = 11.8294
-maxofthree = 65.0932
-time = 80.7144
-timeStep = 0.000976562
-
-maxAll = 0.0197094
-maxLiquid = 0.0273256
-maxGas = 0.0464933
-maxofthree = 0.0464933
-time = 80.7153
-timeStep = 0.25
-
-maxAll = 65.094
-maxLiquid = 6.79224
-maxGas = 11.8007
-maxofthree = 65.094
-time = 80.9653
-timeStep = 0.000976562
-
-maxAll = 0.0196304
-maxLiquid = 0.0271684
-maxGas = 0.0463786
-maxofthree = 0.0463786
-time = 80.9663
-timeStep = 0.25
-
-maxAll = 65.0948
-maxLiquid = 6.7636
-maxGas = 11.7695
-maxofthree = 65.0948
-time = 81.2163
-timeStep = 0.000976562
-
-maxAll = 0.0195519
-maxLiquid = 0.027011
-maxGas = 0.046254
-maxofthree = 0.046254
-time = 81.2173
-timeStep = 0.25
-
-maxAll = 65.0956
-maxLiquid = 6.7347
-maxGas = 11.7355
-maxofthree = 65.0956
-time = 81.4673
-timeStep = 0.000976562
-
-maxAll = 0.019474
-maxLiquid = 0.0268535
-maxGas = 0.0461196
-maxofthree = 0.0461196
-time = 81.4683
-timeStep = 0.25
-
-maxAll = 65.0963
-maxLiquid = 6.70555
-maxGas = 11.6989
-maxofthree = 65.0963
-time = 81.7183
-timeStep = 0.000976562
-
-maxAll = 0.0193965
-maxLiquid = 0.026696
-maxGas = 0.0459752
-maxofthree = 0.0459752
-time = 81.7192
-timeStep = 0.25
-
-maxAll = 65.0971
-maxLiquid = 6.67613
-maxGas = 11.6597
-maxofthree = 65.0971
-time = 81.9692
-timeStep = 0.000976562
-
-maxAll = 0.0193196
-maxLiquid = 0.0265383
-maxGas = 0.0458209
-maxofthree = 0.0458209
-time = 81.9702
-timeStep = 0.25
-
-maxAll = 65.0978
-maxLiquid = 6.64647
-maxGas = 11.6177
-maxofthree = 65.0978
-time = 82.2202
-timeStep = 0.000976562
-
-maxAll = 0.0192432
-maxLiquid = 0.0263806
-maxGas = 0.0456565
-maxofthree = 0.0456565
-time = 82.2212
-timeStep = 0.25
-
-maxAll = 65.0985
-maxLiquid = 6.61656
-maxGas = 11.573
-maxofthree = 65.0985
-time = 82.4712
-timeStep = 0.000976562
-
-maxAll = 0.0191673
-maxLiquid = 0.0262229
-maxGas = 0.0454821
-maxofthree = 0.0454821
-time = 82.4722
-timeStep = 0.25
-
-maxAll = 65.0992
-maxLiquid = 6.58642
-maxGas = 11.5256
-maxofthree = 65.0992
-time = 82.7222
-timeStep = 0.000976562
-
-maxAll = 0.0190919
-maxLiquid = 0.0260651
-maxGas = 0.0452977
-maxofthree = 0.0452977
-time = 82.7231
-timeStep = 0.25
-
-maxAll = 65.0999
-maxLiquid = 6.55604
-maxGas = 11.4755
-maxofthree = 65.0999
-time = 82.9731
-timeStep = 0.000976562
-
-maxAll = 0.0190169
-maxLiquid = 0.0259073
-maxGas = 0.0451031
-maxofthree = 0.0451031
-time = 82.9741
-timeStep = 0.25
-
-maxAll = 65.1006
-maxLiquid = 6.52543
-maxGas = 11.4226
-maxofthree = 65.1006
-time = 83.2241
-timeStep = 0.000976562
-
-maxAll = 0.0189424
-maxLiquid = 0.0257495
-maxGas = 0.0448984
-maxofthree = 0.0448984
-time = 83.2251
-timeStep = 0.25
-
-maxAll = 65.1013
-maxLiquid = 6.4946
-maxGas = 11.367
-maxofthree = 65.1013
-time = 83.4751
-timeStep = 0.000976562
-
-maxAll = 0.0188685
-maxLiquid = 0.0255917
-maxGas = 0.0446835
-maxofthree = 0.0446835
-time = 83.4761
-timeStep = 0.25
-
-maxAll = 65.102
-maxLiquid = 6.46355
-maxGas = 11.3087
-maxofthree = 65.102
-time = 83.7261
-timeStep = 0.000976562
-
-maxAll = 0.0187949
-maxLiquid = 0.025434
-maxGas = 0.0444586
-maxofthree = 0.0444586
-time = 83.7271
-timeStep = 0.25
-
-maxAll = 65.1027
-maxLiquid = 6.43229
-maxGas = 11.2477
-maxofthree = 65.1027
-time = 83.9771
-timeStep = 0.000976562
-
-maxAll = 0.0187219
-maxLiquid = 0.0252763
-maxGas = 0.0442235
-maxofthree = 0.0442235
-time = 83.978
-timeStep = 0.25
-
-maxAll = 65.1033
-maxLiquid = 6.40083
-maxGas = 11.1839
-maxofthree = 65.1033
-time = 84.228
-timeStep = 0.000976562
-
-maxAll = 0.0186492
-maxLiquid = 0.0251186
-maxGas = 0.0439783
-maxofthree = 0.0439783
-time = 84.229
-timeStep = 0.25
-
-maxAll = 65.104
-maxLiquid = 6.36917
-maxGas = 11.1175
-maxofthree = 65.104
-time = 84.479
-timeStep = 0.000976562
-
-maxAll = 0.0185771
-maxLiquid = 0.0249611
-maxGas = 0.0437231
-maxofthree = 0.0437231
-time = 84.48
-timeStep = 0.25
-
-maxAll = 65.1046
-maxLiquid = 6.33731
-maxGas = 11.0483
-maxofthree = 65.1046
-time = 84.73
-timeStep = 0.000976562
-
-maxAll = 0.0185053
-maxLiquid = 0.0248036
-maxGas = 0.0434579
-maxofthree = 0.0434579
-time = 84.731
-timeStep = 0.25
-
-maxAll = 65.1052
-maxLiquid = 6.30527
-maxGas = 10.9764
-maxofthree = 65.1052
-time = 84.981
-timeStep = 0.000976562
-
-maxAll = 0.0184341
-maxLiquid = 0.0246463
-maxGas = 0.0431827
-maxofthree = 0.0431827
-time = 84.9819
-timeStep = 0.25
-
-maxAll = 65.1059
-maxLiquid = 6.27304
-maxGas = 10.9083
-maxofthree = 65.1059
-time = 85.2319
-timeStep = 0.000976562
-
-maxAll = 0.0183632
-maxLiquid = 0.024489
-maxGas = 0.0428976
-maxofthree = 0.0428976
-time = 85.2329
-timeStep = 0.25
-
-maxAll = 65.1065
-maxLiquid = 6.24064
-maxGas = 10.8945
-maxofthree = 65.1065
-time = 85.4829
-timeStep = 0.000976562
-
-maxAll = 0.0182927
-maxLiquid = 0.0243319
-maxGas = 0.0427555
-maxofthree = 0.0427555
-time = 85.4839
-timeStep = 0.25
-
-maxAll = 65.1071
-maxLiquid = 6.20807
-maxGas = 10.8785
-maxofthree = 65.1071
-time = 85.7339
-timeStep = 0.000976562
-
-maxAll = 0.0182227
-maxLiquid = 0.024175
-maxGas = 0.0426891
-maxofthree = 0.0426891
-time = 85.7349
-timeStep = 0.25
-
-maxAll = 65.1077
-maxLiquid = 6.17533
-maxGas = 10.8602
-maxofthree = 65.1077
-time = 85.9849
-timeStep = 0.000976562
-
-maxAll = 0.0181531
-maxLiquid = 0.0240183
-maxGas = 0.0426143
-maxofthree = 0.0426143
-time = 85.9858
-timeStep = 0.25
-
-maxAll = 65.1083
-maxLiquid = 6.14243
-maxGas = 10.8398
-maxofthree = 65.1083
-time = 86.2358
-timeStep = 0.000976562
-
-maxAll = 0.0180839
-maxLiquid = 0.0238617
-maxGas = 0.0425313
-maxofthree = 0.0425313
-time = 86.2368
-timeStep = 0.25
-
-maxAll = 65.1088
-maxLiquid = 6.10939
-maxGas = 10.8171
-maxofthree = 65.1088
-time = 86.4868
-timeStep = 0.000976562
-
-maxAll = 0.0180151
-maxLiquid = 0.0237053
-maxGas = 0.0424399
-maxofthree = 0.0424399
-time = 86.4878
-timeStep = 0.25
-
-maxAll = 65.1094
-maxLiquid = 6.0762
-maxGas = 10.7921
-maxofthree = 65.1094
-time = 86.7378
-timeStep = 0.000976562
-
-maxAll = 0.0179466
-maxLiquid = 0.0235492
-maxGas = 0.0423401
-maxofthree = 0.0423401
-time = 86.7388
-timeStep = 0.25
-
-maxAll = 65.11
-maxLiquid = 6.04286
-maxGas = 10.7648
-maxofthree = 65.11
-time = 86.9888
-timeStep = 0.000976562
-
-maxAll = 0.0178786
-maxLiquid = 0.0233933
-maxGas = 0.0422319
-maxofthree = 0.0422319
-time = 86.9897
-timeStep = 0.25
-
-maxAll = 65.1105
-maxLiquid = 6.0094
-maxGas = 10.7353
-maxofthree = 65.1105
-time = 87.2397
-timeStep = 0.000976562
-
-maxAll = 0.017811
-maxLiquid = 0.0232377
-maxGas = 0.0421151
-maxofthree = 0.0421151
-time = 87.2407
-timeStep = 0.25
-
-maxAll = 65.1111
-maxLiquid = 5.9758
-maxGas = 10.7035
-maxofthree = 65.1111
-time = 87.4907
-timeStep = 0.000976562
-
-maxAll = 0.0177437
-maxLiquid = 0.0230823
-maxGas = 0.0419899
-maxofthree = 0.0419899
-time = 87.4917
-timeStep = 0.25
-
-maxAll = 65.1116
-maxLiquid = 5.94209
-maxGas = 10.6693
-maxofthree = 65.1116
-time = 87.7417
-timeStep = 0.000976562
-
-maxAll = 0.0176768
-maxLiquid = 0.0229272
-maxGas = 0.041856
-maxofthree = 0.041856
-time = 87.7427
-timeStep = 0.25
-
-maxAll = 65.1122
-maxLiquid = 5.90826
-maxGas = 10.6329
-maxofthree = 65.1122
-time = 87.9927
-timeStep = 0.000976562
-
-maxAll = 0.0176103
-maxLiquid = 0.0227724
-maxGas = 0.0417136
-maxofthree = 0.0417136
-time = 87.9937
-timeStep = 0.25
-
-maxAll = 65.1127
-maxLiquid = 5.87432
-maxGas = 10.5941
-maxofthree = 65.1127
-time = 88.2437
-timeStep = 0.000976562
-
-maxAll = 0.0175441
-maxLiquid = 0.022618
-maxGas = 0.0415626
-maxofthree = 0.0415626
-time = 88.2446
-timeStep = 0.25
-
-maxAll = 65.1132
-maxLiquid = 5.84028
-maxGas = 10.553
-maxofthree = 65.1132
-time = 88.4946
-timeStep = 0.000976562
-
-maxAll = 0.0174783
-maxLiquid = 0.0224639
-maxGas = 0.0414029
-maxofthree = 0.0414029
-time = 88.4956
-timeStep = 0.25
-
-maxAll = 65.1137
-maxLiquid = 5.80614
-maxGas = 10.5096
-maxofthree = 65.1137
-time = 88.7456
-timeStep = 0.000976562
-
-maxAll = 0.0174129
-maxLiquid = 0.0223101
-maxGas = 0.0412346
-maxofthree = 0.0412346
-time = 88.7466
-timeStep = 0.25
-
-maxAll = 65.1142
-maxLiquid = 5.77191
-maxGas = 10.4638
-maxofthree = 65.1142
-time = 88.9966
-timeStep = 0.000976562
-
-maxAll = 0.0173478
-maxLiquid = 0.0221867
-maxGas = 0.0410577
-maxofthree = 0.0410577
-time = 88.9976
-timeStep = 0.25
-
-maxAll = 65.1147
-maxLiquid = 5.73759
-maxGas = 10.4157
-maxofthree = 65.1147
-time = 89.2476
-timeStep = 0.000976562
-
-maxAll = 0.017283
-maxLiquid = 0.022133
-maxGas = 0.0408721
-maxofthree = 0.0408721
-time = 89.2485
-timeStep = 0.25
-
-maxAll = 65.1152
-maxLiquid = 5.7032
-maxGas = 10.3653
-maxofthree = 65.1152
-time = 89.4985
-timeStep = 0.000976562
-
-maxAll = 0.0172186
-maxLiquid = 0.022079
-maxGas = 0.0406779
-maxofthree = 0.0406779
-time = 89.4995
-timeStep = 0.25
-
-maxAll = 65.1157
-maxLiquid = 5.66874
-maxGas = 10.3125
-maxofthree = 65.1157
-time = 89.7495
-timeStep = 0.000976562
-
-maxAll = 0.0171545
-maxLiquid = 0.0220247
-maxGas = 0.0404751
-maxofthree = 0.0404751
-time = 89.7505
-timeStep = 0.25
-
-maxAll = 65.1162
-maxLiquid = 5.63421
-maxGas = 10.2575
-maxofthree = 65.1162
-time = 90.0005
-timeStep = 0.000976562
-
-maxAll = 0.0170908
-maxLiquid = 0.02197
-maxGas = 0.0402637
-maxofthree = 0.0402637
-time = 90.0015
-timeStep = 0.25
-
-maxAll = 65.1167
-maxLiquid = 5.59962
-maxGas = 10.2001
-maxofthree = 65.1167
-time = 90.2515
-timeStep = 0.000976562
-
-maxAll = 0.0170273
-maxLiquid = 0.0219151
-maxGas = 0.0400437
-maxofthree = 0.0400437
-time = 90.2524
-timeStep = 0.25
-
-maxAll = 65.1172
-maxLiquid = 5.56498
-maxGas = 10.1404
-maxofthree = 65.1172
-time = 90.5024
-timeStep = 0.000976562
-
-maxAll = 0.0169642
-maxLiquid = 0.0218598
-maxGas = 0.0398192
-maxofthree = 0.0398192
-time = 90.5034
-timeStep = 0.25
-
-maxAll = 65.1176
-maxLiquid = 5.53029
-maxGas = 10.0784
-maxofthree = 65.1176
-time = 90.7534
-timeStep = 0.000976562
-
-maxAll = 0.0169015
-maxLiquid = 0.0218043
-maxGas = 0.039768
-maxofthree = 0.039768
-time = 90.7544
-timeStep = 0.25
-
-maxAll = 65.1181
-maxLiquid = 5.49556
-maxGas = 10.0141
-maxofthree = 65.1181
-time = 91.0044
-timeStep = 0.000976562
-
-maxAll = 0.016839
-maxLiquid = 0.0217485
-maxGas = 0.0397097
-maxofthree = 0.0397097
-time = 91.0054
-timeStep = 0.25
-
-maxAll = 65.1185
-maxLiquid = 5.46846
-maxGas = 9.98254
-maxofthree = 65.1185
-time = 91.2554
-timeStep = 0.000976562
-
-maxAll = 0.0167768
-maxLiquid = 0.0216923
-maxGas = 0.039644
-maxofthree = 0.039644
-time = 91.2563
-timeStep = 0.25
-
-maxAll = 65.119
-maxLiquid = 5.45365
-maxGas = 9.96795
-maxofthree = 65.119
-time = 91.5063
-timeStep = 0.000976562
-
-maxAll = 0.016715
-maxLiquid = 0.021636
-maxGas = 0.039571
-maxofthree = 0.039571
-time = 91.5073
-timeStep = 0.25
-
-maxAll = 65.1194
-maxLiquid = 5.43878
-maxGas = 9.95142
-maxofthree = 65.1194
-time = 91.7573
-timeStep = 0.000976562
-
-maxAll = 0.0166534
-maxLiquid = 0.0215793
-maxGas = 0.0394906
-maxofthree = 0.0394906
-time = 91.7583
-timeStep = 0.25
-
-maxAll = 65.1198
-maxLiquid = 5.42384
-maxGas = 9.93292
-maxofthree = 65.1198
-time = 92.0083
-timeStep = 0.000976562
-
-maxAll = 0.0165922
-maxLiquid = 0.0215224
-maxGas = 0.0394028
-maxofthree = 0.0394028
-time = 92.0093
-timeStep = 0.25
-
-maxAll = 65.1203
-maxLiquid = 5.40883
-maxGas = 9.91247
-maxofthree = 65.1203
-time = 92.2593
-timeStep = 0.000976562
-
-maxAll = 0.0165312
-maxLiquid = 0.0214652
-maxGas = 0.0393076
-maxofthree = 0.0393076
-time = 92.2603
-timeStep = 0.25
-
-maxAll = 65.1207
-maxLiquid = 5.39376
-maxGas = 9.89003
-maxofthree = 65.1207
-time = 92.5103
-timeStep = 0.000976562
-
-maxAll = 0.0164705
-maxLiquid = 0.0214078
-maxGas = 0.0392049
-maxofthree = 0.0392049
-time = 92.5112
-timeStep = 0.25
-
-maxAll = 65.1211
-maxLiquid = 5.37864
-maxGas = 9.86561
-maxofthree = 65.1211
-time = 92.7612
-timeStep = 0.000976562
-
-maxAll = 0.0164102
-maxLiquid = 0.0213501
-maxGas = 0.0390947
-maxofthree = 0.0390947
-time = 92.7622
-timeStep = 0.25
-
-maxAll = 65.1215
-maxLiquid = 5.36345
-maxGas = 9.8392
-maxofthree = 65.1215
-time = 93.0122
-timeStep = 0.000976562
-
-maxAll = 0.0163501
-maxLiquid = 0.0212922
-maxGas = 0.038977
-maxofthree = 0.038977
-time = 93.0132
-timeStep = 0.25
-
-maxAll = 65.1219
-maxLiquid = 5.3482
-maxGas = 9.81079
-maxofthree = 65.1219
-time = 93.2632
-timeStep = 0.000976562
-
-maxAll = 0.0162937
-maxLiquid = 0.0212341
-maxGas = 0.0388518
-maxofthree = 0.0388518
-time = 93.2642
-timeStep = 0.25
-
-maxAll = 65.1223
-maxLiquid = 5.33289
-maxGas = 9.78037
-maxofthree = 65.1223
-time = 93.5142
-timeStep = 0.000976562
-
-maxAll = 0.0162457
-maxLiquid = 0.0211757
-maxGas = 0.038719
-maxofthree = 0.038719
-time = 93.5151
-timeStep = 0.25
-
-maxAll = 65.1227
-maxLiquid = 5.31753
-maxGas = 9.74794
-maxofthree = 65.1227
-time = 93.7651
-timeStep = 0.000976562
-
-maxAll = 0.016198
-maxLiquid = 0.0211171
-maxGas = 0.0385788
-maxofthree = 0.0385788
-time = 93.7661
-timeStep = 0.25
-
-maxAll = 65.1231
-maxLiquid = 5.30212
-maxGas = 9.7135
-maxofthree = 65.1231
-time = 94.0161
-timeStep = 0.000976562
-
-maxAll = 0.0161507
-maxLiquid = 0.0210583
-maxGas = 0.0384309
-maxofthree = 0.0384309
-time = 94.0171
-timeStep = 0.25
-
-maxAll = 65.1235
-maxLiquid = 5.28665
-maxGas = 9.67704
-maxofthree = 65.1235
-time = 94.2671
-timeStep = 0.000976562
-
-maxAll = 0.0161037
-maxLiquid = 0.0209993
-maxGas = 0.0382755
-maxofthree = 0.0382755
-time = 94.2681
-timeStep = 0.25
-
-maxAll = 65.1238
-maxLiquid = 5.27113
-maxGas = 9.63857
-maxofthree = 65.1238
-time = 94.5181
-timeStep = 0.000976562
-
-maxAll = 0.0160569
-maxLiquid = 0.0209401
-maxGas = 0.0381126
-maxofthree = 0.0381126
-time = 94.519
-timeStep = 0.25
-
-maxAll = 65.1242
-maxLiquid = 5.25556
-maxGas = 9.59808
-maxofthree = 65.1242
-time = 94.769
-timeStep = 0.000976562
-
-maxAll = 0.0160105
-maxLiquid = 0.0208807
-maxGas = 0.0379422
-maxofthree = 0.0379422
-time = 94.77
-timeStep = 0.25
-
-maxAll = 65.1246
-maxLiquid = 5.23995
-maxGas = 9.55557
-maxofthree = 65.1246
-time = 95.02
-timeStep = 0.000976562
-
-maxAll = 0.0159644
-maxLiquid = 0.0208211
-maxGas = 0.0377643
-maxofthree = 0.0377643
-time = 95.021
-timeStep = 0.25
-
-maxAll = 65.1249
-maxLiquid = 5.22428
-maxGas = 9.51106
-maxofthree = 65.1249
-time = 95.271
-timeStep = 0.000976562
-
-maxAll = 0.0159186
-maxLiquid = 0.0207613
-maxGas = 0.0375847
-maxofthree = 0.0375847
-time = 95.272
-timeStep = 0.25
-
-maxAll = 65.1253
-maxLiquid = 5.20857
-maxGas = 9.46453
-maxofthree = 65.1253
-time = 95.522
-timeStep = 0.000976562
-
-maxAll = 0.015873
-maxLiquid = 0.0207013
-maxGas = 0.0374061
-maxofthree = 0.0374061
-time = 95.5229
-timeStep = 0.25
-
-maxAll = 65.1256
-maxLiquid = 5.19281
-maxGas = 9.416
-maxofthree = 65.1256
-time = 95.7729
-timeStep = 0.000976562
-
-maxAll = 0.0158278
-maxLiquid = 0.0206411
-maxGas = 0.0373148
-maxofthree = 0.0373148
-time = 95.7739
-timeStep = 0.25
-
-maxAll = 65.126
-maxLiquid = 5.17701
-maxGas = 9.36548
-maxofthree = 65.126
-time = 96.0239
-timeStep = 0.000976562
-
-maxAll = 0.0157829
-maxLiquid = 0.0205808
-maxGas = 0.0372717
-maxofthree = 0.0372717
-time = 96.0249
-timeStep = 0.25
-
-maxAll = 65.1263
-maxLiquid = 5.16117
-maxGas = 9.31298
-maxofthree = 65.1263
-time = 96.2749
-timeStep = 0.000976562
-
-maxAll = 0.0157382
-maxLiquid = 0.0205203
-maxGas = 0.0372221
-maxofthree = 0.0372221
-time = 96.2759
-timeStep = 0.25
-
-maxAll = 65.1267
-maxLiquid = 5.14528
-maxGas = 9.26156
-maxofthree = 65.1267
-time = 96.5259
-timeStep = 0.000976562
-
-maxAll = 0.0156938
-maxLiquid = 0.0204596
-maxGas = 0.0371659
-maxofthree = 0.0371659
-time = 96.5269
-timeStep = 0.25
-
-maxAll = 65.127
-maxLiquid = 5.12936
-maxGas = 9.24622
-maxofthree = 65.127
-time = 96.7769
-timeStep = 0.000976562
-
-maxAll = 0.0156497
-maxLiquid = 0.0203988
-maxGas = 0.0371032
-maxofthree = 0.0371032
-time = 96.7778
-timeStep = 0.25
-
-maxAll = 65.1273
-maxLiquid = 5.11339
-maxGas = 9.22909
-maxofthree = 65.1273
-time = 97.0278
-timeStep = 0.000976562
-
-maxAll = 0.0156059
-maxLiquid = 0.0203377
-maxGas = 0.0370339
-maxofthree = 0.0370339
-time = 97.0288
-timeStep = 0.25
-
-maxAll = 65.1276
-maxLiquid = 5.09739
-maxGas = 9.21018
-maxofthree = 65.1276
-time = 97.2788
-timeStep = 0.000976562
-
-maxAll = 0.0155624
-maxLiquid = 0.0202766
-maxGas = 0.0369579
-maxofthree = 0.0369579
-time = 97.2798
-timeStep = 0.25
-
-maxAll = 65.128
-maxLiquid = 5.08134
-maxGas = 9.18947
-maxofthree = 65.128
-time = 97.5298
-timeStep = 0.000976562
-
-maxAll = 0.0155191
-maxLiquid = 0.0202153
-maxGas = 0.0368753
-maxofthree = 0.0368753
-time = 97.5308
-timeStep = 0.25
-
-maxAll = 65.1283
-maxLiquid = 5.06527
-maxGas = 9.16697
-maxofthree = 65.1283
-time = 97.7808
-timeStep = 0.000976562
-
-maxAll = 0.0154761
-maxLiquid = 0.0201538
-maxGas = 0.036786
-maxofthree = 0.036786
-time = 97.7817
-timeStep = 0.25
-
-maxAll = 65.1286
-maxLiquid = 5.04915
-maxGas = 9.14265
-maxofthree = 65.1286
-time = 98.0317
-timeStep = 0.000976562
-
-maxAll = 0.0154334
-maxLiquid = 0.0200922
-maxGas = 0.03669
-maxofthree = 0.03669
-time = 98.0327
-timeStep = 0.25
-
-maxAll = 65.1289
-maxLiquid = 5.033
-maxGas = 9.11652
-maxofthree = 65.1289
-time = 98.2827
-timeStep = 0.000976562
-
-maxAll = 0.0153909
-maxLiquid = 0.0200305
-maxGas = 0.0365873
-maxofthree = 0.0365873
-time = 98.2837
-timeStep = 0.25
-
-maxAll = 65.1292
-maxLiquid = 5.01682
-maxGas = 9.08858
-maxofthree = 65.1292
-time = 98.5337
-timeStep = 0.000976562
-
-maxAll = 0.0153487
-maxLiquid = 0.0199686
-maxGas = 0.0364778
-maxofthree = 0.0364778
-time = 98.5347
-timeStep = 0.25
-
-maxAll = 65.1295
-maxLiquid = 5.00061
-maxGas = 9.05882
-maxofthree = 65.1295
-time = 98.7847
-timeStep = 0.000976562
-
-maxAll = 0.0153068
-maxLiquid = 0.0199066
-maxGas = 0.0363617
-maxofthree = 0.0363617
-time = 98.7856
-timeStep = 0.25
-
-maxAll = 65.1298
-maxLiquid = 4.98436
-maxGas = 9.02725
-maxofthree = 65.1298
-time = 99.0356
-timeStep = 0.000976562
-
-maxAll = 0.0152651
-maxLiquid = 0.0198445
-maxGas = 0.0362388
-maxofthree = 0.0362388
-time = 99.0366
-timeStep = 0.25
-
-maxAll = 65.1301
-maxLiquid = 4.96809
-maxGas = 8.99385
-maxofthree = 65.1301
-time = 99.2866
-timeStep = 0.000976562
-
-maxAll = 0.0152237
-maxLiquid = 0.0197822
-maxGas = 0.0361092
-maxofthree = 0.0361092
-time = 99.2876
-timeStep = 0.25
-
-maxAll = 65.1304
-maxLiquid = 4.95178
-maxGas = 8.95863
-maxofthree = 65.1304
-time = 99.5376
-timeStep = 0.000976562
-
-maxAll = 0.0151825
-maxLiquid = 0.0197198
-maxGas = 0.0359728
-maxofthree = 0.0359728
-time = 99.5386
-timeStep = 0.25
-
-maxAll = 65.1306
-maxLiquid = 4.93545
-maxGas = 8.9216
-maxofthree = 65.1306
-time = 99.7886
-timeStep = 0.000976562
-
-maxAll = 0.0151416
-maxLiquid = 0.0196573
-maxGas = 0.0358297
-maxofthree = 0.0358297
-time = 99.7896
-timeStep = 0.25
-
-maxAll = 65.1309
-maxLiquid = 4.91909
-maxGas = 8.88275
-maxofthree = 65.1309
-time = 100.04
-timeStep = 0.000976562
-
-maxAll = 0.0151009
-maxLiquid = 0.0195947
-maxGas = 0.03568
-maxofthree = 0.03568
-time = 100.041
-timeStep = 0.25
-
-maxAll = 65.1312
-maxLiquid = 4.9027
-maxGas = 8.84209
-maxofthree = 65.1312
-time = 100.291
-timeStep = 0.000976562
-
-maxAll = 0.0150605
-maxLiquid = 0.019532
-maxGas = 0.0355235
-maxofthree = 0.0355235
-time = 100.292
-timeStep = 0.25
-
-maxAll = 65.1315
-maxLiquid = 4.88629
-maxGas = 8.79962
-maxofthree = 65.1315
-time = 100.542
-timeStep = 0.000976562
-
-maxAll = 0.0150203
-maxLiquid = 0.0194692
-maxGas = 0.0353604
-maxofthree = 0.0353604
-time = 100.542
-timeStep = 0.25
-
-maxAll = 65.1317
-maxLiquid = 4.86985
-maxGas = 8.75535
-maxofthree = 65.1317
-time = 100.792
-timeStep = 0.000976562
-
-maxAll = 0.0149803
-maxLiquid = 0.0194063
-maxGas = 0.0351906
-maxofthree = 0.0351906
-time = 100.793
-timeStep = 0.25
-
-maxAll = 65.132
-maxLiquid = 4.85338
-maxGas = 8.7093
-maxofthree = 65.132
-time = 101.043
-timeStep = 0.000976562
-
-maxAll = 0.0149406
-maxLiquid = 0.0193432
-maxGas = 0.0350142
-maxofthree = 0.0350142
-time = 101.044
-timeStep = 0.25
-
-maxAll = 65.1323
-maxLiquid = 4.8369
-maxGas = 8.66146
-maxofthree = 65.1323
-time = 101.294
-timeStep = 0.000976562
-
-maxAll = 0.0149012
-maxLiquid = 0.0192801
-maxGas = 0.0348312
-maxofthree = 0.0348312
-time = 101.295
-timeStep = 0.25
-
-maxAll = 65.1325
-maxLiquid = 4.82039
-maxGas = 8.65148
-maxofthree = 65.1325
-time = 101.545
-timeStep = 0.000976562
-
-maxAll = 0.0148619
-maxLiquid = 0.0192169
-maxGas = 0.0346418
-maxofthree = 0.0346418
-time = 101.546
-timeStep = 0.25
-
-maxAll = 65.1328
-maxLiquid = 4.80385
-maxGas = 8.64194
-maxofthree = 65.1328
-time = 101.796
-timeStep = 0.000976562
-
-maxAll = 0.0148229
-maxLiquid = 0.0191536
-maxGas = 0.034586
-maxofthree = 0.034586
-time = 101.797
-timeStep = 0.25
-
-maxAll = 65.133
-maxLiquid = 4.7873
-maxGas = 8.63084
-maxofthree = 65.133
-time = 102.047
-timeStep = 0.000976562
-
-maxAll = 0.0147842
-maxLiquid = 0.0190902
-maxGas = 0.0345243
-maxofthree = 0.0345243
-time = 102.048
-timeStep = 0.25
-
-maxAll = 65.1333
-maxLiquid = 4.77073
-maxGas = 8.61818
-maxofthree = 65.1333
-time = 102.298
-timeStep = 0.000976562
-
-maxAll = 0.0147456
-maxLiquid = 0.0190267
-maxGas = 0.0344566
-maxofthree = 0.0344566
-time = 102.299
-timeStep = 0.25
-
-maxAll = 65.1335
-maxLiquid = 4.75414
-maxGas = 8.60395
-maxofthree = 65.1335
-time = 102.549
-timeStep = 0.000976562
-
-maxAll = 0.0147073
-maxLiquid = 0.0189632
-maxGas = 0.0343829
-maxofthree = 0.0343829
-time = 102.55
-timeStep = 0.25
-
-maxAll = 65.1337
-maxLiquid = 4.73753
-maxGas = 8.58815
-maxofthree = 65.1337
-time = 102.8
-timeStep = 0.000976562
-
-maxAll = 0.0146692
-maxLiquid = 0.0188995
-maxGas = 0.0343033
-maxofthree = 0.0343033
-time = 102.801
-timeStep = 0.25
-
-maxAll = 65.134
-maxLiquid = 4.7209
-maxGas = 8.57078
-maxofthree = 65.134
-time = 103.051
-timeStep = 0.000976562
-
-maxAll = 0.0146313
-maxLiquid = 0.0188358
-maxGas = 0.0342176
-maxofthree = 0.0342176
-time = 103.052
-timeStep = 0.25
-
-maxAll = 65.1342
-maxLiquid = 4.70425
-maxGas = 8.55182
-maxofthree = 65.1342
-time = 103.302
-timeStep = 0.000976562
-
-maxAll = 0.0145937
-maxLiquid = 0.018772
-maxGas = 0.034126
-maxofthree = 0.034126
-time = 103.303
-timeStep = 0.25
-
-maxAll = 65.1344
-maxLiquid = 4.68759
-maxGas = 8.53127
-maxofthree = 65.1344
-time = 103.553
-timeStep = 0.000976562
-
-maxAll = 0.0145562
-maxLiquid = 0.0187082
-maxGas = 0.0340283
-maxofthree = 0.0340283
-time = 103.554
-timeStep = 0.25
-
-maxAll = 65.1347
-maxLiquid = 4.67091
-maxGas = 8.50914
-maxofthree = 65.1347
-time = 103.804
-timeStep = 0.000976562
-
-maxAll = 0.014519
-maxLiquid = 0.0186443
-maxGas = 0.0339246
-maxofthree = 0.0339246
-time = 103.805
-timeStep = 0.25
-
-maxAll = 65.1349
-maxLiquid = 4.65422
-maxGas = 8.48541
-maxofthree = 65.1349
-time = 104.055
-timeStep = 0.000976562
-
-maxAll = 0.014482
-maxLiquid = 0.0185803
-maxGas = 0.0338149
-maxofthree = 0.0338149
-time = 104.056
-timeStep = 0.25
-
-maxAll = 65.1351
-maxLiquid = 4.63751
-maxGas = 8.46008
-maxofthree = 65.1351
-time = 104.306
-timeStep = 0.000976562
-
-maxAll = 0.0144452
-maxLiquid = 0.0185162
-maxGas = 0.0336992
-maxofthree = 0.0336992
-time = 104.307
-timeStep = 0.25
-
-maxAll = 65.1353
-maxLiquid = 4.62079
-maxGas = 8.43317
-maxofthree = 65.1353
-time = 104.557
-timeStep = 0.000976562
-
-maxAll = 0.0144087
-maxLiquid = 0.0184521
-maxGas = 0.0335775
-maxofthree = 0.0335775
-time = 104.558
-timeStep = 0.25
-
-maxAll = 65.1355
-maxLiquid = 4.60405
-maxGas = 8.40465
-maxofthree = 65.1355
-time = 104.808
-timeStep = 0.000976562
-
-maxAll = 0.0143723
-maxLiquid = 0.018388
-maxGas = 0.0334606
-maxofthree = 0.0334606
-time = 104.809
-timeStep = 0.25
-
-maxAll = 65.1358
-maxLiquid = 4.58731
-maxGas = 8.37454
-maxofthree = 65.1358
-time = 105.059
-timeStep = 0.000976562
-
-maxAll = 0.0143361
-maxLiquid = 0.0183238
-maxGas = 0.0333441
-maxofthree = 0.0333441
-time = 105.06
-timeStep = 0.25
-
-maxAll = 65.136
-maxLiquid = 4.57055
-maxGas = 8.34284
-maxofthree = 65.136
-time = 105.31
-timeStep = 0.000976562
-
-maxAll = 0.0143001
-maxLiquid = 0.0182595
-maxGas = 0.0332217
-maxofthree = 0.0332217
-time = 105.311
-timeStep = 0.25
-
-maxAll = 65.1362
-maxLiquid = 4.55378
-maxGas = 8.30955
-maxofthree = 65.1362
-time = 105.561
-timeStep = 0.000976562
-
-maxAll = 0.0142644
-maxLiquid = 0.0181952
-maxGas = 0.0330934
-maxofthree = 0.0330934
-time = 105.562
-timeStep = 0.25
-
-maxAll = 65.1364
-maxLiquid = 4.537
-maxGas = 8.27467
-maxofthree = 65.1364
-time = 105.812
-timeStep = 0.000976562
-
-maxAll = 0.0142288
-maxLiquid = 0.0181309
-maxGas = 0.0329593
-maxofthree = 0.0329593
-time = 105.813
-timeStep = 0.25
-
-maxAll = 65.1366
-maxLiquid = 4.52022
-maxGas = 8.23821
-maxofthree = 65.1366
-time = 106.063
-timeStep = 0.000976562
-
-maxAll = 0.0141935
-maxLiquid = 0.0180665
-maxGas = 0.0328193
-maxofthree = 0.0328193
-time = 106.064
-timeStep = 0.25
-
-maxAll = 65.1368
-maxLiquid = 4.50342
-maxGas = 8.20018
-maxofthree = 65.1368
-time = 106.314
-timeStep = 0.000976562
-
-maxAll = 0.0141583
-maxLiquid = 0.0180021
-maxGas = 0.0326735
-maxofthree = 0.0326735
-time = 106.315
-timeStep = 0.25
-
-maxAll = 65.137
-maxLiquid = 4.48662
-maxGas = 8.16057
-maxofthree = 65.137
-time = 106.565
-timeStep = 0.000976562
-
-maxAll = 0.0141233
-maxLiquid = 0.0179376
-maxGas = 0.0325219
-maxofthree = 0.0325219
-time = 106.566
-timeStep = 0.25
-
-maxAll = 65.1372
-maxLiquid = 4.4698
-maxGas = 8.11941
-maxofthree = 65.1372
-time = 106.816
-timeStep = 0.000976562
-
-maxAll = 0.0140886
-maxLiquid = 0.0178731
-maxGas = 0.0324385
-maxofthree = 0.0324385
-time = 106.817
-timeStep = 0.25
-
-maxAll = 65.1373
-maxLiquid = 4.45299
-maxGas = 8.07669
-maxofthree = 65.1373
-time = 107.067
-timeStep = 0.000976562
-
-maxAll = 0.014054
-maxLiquid = 0.0178086
-maxGas = 0.0324042
-maxofthree = 0.0324042
-time = 107.068
-timeStep = 0.25
-
-maxAll = 65.1375
-maxLiquid = 4.43616
-maxGas = 8.03243
-maxofthree = 65.1375
-time = 107.318
-timeStep = 0.000976562
-
-maxAll = 0.0140196
-maxLiquid = 0.0177441
-maxGas = 0.0323646
-maxofthree = 0.0323646
-time = 107.319
-timeStep = 0.25
-
-maxAll = 65.1377
-maxLiquid = 4.41933
-maxGas = 8.0189
-maxofthree = 65.1377
-time = 107.569
-timeStep = 0.000976562
-
-maxAll = 0.0139854
-maxLiquid = 0.0176795
-maxGas = 0.0323199
-maxofthree = 0.0323199
-time = 107.57
-timeStep = 0.25
-
-maxAll = 65.1379
-maxLiquid = 4.4025
-maxGas = 8.00664
-maxofthree = 65.1379
-time = 107.82
-timeStep = 0.000976562
-
-maxAll = 0.0139514
-maxLiquid = 0.0176149
-maxGas = 0.0322699
-maxofthree = 0.0322699
-time = 107.821
-timeStep = 0.25
-
-maxAll = 65.1381
-maxLiquid = 4.38566
-maxGas = 7.99297
-maxofthree = 65.1381
-time = 108.071
-timeStep = 0.000976562
-
-maxAll = 0.0139176
-maxLiquid = 0.0175503
-maxGas = 0.0322147
-maxofthree = 0.0322147
-time = 108.072
-timeStep = 0.25
-
-maxAll = 65.1383
-maxLiquid = 4.36882
-maxGas = 7.97788
-maxofthree = 65.1383
-time = 108.322
-timeStep = 0.000976562
-
-maxAll = 0.0138839
-maxLiquid = 0.0174856
-maxGas = 0.0321543
-maxofthree = 0.0321543
-time = 108.323
-timeStep = 0.25
-
-maxAll = 65.1384
-maxLiquid = 4.35197
-maxGas = 7.96137
-maxofthree = 65.1384
-time = 108.573
-timeStep = 0.000976562
-
-maxAll = 0.0138505
-maxLiquid = 0.017421
-maxGas = 0.0320886
-maxofthree = 0.0320886
-time = 108.574
-timeStep = 0.25
-
-maxAll = 65.1386
-maxLiquid = 4.33513
-maxGas = 7.94343
-maxofthree = 65.1386
-time = 108.824
-timeStep = 0.000976562
-
-maxAll = 0.0138172
-maxLiquid = 0.0173563
-maxGas = 0.0320176
-maxofthree = 0.0320176
-time = 108.825
-timeStep = 0.25
-
-maxAll = 65.1388
-maxLiquid = 4.31828
-maxGas = 7.92407
-maxofthree = 65.1388
-time = 109.075
-timeStep = 0.000976562
-
-maxAll = 0.0137841
-maxLiquid = 0.0172916
-maxGas = 0.0319414
-maxofthree = 0.0319414
-time = 109.076
-timeStep = 0.25
-
-maxAll = 65.1389
-maxLiquid = 4.30143
-maxGas = 7.90328
-maxofthree = 65.1389
-time = 109.326
-timeStep = 0.000976562
-
-maxAll = 0.0137512
-maxLiquid = 0.017227
-maxGas = 0.0318599
-maxofthree = 0.0318599
-time = 109.327
-timeStep = 0.25
-
-maxAll = 65.1391
-maxLiquid = 4.28458
-maxGas = 7.88107
-maxofthree = 65.1391
-time = 109.577
-timeStep = 0.000976562
-
-maxAll = 0.0137184
-maxLiquid = 0.0171623
-maxGas = 0.0317731
-maxofthree = 0.0317731
-time = 109.578
-timeStep = 0.25
-
-maxAll = 65.1393
-maxLiquid = 4.26773
-maxGas = 7.85742
-maxofthree = 65.1393
-time = 109.828
-timeStep = 0.000976562
-
-maxAll = 0.0136859
-maxLiquid = 0.0170976
-maxGas = 0.0316811
-maxofthree = 0.0316811
-time = 109.829
-timeStep = 0.25
-
-maxAll = 65.1394
-maxLiquid = 4.25089
-maxGas = 7.83235
-maxofthree = 65.1394
-time = 110.079
-timeStep = 0.000976562
-
-maxAll = 0.0136535
-maxLiquid = 0.0170329
-maxGas = 0.0315837
-maxofthree = 0.0315837
-time = 110.08
-timeStep = 0.25
-
-maxAll = 65.1396
-maxLiquid = 4.23404
-maxGas = 7.80585
-maxofthree = 65.1396
-time = 110.33
-timeStep = 0.000976562
-
-maxAll = 0.0136213
-maxLiquid = 0.0169682
-maxGas = 0.0314811
-maxofthree = 0.0314811
-time = 110.331
-timeStep = 0.25
-
-maxAll = 65.1397
-maxLiquid = 4.2172
-maxGas = 7.77792
-maxofthree = 65.1397
-time = 110.581
-timeStep = 0.000976562
-
-maxAll = 0.0135892
-maxLiquid = 0.0169035
-maxGas = 0.0313733
-maxofthree = 0.0313733
-time = 110.582
-timeStep = 0.25
-
-maxAll = 65.1399
-maxLiquid = 4.20036
-maxGas = 7.74858
-maxofthree = 65.1399
-time = 110.832
-timeStep = 0.000976562
-
-maxAll = 0.0135573
-maxLiquid = 0.0168389
-maxGas = 0.0312602
-maxofthree = 0.0312602
-time = 110.833
-timeStep = 0.25
-
-maxAll = 65.14
-maxLiquid = 4.18352
-maxGas = 7.71781
-maxofthree = 65.14
-time = 111.083
-timeStep = 0.000976562
-
-maxAll = 0.0135256
-maxLiquid = 0.0167742
-maxGas = 0.0311418
-maxofthree = 0.0311418
-time = 111.083
-timeStep = 0.25
-
-maxAll = 65.1402
-maxLiquid = 4.16669
-maxGas = 7.68563
-maxofthree = 65.1402
-time = 111.333
-timeStep = 0.000976562
-
-maxAll = 0.0134941
-maxLiquid = 0.0167095
-maxGas = 0.0310182
-maxofthree = 0.0310182
-time = 111.334
-timeStep = 0.25
-
-maxAll = 65.1403
-maxLiquid = 4.14986
-maxGas = 7.65203
-maxofthree = 65.1403
-time = 111.584
-timeStep = 0.000976562
-
-maxAll = 0.0134627
-maxLiquid = 0.0166449
-maxGas = 0.0308895
-maxofthree = 0.0308895
-time = 111.585
-timeStep = 0.25
-
-maxAll = 65.1405
-maxLiquid = 4.13303
-maxGas = 7.61704
-maxofthree = 65.1405
-time = 111.835
-timeStep = 0.000976562
-
-maxAll = 0.0134315
-maxLiquid = 0.0165803
-maxGas = 0.0307556
-maxofthree = 0.0307556
-time = 111.836
-timeStep = 0.25
-
-maxAll = 65.1406
-maxLiquid = 4.11622
-maxGas = 7.58064
-maxofthree = 65.1406
-time = 112.086
-timeStep = 0.000976562
-
-maxAll = 0.0134004
-maxLiquid = 0.0165157
-maxGas = 0.0307123
-maxofthree = 0.0307123
-time = 112.087
-timeStep = 0.25
-
-maxAll = 65.1408
-maxLiquid = 4.09941
-maxGas = 7.54286
-maxofthree = 65.1408
-time = 112.337
-timeStep = 0.000976562
-
-maxAll = 0.0133695
-maxLiquid = 0.0164511
-maxGas = 0.0306769
-maxofthree = 0.0306769
-time = 112.338
-timeStep = 0.25
-
-maxAll = 65.1409
-maxLiquid = 4.0826
-maxGas = 7.5227
-maxofthree = 65.1409
-time = 112.588
-timeStep = 0.000976562
-
-maxAll = 0.0133388
-maxLiquid = 0.0163866
-maxGas = 0.0306368
-maxofthree = 0.0306368
-time = 112.589
-timeStep = 0.25
-
-maxAll = 65.1411
-maxLiquid = 4.06581
-maxGas = 7.51172
-maxofthree = 65.1411
-time = 112.839
-timeStep = 0.000976562
-
-maxAll = 0.0133082
-maxLiquid = 0.016322
-maxGas = 0.0305918
-maxofthree = 0.0305918
-time = 112.84
-timeStep = 0.25
-
-maxAll = 65.1412
-maxLiquid = 4.04902
-maxGas = 7.49945
-maxofthree = 65.1412
-time = 113.09
-timeStep = 0.000976562
-
-maxAll = 0.0132778
-maxLiquid = 0.0162575
-maxGas = 0.0305421
-maxofthree = 0.0305421
-time = 113.091
-timeStep = 0.25
-
-maxAll = 65.1413
-maxLiquid = 4.03224
-maxGas = 7.48589
-maxofthree = 65.1413
-time = 113.341
-timeStep = 0.000976562
-
-maxAll = 0.0132475
-maxLiquid = 0.0161931
-maxGas = 0.0304877
-maxofthree = 0.0304877
-time = 113.342
-timeStep = 0.25
-
-maxAll = 65.1415
-maxLiquid = 4.01548
-maxGas = 7.47103
-maxofthree = 65.1415
-time = 113.592
-timeStep = 0.000976562
-
-maxAll = 0.0132174
-maxLiquid = 0.0161286
-maxGas = 0.0304284
-maxofthree = 0.0304284
-time = 113.593
-timeStep = 0.25
-
-maxAll = 65.1416
-maxLiquid = 3.99872
-maxGas = 7.45488
-maxofthree = 65.1416
-time = 113.843
-timeStep = 0.000976562
-
-maxAll = 0.0131875
-maxLiquid = 0.0160642
-maxGas = 0.0303643
-maxofthree = 0.0303643
-time = 113.844
-timeStep = 0.25
-
-maxAll = 65.1417
-maxLiquid = 3.98197
-maxGas = 7.43743
-maxofthree = 65.1417
-time = 114.094
-timeStep = 0.000976562
-
-maxAll = 0.0131577
-maxLiquid = 0.0159999
-maxGas = 0.0302955
-maxofthree = 0.0302955
-time = 114.095
-timeStep = 0.25
-
-maxAll = 65.1418
-maxLiquid = 3.96524
-maxGas = 7.41867
-maxofthree = 65.1418
-time = 114.345
-timeStep = 0.000976562
-
-maxAll = 0.013128
-maxLiquid = 0.0159356
-maxGas = 0.0302218
-maxofthree = 0.0302218
-time = 114.346
-timeStep = 0.25
-
-maxAll = 65.142
-maxLiquid = 3.94851
-maxGas = 7.39862
-maxofthree = 65.142
-time = 114.596
-timeStep = 0.000976562
-
-maxAll = 0.0130985
-maxLiquid = 0.0158713
-maxGas = 0.0301433
-maxofthree = 0.0301433
-time = 114.597
-timeStep = 0.25
-
-maxAll = 65.1421
-maxLiquid = 3.9318
-maxGas = 7.37727
-maxofthree = 65.1421
-time = 114.847
-timeStep = 0.000976562
-
-maxAll = 0.0130692
-maxLiquid = 0.0158071
-maxGas = 0.0300601
-maxofthree = 0.0300601
-time = 114.848
-timeStep = 0.25
-
-maxAll = 65.1422
-maxLiquid = 3.91511
-maxGas = 7.35462
-maxofthree = 65.1422
-time = 115.098
-timeStep = 0.000976562
-
-maxAll = 0.01304
-maxLiquid = 0.0157429
-maxGas = 0.029972
-maxofthree = 0.029972
-time = 115.099
-timeStep = 0.25
-
-maxAll = 65.1423
-maxLiquid = 3.89842
-maxGas = 7.33067
-maxofthree = 65.1423
-time = 115.349
-timeStep = 0.000976562
-
-maxAll = 0.0130109
-maxLiquid = 0.0156788
-maxGas = 0.0298791
-maxofthree = 0.0298791
-time = 115.35
-timeStep = 0.25
-
-maxAll = 65.1425
-maxLiquid = 3.88176
-maxGas = 7.30542
-maxofthree = 65.1425
-time = 115.6
-timeStep = 0.000976562
-
-maxAll = 0.012982
-maxLiquid = 0.0156147
-maxGas = 0.0297815
-maxofthree = 0.0297815
-time = 115.601
-timeStep = 0.25
-
-maxAll = 65.1426
-maxLiquid = 3.8651
-maxGas = 7.27888
-maxofthree = 65.1426
-time = 115.851
-timeStep = 0.000976562
-
-maxAll = 0.0129532
-maxLiquid = 0.0155507
-maxGas = 0.029679
-maxofthree = 0.029679
-time = 115.852
-timeStep = 0.25
-
-maxAll = 65.1427
-maxLiquid = 3.84846
-maxGas = 7.25106
-maxofthree = 65.1427
-time = 116.102
-timeStep = 0.000976562
-
-maxAll = 0.0129246
-maxLiquid = 0.0154867
-maxGas = 0.0295719
-maxofthree = 0.0295719
-time = 116.103
-timeStep = 0.25
-
-maxAll = 65.1428
-maxLiquid = 3.83184
-maxGas = 7.22195
-maxofthree = 65.1428
-time = 116.353
-timeStep = 0.000976562
-
-maxAll = 0.0128961
-maxLiquid = 0.0154228
-maxGas = 0.02946
-maxofthree = 0.02946
-time = 116.354
-timeStep = 0.25
-
-maxAll = 65.1429
-maxLiquid = 3.81524
-maxGas = 7.19156
-maxofthree = 65.1429
-time = 116.604
-timeStep = 0.000976562
-
-maxAll = 0.0128678
-maxLiquid = 0.015359
-maxGas = 0.0293433
-maxofthree = 0.0293433
-time = 116.605
-timeStep = 0.25
-
-maxAll = 65.143
-maxLiquid = 3.79865
-maxGas = 7.15989
-maxofthree = 65.143
-time = 116.855
-timeStep = 0.000976562
-
-maxAll = 0.0128395
-maxLiquid = 0.0152952
-maxGas = 0.029222
-maxofthree = 0.029222
-time = 116.856
-timeStep = 0.25
-
-maxAll = 65.1431
-maxLiquid = 3.78208
-maxGas = 7.12696
-maxofthree = 65.1431
-time = 117.106
-timeStep = 0.000976562
-
-maxAll = 0.0128115
-maxLiquid = 0.0152315
-maxGas = 0.029096
-maxofthree = 0.029096
-time = 117.107
-timeStep = 0.25
-
-maxAll = 65.1432
-maxLiquid = 3.76553
-maxGas = 7.09277
-maxofthree = 65.1432
-time = 117.357
-timeStep = 0.000976562
-
-maxAll = 0.0127836
-maxLiquid = 0.0151679
-maxGas = 0.0289654
-maxofthree = 0.0289654
-time = 117.358
-timeStep = 0.25
-
-maxAll = 65.1434
-maxLiquid = 3.75058
-maxGas = 7.05772
-maxofthree = 65.1434
-time = 117.608
-timeStep = 0.000976562
-
-maxAll = 0.0127558
-maxLiquid = 0.0151043
-maxGas = 0.0288302
-maxofthree = 0.0288302
-time = 117.609
-timeStep = 0.25
-
-maxAll = 65.1435
-maxLiquid = 3.73761
-maxGas = 7.05373
-maxofthree = 65.1435
-time = 117.859
-timeStep = 0.000976562
-
-maxAll = 0.0127281
-maxLiquid = 0.0150408
-maxGas = 0.0286903
-maxofthree = 0.0286903
-time = 117.86
-timeStep = 0.25
-
-maxAll = 65.1436
-maxLiquid = 3.7246
-maxGas = 7.04864
-maxofthree = 65.1436
-time = 118.11
-timeStep = 0.000976562
-
-maxAll = 0.0127006
-maxLiquid = 0.0149774
-maxGas = 0.0286489
-maxofthree = 0.0286489
-time = 118.111
-timeStep = 0.25
-
-maxAll = 65.1437
-maxLiquid = 3.71157
-maxGas = 7.04243
-maxofthree = 65.1437
-time = 118.361
-timeStep = 0.000976562
-
-maxAll = 0.0126732
-maxLiquid = 0.0149141
-maxGas = 0.0286034
-maxofthree = 0.0286034
-time = 118.362
-timeStep = 0.25
-
-maxAll = 65.1438
-maxLiquid = 3.6985
-maxGas = 7.03511
-maxofthree = 65.1438
-time = 118.612
-timeStep = 0.000976562
-
-maxAll = 0.0126459
-maxLiquid = 0.0148508
-maxGas = 0.0285537
-maxofthree = 0.0285537
-time = 118.613
-timeStep = 0.25
-
-maxAll = 65.1439
-maxLiquid = 3.68539
-maxGas = 7.02666
-maxofthree = 65.1439
-time = 118.863
-timeStep = 0.000976562
-
-maxAll = 0.0126188
-maxLiquid = 0.0147876
-maxGas = 0.0284997
-maxofthree = 0.0284997
-time = 118.864
-timeStep = 0.25
-
-maxAll = 65.144
-maxLiquid = 3.67226
-maxGas = 7.0171
-maxofthree = 65.144
-time = 119.114
-timeStep = 0.000976562
-
-maxAll = 0.0125918
-maxLiquid = 0.0147245
-maxGas = 0.0284413
-maxofthree = 0.0284413
-time = 119.115
-timeStep = 0.25
-
-maxAll = 65.1441
-maxLiquid = 3.65911
-maxGas = 7.00642
-maxofthree = 65.1441
-time = 119.365
-timeStep = 0.000976562
-
-maxAll = 0.0125649
-maxLiquid = 0.0146616
-maxGas = 0.0283787
-maxofthree = 0.0283787
-time = 119.366
-timeStep = 0.25
-
-maxAll = 65.1442
-maxLiquid = 3.64592
-maxGas = 6.9946
-maxofthree = 65.1442
-time = 119.616
-timeStep = 0.000976562
-
-maxAll = 0.0125382
-maxLiquid = 0.0145986
-maxGas = 0.0283118
-maxofthree = 0.0283118
-time = 119.617
-timeStep = 0.25
-
-maxAll = 65.1442
-maxLiquid = 3.63271
-maxGas = 6.98167
-maxofthree = 65.1442
-time = 119.867
-timeStep = 0.000976562
-
-maxAll = 0.0125116
-maxLiquid = 0.0145358
-maxGas = 0.0282406
-maxofthree = 0.0282406
-time = 119.868
-timeStep = 0.25
-
-maxAll = 65.1443
-maxLiquid = 3.61947
-maxGas = 6.9676
-maxofthree = 65.1443
-time = 120.118
-timeStep = 0.000976562
-
-maxAll = 0.0124851
-maxLiquid = 0.0144731
-maxGas = 0.0281651
-maxofthree = 0.0281651
-time = 120.119
-timeStep = 0.25
-
-maxAll = 65.1444
-maxLiquid = 3.60621
-maxGas = 6.9524
-maxofthree = 65.1444
-time = 120.369
-timeStep = 0.000976562
-
-maxAll = 0.0124587
-maxLiquid = 0.0144105
-maxGas = 0.0280853
-maxofthree = 0.0280853
-time = 120.37
-timeStep = 0.25
-
-maxAll = 65.1445
-maxLiquid = 3.59293
-maxGas = 6.93608
-maxofthree = 65.1445
-time = 120.62
-timeStep = 0.000976562
-
-maxAll = 0.0124325
-maxLiquid = 0.014348
-maxGas = 0.0280013
-maxofthree = 0.0280013
-time = 120.621
-timeStep = 0.25
-
-maxAll = 65.1446
-maxLiquid = 3.57962
-maxGas = 6.91863
-maxofthree = 65.1446
-time = 120.871
-timeStep = 0.000976562
-
-maxAll = 0.0124063
-maxLiquid = 0.0142856
-maxGas = 0.027913
-maxofthree = 0.027913
-time = 120.872
-timeStep = 0.25
-
-maxAll = 65.1447
-maxLiquid = 3.5663
-maxGas = 6.90005
-maxofthree = 65.1447
-time = 121.122
-timeStep = 0.000976562
-
-maxAll = 0.0123804
-maxLiquid = 0.0142232
-maxGas = 0.0278205
-maxofthree = 0.0278205
-time = 121.123
-timeStep = 0.25
-
-maxAll = 65.1448
-maxLiquid = 3.55295
-maxGas = 6.88034
-maxofthree = 65.1448
-time = 121.373
-timeStep = 0.000976562
-
-maxAll = 0.0123545
-maxLiquid = 0.014161
-maxGas = 0.0277237
-maxofthree = 0.0277237
-time = 121.374
-timeStep = 0.25
-
-maxAll = 65.1449
-maxLiquid = 3.53958
-maxGas = 6.85951
-maxofthree = 65.1449
-time = 121.624
-timeStep = 0.000976562
-
-maxAll = 0.0123287
-maxLiquid = 0.0140989
-maxGas = 0.0276228
-maxofthree = 0.0276228
-time = 121.625
-timeStep = 0.25
-
-maxAll = 65.145
-maxLiquid = 3.5262
-maxGas = 6.83755
-maxofthree = 65.145
-time = 121.875
-timeStep = 0.000976562
-
-maxAll = 0.0123031
-maxLiquid = 0.0140369
-maxGas = 0.0275176
-maxofthree = 0.0275176
-time = 121.875
-timeStep = 0.25
-
-maxAll = 65.145
-maxLiquid = 3.5128
-maxGas = 6.81448
-maxofthree = 65.145
-time = 122.125
-timeStep = 0.000976562
-
-maxAll = 0.0122776
-maxLiquid = 0.0139751
-maxGas = 0.0274083
-maxofthree = 0.0274083
-time = 122.126
-timeStep = 0.25
-
-maxAll = 65.1451
-maxLiquid = 3.49938
-maxGas = 6.79029
-maxofthree = 65.1451
-time = 122.376
-timeStep = 0.000976562
-
-maxAll = 0.0122522
-maxLiquid = 0.0139133
-maxGas = 0.0272948
-maxofthree = 0.0272948
-time = 122.377
-timeStep = 0.25
-
-maxAll = 65.1452
-maxLiquid = 3.48595
-maxGas = 6.76498
-maxofthree = 65.1452
-time = 122.627
-timeStep = 0.000976562
-
-maxAll = 0.0122269
-maxLiquid = 0.0138517
-maxGas = 0.0271773
-maxofthree = 0.0271773
-time = 122.628
-timeStep = 0.25
-
-maxAll = 65.1453
-maxLiquid = 3.4725
-maxGas = 6.73857
-maxofthree = 65.1453
-time = 122.878
-timeStep = 0.000976562
-
-maxAll = 0.0122017
-maxLiquid = 0.0137901
-maxGas = 0.0270556
-maxofthree = 0.0270556
-time = 122.879
-timeStep = 0.25
-
-maxAll = 65.1454
-maxLiquid = 3.45904
-maxGas = 6.71106
-maxofthree = 65.1454
-time = 123.129
-timeStep = 0.000976562
-
-maxAll = 0.0121767
-maxLiquid = 0.0137287
-maxGas = 0.0269299
-maxofthree = 0.0269299
-time = 123.13
-timeStep = 0.25
-
-maxAll = 65.1454
-maxLiquid = 3.44557
-maxGas = 6.68244
-maxofthree = 65.1454
-time = 123.38
-timeStep = 0.000976562
-
-maxAll = 0.0121518
-maxLiquid = 0.0136675
-maxGas = 0.0268002
-maxofthree = 0.0268002
-time = 123.381
-timeStep = 0.25
-
-maxAll = 65.1455
-maxLiquid = 3.43209
-maxGas = 6.65274
-maxofthree = 65.1455
-time = 123.631
-timeStep = 0.000976562
-
-maxAll = 0.0121269
-maxLiquid = 0.0136063
-maxGas = 0.026667
-maxofthree = 0.026667
-time = 123.632
-timeStep = 0.25
-
-maxAll = 65.1456
-maxLiquid = 3.41859
-maxGas = 6.62196
-maxofthree = 65.1456
-time = 123.882
-timeStep = 0.000976562
-
-maxAll = 0.0121022
-maxLiquid = 0.0135453
-maxGas = 0.0265498
-maxofthree = 0.0265498
-time = 123.883
-timeStep = 0.25
-
-maxAll = 65.1457
-maxLiquid = 3.40509
-maxGas = 6.5901
-maxofthree = 65.1457
-time = 124.133
-timeStep = 0.000976562
-
-maxAll = 0.0120776
-maxLiquid = 0.0134844
-maxGas = 0.0264287
-maxofthree = 0.0264287
-time = 124.134
-timeStep = 0.25
-
-maxAll = 65.1457
-maxLiquid = 3.39158
-maxGas = 6.55717
-maxofthree = 65.1457
-time = 124.384
-timeStep = 0.000976562
-
-maxAll = 0.0120531
-maxLiquid = 0.0134236
-maxGas = 0.0263036
-maxofthree = 0.0263036
-time = 124.385
-timeStep = 0.25
-
-maxAll = 65.1458
-maxLiquid = 3.37806
-maxGas = 6.52318
-maxofthree = 65.1458
-time = 124.635
-timeStep = 0.000976562
-
-maxAll = 0.0120288
-maxLiquid = 0.0133773
-maxGas = 0.0261747
-maxofthree = 0.0261747
-time = 124.636
-timeStep = 0.25
-
-maxAll = 65.1459
-maxLiquid = 3.36454
-maxGas = 6.48814
-maxofthree = 65.1459
-time = 124.886
-timeStep = 0.000976562
-
-maxAll = 0.0120045
-maxLiquid = 0.0133586
-maxGas = 0.0260419
-maxofthree = 0.0260419
-time = 124.887
-timeStep = 0.25
-
-maxAll = 65.146
-maxLiquid = 3.35821
-maxGas = 6.45207
-maxofthree = 65.146
-time = 125.137
-timeStep = 0.000976562
-
-maxAll = 0.0119803
-maxLiquid = 0.0133398
-maxGas = 0.0259053
-maxofthree = 0.0259053
-time = 125.138
-timeStep = 0.25
-
-maxAll = 65.146
-maxLiquid = 3.35326
-maxGas = 6.41496
-maxofthree = 65.146
-time = 125.388
-timeStep = 0.000976562
-
-maxAll = 0.0119563
-maxLiquid = 0.013321
-maxGas = 0.0257649
-maxofthree = 0.0257649
-time = 125.389
-timeStep = 0.25
-
-maxAll = 65.1461
-maxLiquid = 3.34828
-maxGas = 6.37684
-maxofthree = 65.1461
-time = 125.639
-timeStep = 0.000976562
-
-maxAll = 0.0119323
-maxLiquid = 0.013302
-maxGas = 0.0256208
-maxofthree = 0.0256208
-time = 125.64
-timeStep = 0.25
-
-maxAll = 65.1462
-maxLiquid = 3.34327
-maxGas = 6.33772
-maxofthree = 65.1462
-time = 125.89
-timeStep = 0.000976562
-
-maxAll = 0.0119085
-maxLiquid = 0.0132829
-maxGas = 0.0254731
-maxofthree = 0.0254731
-time = 125.891
-timeStep = 0.25
-
-maxAll = 65.1462
-maxLiquid = 3.33824
-maxGas = 6.29761
-maxofthree = 65.1462
-time = 126.141
-timeStep = 0.000976562
-
-maxAll = 0.0118848
-maxLiquid = 0.0132637
-maxGas = 0.0253216
-maxofthree = 0.0253216
-time = 126.142
-timeStep = 0.25
-
-maxAll = 65.1463
-maxLiquid = 3.33318
-maxGas = 6.25652
-maxofthree = 65.1463
-time = 126.392
-timeStep = 0.000976562
-
-maxAll = 0.0118611
-maxLiquid = 0.0132443
-maxGas = 0.0251667
-maxofthree = 0.0251667
-time = 126.393
-timeStep = 0.25
-
-maxAll = 65.1464
-maxLiquid = 3.32809
-maxGas = 6.21447
-maxofthree = 65.1464
-time = 126.643
-timeStep = 0.000976562
-
-maxAll = 0.0118376
-maxLiquid = 0.0132249
-maxGas = 0.0250082
-maxofthree = 0.0250082
-time = 126.644
-timeStep = 0.25
-
-maxAll = 65.1464
-maxLiquid = 3.32298
-maxGas = 6.17147
-maxofthree = 65.1464
-time = 126.894
-timeStep = 0.000976562
-
-maxAll = 0.0118142
-maxLiquid = 0.0132054
-maxGas = 0.0248462
-maxofthree = 0.0248462
-time = 126.895
-timeStep = 0.25
-
-maxAll = 65.1465
-maxLiquid = 3.31784
-maxGas = 6.12754
-maxofthree = 65.1465
-time = 127.145
-timeStep = 0.000976562
-
-maxAll = 0.0117909
-maxLiquid = 0.0131858
-maxGas = 0.0246808
-maxofthree = 0.0246808
-time = 127.146
-timeStep = 0.25
-
-maxAll = 65.1466
-maxLiquid = 3.31268
-maxGas = 6.0827
-maxofthree = 65.1466
-time = 127.396
-timeStep = 0.000976562
-
-maxAll = 0.0117677
-maxLiquid = 0.0131661
-maxGas = 0.0245121
-maxofthree = 0.0245121
-time = 127.397
-timeStep = 0.25
-
-maxAll = 65.1466
-maxLiquid = 3.30749
-maxGas = 6.03695
-maxofthree = 65.1466
-time = 127.647
-timeStep = 0.000976562
-
-maxAll = 0.0117445
-maxLiquid = 0.0131463
-maxGas = 0.0243402
-maxofthree = 0.0243402
-time = 127.648
-timeStep = 0.25
-
-maxAll = 65.1467
-maxLiquid = 3.30228
-maxGas = 5.99033
-maxofthree = 65.1467
-time = 127.898
-timeStep = 0.000976562
-
-maxAll = 0.0117215
-maxLiquid = 0.0131264
-maxGas = 0.0242279
-maxofthree = 0.0242279
-time = 127.899
-timeStep = 0.25
-
-maxAll = 65.1468
-maxLiquid = 3.29705
-maxGas = 5.94285
-maxofthree = 65.1468
-time = 128.149
-timeStep = 0.000976562
-
-maxAll = 0.0116986
-maxLiquid = 0.0131064
-maxGas = 0.0241477
-maxofthree = 0.0241477
-time = 128.15
-timeStep = 0.25
-
-maxAll = 65.1468
-maxLiquid = 3.29179
-maxGas = 5.89453
-maxofthree = 65.1468
-time = 128.4
-timeStep = 0.000976562
-
-maxAll = 0.0116758
-maxLiquid = 0.0130863
-maxGas = 0.0240649
-maxofthree = 0.0240649
-time = 128.401
-timeStep = 0.25
-
-maxAll = 65.1469
-maxLiquid = 3.28651
-maxGas = 5.84539
-maxofthree = 65.1469
-time = 128.651
-timeStep = 0.000976562
-
-maxAll = 0.0116531
-maxLiquid = 0.0130661
-maxGas = 0.0239795
-maxofthree = 0.0239795
-time = 128.652
-timeStep = 0.25
-
-maxAll = 65.1469
-maxLiquid = 3.28121
-maxGas = 5.83328
-maxofthree = 65.1469
-time = 128.902
-timeStep = 0.000976562
-
-maxAll = 0.0116304
-maxLiquid = 0.0130458
-maxGas = 0.0238915
-maxofthree = 0.0238915
-time = 128.903
-timeStep = 0.25
-
-maxAll = 65.147
-maxLiquid = 3.27589
-maxGas = 5.83039
-maxofthree = 65.147
-time = 129.153
-timeStep = 0.000976562
-
-maxAll = 0.0116079
-maxLiquid = 0.0130255
-maxGas = 0.023801
-maxofthree = 0.023801
-time = 129.154
-timeStep = 0.25
-
-maxAll = 65.1471
-maxLiquid = 3.27054
-maxGas = 5.82688
-maxofthree = 65.1471
-time = 129.404
-timeStep = 0.000976562
-
-maxAll = 0.0115855
-maxLiquid = 0.013005
-maxGas = 0.0237079
-maxofthree = 0.0237079
-time = 129.405
-timeStep = 0.25
-
-maxAll = 65.1471
-maxLiquid = 3.26518
-maxGas = 5.82274
-maxofthree = 65.1471
-time = 129.655
-timeStep = 0.000976562
-
-maxAll = 0.0115632
-maxLiquid = 0.0129845
-maxGas = 0.0236123
-maxofthree = 0.0236123
-time = 129.656
-timeStep = 0.25
-
-maxAll = 65.1472
-maxLiquid = 3.25979
-maxGas = 5.81797
-maxofthree = 65.1472
-time = 129.906
-timeStep = 0.000976562
-
-maxAll = 0.0115409
-maxLiquid = 0.0129639
-maxGas = 0.0235141
-maxofthree = 0.0235141
-time = 129.907
-timeStep = 0.25
-
-maxAll = 65.1472
-maxLiquid = 3.25439
-maxGas = 5.81257
-maxofthree = 65.1472
-time = 130.157
-timeStep = 0.000976562
-
-maxAll = 0.0115188
-maxLiquid = 0.0129432
-maxGas = 0.0234135
-maxofthree = 0.0234135
-time = 130.158
-timeStep = 0.25
-
-maxAll = 65.1473
-maxLiquid = 3.24896
-maxGas = 5.80654
-maxofthree = 65.1473
-time = 130.408
-timeStep = 0.000976562
-
-maxAll = 0.0114967
-maxLiquid = 0.0129225
-maxGas = 0.0233103
-maxofthree = 0.0233103
-time = 130.409
-timeStep = 0.25
-
-maxAll = 65.1473
-maxLiquid = 3.24351
-maxGas = 5.79987
-maxofthree = 65.1473
-time = 130.659
-timeStep = 0.000976562
-
-maxAll = 0.0114748
-maxLiquid = 0.0129016
-maxGas = 0.0232048
-maxofthree = 0.0232048
-time = 130.66
-timeStep = 0.25
-
-maxAll = 65.1474
-maxLiquid = 3.23805
-maxGas = 5.79258
-maxofthree = 65.1474
-time = 130.91
-timeStep = 0.000976562
-
-maxAll = 0.0114529
-maxLiquid = 0.0128807
-maxGas = 0.0230968
-maxofthree = 0.0230968
-time = 130.911
-timeStep = 0.25
-
-maxAll = 65.1474
-maxLiquid = 3.23257
-maxGas = 5.78465
-maxofthree = 65.1474
-time = 131.161
-timeStep = 0.000976562
-
-maxAll = 0.0114311
-maxLiquid = 0.0128597
-maxGas = 0.0229863
-maxofthree = 0.0229863
-time = 131.162
-timeStep = 0.25
-
-maxAll = 65.1475
-maxLiquid = 3.22706
-maxGas = 5.77609
-maxofthree = 65.1475
-time = 131.412
-timeStep = 0.000976562
-
-maxAll = 0.0114094
-maxLiquid = 0.0128387
-maxGas = 0.0228995
-maxofthree = 0.0228995
-time = 131.413
-timeStep = 0.25
-
-maxAll = 65.1475
-maxLiquid = 3.22154
-maxGas = 5.76689
-maxofthree = 65.1475
-time = 131.663
-timeStep = 0.000976562
-
-maxAll = 0.0113878
-maxLiquid = 0.0128175
-maxGas = 0.0228628
-maxofthree = 0.0228628
-time = 131.664
-timeStep = 0.25
-
-maxAll = 65.1476
-maxLiquid = 3.21601
-maxGas = 5.75706
-maxofthree = 65.1476
-time = 131.914
-timeStep = 0.000976562
-
-maxAll = 0.0113663
-maxLiquid = 0.0127963
-maxGas = 0.0228237
-maxofthree = 0.0228237
-time = 131.915
-timeStep = 0.25
-
-maxAll = 65.1476
-maxLiquid = 3.21045
-maxGas = 5.74659
-maxofthree = 65.1476
-time = 132.165
-timeStep = 0.000976562
-
-maxAll = 0.0113449
-maxLiquid = 0.012775
-maxGas = 0.0227822
-maxofthree = 0.0227822
-time = 132.166
-timeStep = 0.25
-
-maxAll = 65.1477
-maxLiquid = 3.20488
-maxGas = 5.7355
-maxofthree = 65.1477
-time = 132.416
-timeStep = 0.000976562
-
-maxAll = 0.0113236
-maxLiquid = 0.0127537
-maxGas = 0.0227384
-maxofthree = 0.0227384
-time = 132.417
-timeStep = 0.25
-
-maxAll = 65.1477
-maxLiquid = 3.19929
-maxGas = 5.72376
-maxofthree = 65.1477
-time = 132.667
-timeStep = 0.000976562
-
-maxAll = 0.0113023
-maxLiquid = 0.0127323
-maxGas = 0.0226921
-maxofthree = 0.0226921
-time = 132.667
-timeStep = 0.25
-
-maxAll = 65.1478
-maxLiquid = 3.19369
-maxGas = 5.7114
-maxofthree = 65.1478
-time = 132.917
-timeStep = 0.000976562
-
-maxAll = 0.0112812
-maxLiquid = 0.0127108
-maxGas = 0.0226435
-maxofthree = 0.0226435
-time = 132.918
-timeStep = 0.25
-
-maxAll = 65.1478
-maxLiquid = 3.18806
-maxGas = 5.69841
-maxofthree = 65.1478
-time = 133.168
-timeStep = 0.000976562
-
-maxAll = 0.0112601
-maxLiquid = 0.0126893
-maxGas = 0.0225925
-maxofthree = 0.0225925
-time = 133.169
-timeStep = 0.25
+maxAll = -1.99247
+maxLiquid = -1.79769e+308
+maxGas = 272.042
+maxofthree = 272.042
+time = 0.501892
+timeStep = 0.000244141
+
+maxAll = -1.99149
+maxLiquid = -1.79769e+308
+maxGas = 70.3467
+maxofthree = 70.3467
+time = 0.502136
+timeStep = 0.000976562
+
+maxAll = -1.98764
+maxLiquid = -1.79769e+308
+maxGas = 143.152
+maxofthree = 143.152
+time = 0.503113
+timeStep = 0.000488281
+
+maxAll = -1.98571
+maxLiquid = -1.79769e+308
+maxGas = 36.1036
+maxofthree = 36.1036
+time = 0.503601
+timeStep = 0.00195312
+
+maxAll = -1.97805
+maxLiquid = -1.79769e+308
+maxGas = 72.5268
+maxofthree = 72.5268
+time = 0.505554
+timeStep = 0.000976562
+
+maxAll = -1.97423
+maxLiquid = -1.79769e+308
+maxGas = 18.1719
+maxofthree = 18.1719
+time = 0.506531
+timeStep = 0.00390625
+
+maxAll = -1.95915
+maxLiquid = -1.79769e+308
+maxGas = 36.3842
+maxofthree = 36.3842
+time = 0.510437
+timeStep = 0.00195312
+
+maxAll = -1.95165
+maxLiquid = -1.79769e+308
+maxGas = 9.1011
+maxofthree = 9.1011
+time = 0.51239
+timeStep = 0.0078125
+
+maxAll = -1.92236
+maxLiquid = -1.79769e+308
+maxGas = 18.2073
+maxofthree = 18.2073
+time = 0.520203
+timeStep = 0.00390625
+
+maxAll = -1.90801
+maxLiquid = -1.79769e+308
+maxGas = 4.55244
+maxofthree = 4.55244
+time = 0.524109
+timeStep = 0.015625
+
+maxAll = -1.85264
+maxLiquid = -1.79769e+308
+maxGas = 9.10551
+maxofthree = 9.10551
+time = 0.539734
+timeStep = 0.0078125
+
+maxAll = -1.82623
+maxLiquid = -1.79769e+308
+maxGas = 2.27645
+maxofthree = 2.27645
+time = 0.547546
+timeStep = 0.03125
+
+maxAll = -1.72681
+maxLiquid = -1.79769e+308
+maxGas = 4.55297
+maxofthree = 4.55297
+time = 0.578796
+timeStep = 0.015625
+
+maxAll = -1.68176
+maxLiquid = -1.79769e+308
+maxGas = 1.1415
+maxofthree = 1.1415
+time = 0.594421
+timeStep = 0.0625
+
+maxAll = -1.51828
+maxLiquid = -1.79769e+308
+maxGas = 2.29521
+maxofthree = 2.29521
+time = 0.656921
+timeStep = 0.03125
 
-maxAll = 65.1479
-maxLiquid = 3.18243
-maxGas = 5.68478
-maxofthree = 65.1479
-time = 133.419
-timeStep = 0.000976562
-
-maxAll = 0.0112391
-maxLiquid = 0.0126677
-maxGas = 0.0225392
-maxofthree = 0.0225392
-time = 133.42
-timeStep = 0.25
-
-maxAll = 65.1479
-maxLiquid = 3.17677
-maxGas = 5.67053
-maxofthree = 65.1479
-time = 133.67
-timeStep = 0.000976562
-
-maxAll = 0.0112182
-maxLiquid = 0.012646
-maxGas = 0.0224835
-maxofthree = 0.0224835
-time = 133.671
-timeStep = 0.25
-
-maxAll = 65.148
-maxLiquid = 3.17111
-maxGas = 5.65564
-maxofthree = 65.148
-time = 133.921
-timeStep = 0.000976562
-
-maxAll = 0.0111974
-maxLiquid = 0.0126243
-maxGas = 0.0224254
-maxofthree = 0.0224254
-time = 133.922
-timeStep = 0.25
-
-maxAll = 65.148
-maxLiquid = 3.16542
-maxGas = 5.64013
-maxofthree = 65.148
-time = 134.172
-timeStep = 0.000976562
-
-maxAll = 0.0111767
-maxLiquid = 0.0126025
-maxGas = 0.022365
-maxofthree = 0.022365
-time = 134.173
-timeStep = 0.25
-
-maxAll = 65.1481
-maxLiquid = 3.15973
-maxGas = 5.624
-maxofthree = 65.1481
-time = 134.423
-timeStep = 0.000976562
-
-maxAll = 0.011156
-maxLiquid = 0.0125806
-maxGas = 0.0223022
-maxofthree = 0.0223022
-time = 134.424
-timeStep = 0.25
-
-maxAll = 65.1481
-maxLiquid = 3.15401
-maxGas = 5.60724
-maxofthree = 65.1481
-time = 134.674
-timeStep = 0.000976562
-
-maxAll = 0.0111355
-maxLiquid = 0.0125587
-maxGas = 0.0222371
-maxofthree = 0.0222371
-time = 134.675
-timeStep = 0.25
-
-maxAll = 65.1482
-maxLiquid = 3.14829
-maxGas = 5.58987
-maxofthree = 65.1482
-time = 134.925
-timeStep = 0.000976562
-
-maxAll = 0.011115
-maxLiquid = 0.0125368
-maxGas = 0.0221697
-maxofthree = 0.0221697
-time = 134.926
-timeStep = 0.25
-
-maxAll = 65.1482
-maxLiquid = 3.14255
-maxGas = 5.57187
-maxofthree = 65.1482
-time = 135.176
-timeStep = 0.000976562
-
-maxAll = 0.0110946
-maxLiquid = 0.0125148
-maxGas = 0.0220999
-maxofthree = 0.0220999
-time = 135.177
-timeStep = 0.25
-
-maxAll = 65.1482
-maxLiquid = 3.13679
-maxGas = 5.55327
-maxofthree = 65.1482
-time = 135.427
-timeStep = 0.000976562
-
-maxAll = 0.0110743
-maxLiquid = 0.0124927
-maxGas = 0.0220279
-maxofthree = 0.0220279
-time = 135.428
-timeStep = 0.25
-
-maxAll = 65.1483
-maxLiquid = 3.13103
-maxGas = 5.53404
-maxofthree = 65.1483
-time = 135.678
-timeStep = 0.000976562
-
-maxAll = 0.011054
-maxLiquid = 0.0124706
-maxGas = 0.0219536
-maxofthree = 0.0219536
-time = 135.679
-timeStep = 0.25
-
-maxAll = 65.1483
-maxLiquid = 3.12525
-maxGas = 5.51422
-maxofthree = 65.1483
-time = 135.929
-timeStep = 0.000976562
-
-maxAll = 0.0110339
-maxLiquid = 0.0124484
-maxGas = 0.0218769
-maxofthree = 0.0218769
-time = 135.93
-timeStep = 0.25
-
-maxAll = 65.1484
-maxLiquid = 3.11945
-maxGas = 5.49378
-maxofthree = 65.1484
-time = 136.18
-timeStep = 0.000976562
-
-maxAll = 0.0110138
-maxLiquid = 0.0124262
-maxGas = 0.021798
-maxofthree = 0.021798
-time = 136.181
-timeStep = 0.25
-
-maxAll = 65.1484
-maxLiquid = 3.11365
-maxGas = 5.47274
-maxofthree = 65.1484
-time = 136.431
-timeStep = 0.000976562
-
-maxAll = 0.0109938
-maxLiquid = 0.0124039
-maxGas = 0.0217169
-maxofthree = 0.0217169
-time = 136.432
-timeStep = 0.25
-
-maxAll = 65.1485
-maxLiquid = 3.10783
-maxGas = 5.45111
-maxofthree = 65.1485
-time = 136.682
-timeStep = 0.000976562
-
-maxAll = 0.0109739
-maxLiquid = 0.0123815
-maxGas = 0.0216335
-maxofthree = 0.0216335
-time = 136.683
-timeStep = 0.25
-
-maxAll = 65.1485
-maxLiquid = 3.102
-maxGas = 5.42888
-maxofthree = 65.1485
-time = 136.933
-timeStep = 0.000976562
-
-maxAll = 0.010954
-maxLiquid = 0.0123592
-maxGas = 0.0215479
-maxofthree = 0.0215479
-time = 136.934
-timeStep = 0.25
-
-maxAll = 65.1485
-maxLiquid = 3.09616
-maxGas = 5.40606
-maxofthree = 65.1485
-time = 137.184
-timeStep = 0.000976562
-
-maxAll = 0.0109343
-maxLiquid = 0.0123367
-maxGas = 0.0214601
-maxofthree = 0.0214601
-time = 137.185
-timeStep = 0.25
-
-maxAll = 65.1486
-maxLiquid = 3.09031
-maxGas = 5.38266
-maxofthree = 65.1486
-time = 137.435
-timeStep = 0.000976562
-
-maxAll = 0.0109146
-maxLiquid = 0.0123143
-maxGas = 0.0213701
-maxofthree = 0.0213701
-time = 137.436
-timeStep = 0.25
-
-maxAll = 65.1486
-maxLiquid = 3.08444
-maxGas = 5.35868
-maxofthree = 65.1486
-time = 137.686
-timeStep = 0.000976562
-
-maxAll = 0.010895
-maxLiquid = 0.0122918
-maxGas = 0.0212779
-maxofthree = 0.0212779
-time = 137.687
-timeStep = 0.25
-
-maxAll = 65.1487
-maxLiquid = 3.07856
-maxGas = 5.33412
-maxofthree = 65.1487
-time = 137.937
-timeStep = 0.000976562
-
-maxAll = 0.0108754
-maxLiquid = 0.0122692
-maxGas = 0.0212198
-maxofthree = 0.0212198
-time = 137.938
-timeStep = 0.25
-
-maxAll = 65.1487
-maxLiquid = 3.07268
-maxGas = 5.30899
-maxofthree = 65.1487
-time = 138.188
-timeStep = 0.000976562
-
-maxAll = 0.010856
-maxLiquid = 0.0122466
-maxGas = 0.0211686
-maxofthree = 0.0211686
-time = 138.189
-timeStep = 0.25
-
-maxAll = 65.1487
-maxLiquid = 3.06678
-maxGas = 5.29839
-maxofthree = 65.1487
-time = 138.439
-timeStep = 0.000976562
-
-maxAll = 0.0108366
-maxLiquid = 0.0122239
-maxGas = 0.0211153
-maxofthree = 0.0211153
-time = 138.44
-timeStep = 0.25
-
-maxAll = 65.1488
-maxLiquid = 3.06087
-maxGas = 5.29419
-maxofthree = 65.1488
-time = 138.69
-timeStep = 0.000976562
-
-maxAll = 0.0108173
-maxLiquid = 0.0122012
-maxGas = 0.02106
-maxofthree = 0.02106
-time = 138.691
-timeStep = 0.25
-
-maxAll = 65.1488
-maxLiquid = 3.05495
-maxGas = 5.28946
-maxofthree = 65.1488
-time = 138.941
-timeStep = 0.000976562
-
-maxAll = 0.0107981
-maxLiquid = 0.0121785
-maxGas = 0.0210027
-maxofthree = 0.0210027
-time = 138.942
-timeStep = 0.25
-
-maxAll = 65.1489
-maxLiquid = 3.04903
-maxGas = 5.2842
-maxofthree = 65.1489
-time = 139.192
-timeStep = 0.000976562
-
-maxAll = 0.0107789
-maxLiquid = 0.0121557
-maxGas = 0.0209434
-maxofthree = 0.0209434
-time = 139.193
-timeStep = 0.25
-
-maxAll = 65.1489
-maxLiquid = 3.04309
-maxGas = 5.2784
-maxofthree = 65.1489
-time = 139.443
-timeStep = 0.000976562
-
-maxAll = 0.0107598
-maxLiquid = 0.0121329
-maxGas = 0.020896
-maxofthree = 0.020896
-time = 139.444
-timeStep = 0.25
-
-maxAll = 65.1489
-maxLiquid = 3.03714
-maxGas = 5.27207
-maxofthree = 65.1489
-time = 139.694
-timeStep = 0.000976562
-
-maxAll = 0.0107408
-maxLiquid = 0.0121101
-maxGas = 0.0208706
-maxofthree = 0.0208706
-time = 139.695
-timeStep = 0.25
-
-maxAll = 65.149
-maxLiquid = 3.03118
-maxGas = 5.26521
-maxofthree = 65.149
-time = 139.945
-timeStep = 0.000976562
-
-maxAll = 0.0107218
-maxLiquid = 0.0120872
-maxGas = 0.0208432
-maxofthree = 0.0208432
-time = 139.946
-timeStep = 0.25
-
-maxAll = 65.149
-maxLiquid = 3.02521
-maxGas = 5.25782
-maxofthree = 65.149
-time = 140.196
-timeStep = 0.000976562
-
-maxAll = 0.010703
-maxLiquid = 0.0120642
-maxGas = 0.0208137
-maxofthree = 0.0208137
-time = 140.197
-timeStep = 0.25
-
-maxAll = 65.149
-maxLiquid = 3.01924
-maxGas = 5.24989
-maxofthree = 65.149
-time = 140.447
-timeStep = 0.000976562
-
-maxAll = 0.0106842
-maxLiquid = 0.0120413
-maxGas = 0.0207823
-maxofthree = 0.0207823
-time = 140.448
-timeStep = 0.25
-
-maxAll = 65.1491
-maxLiquid = 3.01325
-maxGas = 5.24143
-maxofthree = 65.1491
-time = 140.698
-timeStep = 0.000976562
-
-maxAll = 0.0106654
-maxLiquid = 0.0120182
-maxGas = 0.0207489
-maxofthree = 0.0207489
-time = 140.699
-timeStep = 0.25
-
-maxAll = 65.1491
-maxLiquid = 3.00726
-maxGas = 5.23243
-maxofthree = 65.1491
-time = 140.949
-timeStep = 0.000976562
-
-maxAll = 0.0106468
-maxLiquid = 0.0119952
-maxGas = 0.0207135
-maxofthree = 0.0207135
-time = 140.95
-timeStep = 0.25
-
-maxAll = 65.1491
-maxLiquid = 3.00126
-maxGas = 5.2229
-maxofthree = 65.1491
-time = 141.2
-timeStep = 0.000976562
-
-maxAll = 0.0106282
-maxLiquid = 0.0119721
-maxGas = 0.0206762
-maxofthree = 0.0206762
-time = 141.201
-timeStep = 0.25
-
-maxAll = 65.1492
-maxLiquid = 2.99525
-maxGas = 5.21285
-maxofthree = 65.1492
-time = 141.451
-timeStep = 0.000976562
-
-maxAll = 0.0106097
-maxLiquid = 0.011949
-maxGas = 0.0206368
-maxofthree = 0.0206368
-time = 141.452
-timeStep = 0.25
-
-maxAll = 65.1492
-maxLiquid = 2.98923
-maxGas = 5.20226
-maxofthree = 65.1492
-time = 141.702
-timeStep = 0.000976562
-
-maxAll = 0.0105912
-maxLiquid = 0.0119259
-maxGas = 0.0205954
-maxofthree = 0.0205954
-time = 141.703
-timeStep = 0.25
-
-maxAll = 65.1492
-maxLiquid = 2.9832
-maxGas = 5.19114
-maxofthree = 65.1492
-time = 141.953
-timeStep = 0.000976562
-
-maxAll = 0.0105728
-maxLiquid = 0.0119027
-maxGas = 0.0205521
-maxofthree = 0.0205521
-time = 141.954
-timeStep = 0.25
-
-maxAll = 65.1493
-maxLiquid = 2.97716
-maxGas = 5.1795
-maxofthree = 65.1493
-time = 142.204
-timeStep = 0.000976562
-
-maxAll = 0.0105545
-maxLiquid = 0.0118795
-maxGas = 0.0205068
-maxofthree = 0.0205068
-time = 142.205
-timeStep = 0.25
-
-maxAll = 65.1493
-maxLiquid = 2.97112
-maxGas = 5.16732
-maxofthree = 65.1493
-time = 142.455
-timeStep = 0.000976562
-
-maxAll = 0.0105362
-maxLiquid = 0.0118562
-maxGas = 0.0204595
-maxofthree = 0.0204595
-time = 142.456
-timeStep = 0.25
-
-maxAll = 65.1493
-maxLiquid = 2.96507
-maxGas = 5.15462
-maxofthree = 65.1493
-time = 142.706
-timeStep = 0.000976562
-
-maxAll = 0.0105181
-maxLiquid = 0.011833
-maxGas = 0.0204103
-maxofthree = 0.0204103
-time = 142.707
-timeStep = 0.25
-
-maxAll = 65.1494
-maxLiquid = 2.95901
-maxGas = 5.1414
-maxofthree = 65.1494
-time = 142.957
-timeStep = 0.000976562
-
-maxAll = 0.0104999
-maxLiquid = 0.0118097
-maxGas = 0.020359
-maxofthree = 0.020359
-time = 142.958
-timeStep = 0.25
-
-maxAll = 65.1494
-maxLiquid = 2.95295
-maxGas = 5.12765
-maxofthree = 65.1494
-time = 143.208
-timeStep = 0.000976562
-
-maxAll = 0.0104819
-maxLiquid = 0.0117863
-maxGas = 0.0203059
-maxofthree = 0.0203059
-time = 143.208
-timeStep = 0.25
-
-maxAll = 65.1494
-maxLiquid = 2.94688
-maxGas = 5.11339
-maxofthree = 65.1494
-time = 143.458
-timeStep = 0.000976562
-
-maxAll = 0.0104639
-maxLiquid = 0.011763
-maxGas = 0.0202508
-maxofthree = 0.0202508
-time = 143.459
-timeStep = 0.25
-
-maxAll = 65.1495
-maxLiquid = 2.9408
-maxGas = 5.0986
-maxofthree = 65.1495
-time = 143.709
-timeStep = 0.000976562
-
-maxAll = 0.010446
-maxLiquid = 0.0117396
-maxGas = 0.0201937
-maxofthree = 0.0201937
-time = 143.71
-timeStep = 0.25
-
-maxAll = 65.1495
-maxLiquid = 2.93471
-maxGas = 5.0833
-maxofthree = 65.1495
-time = 143.96
-timeStep = 0.000976562
-
-maxAll = 0.0104281
-maxLiquid = 0.0117161
-maxGas = 0.0201348
-maxofthree = 0.0201348
-time = 143.961
-timeStep = 0.25
-
-maxAll = 65.1495
-maxLiquid = 2.92862
-maxGas = 5.06748
-maxofthree = 65.1495
-time = 144.211
-timeStep = 0.000976562
-
-maxAll = 0.0104103
-maxLiquid = 0.0116927
-maxGas = 0.0200739
-maxofthree = 0.0200739
-time = 144.212
-timeStep = 0.25
-
-maxAll = 65.1496
-maxLiquid = 2.92252
-maxGas = 5.05115
-maxofthree = 65.1496
-time = 144.462
-timeStep = 0.000976562
-
-maxAll = 0.0103926
-maxLiquid = 0.0116692
-maxGas = 0.0200111
-maxofthree = 0.0200111
-time = 144.463
-timeStep = 0.25
-
-maxAll = 65.1496
-maxLiquid = 2.91642
-maxGas = 5.03431
-maxofthree = 65.1496
-time = 144.713
-timeStep = 0.000976562
-
-maxAll = 0.010375
-maxLiquid = 0.0116457
-maxGas = 0.0199464
-maxofthree = 0.0199464
-time = 144.714
-timeStep = 0.25
-
-maxAll = 65.1496
-maxLiquid = 2.9103
-maxGas = 5.01697
-maxofthree = 65.1496
-time = 144.964
-timeStep = 0.000976562
-
-maxAll = 0.0103574
-maxLiquid = 0.0116222
-maxGas = 0.0198798
-maxofthree = 0.0198798
-time = 144.965
-timeStep = 0.25
-
-maxAll = 65.1497
-maxLiquid = 2.90419
-maxGas = 4.99913
-maxofthree = 65.1497
-time = 145.215
-timeStep = 0.000976562
-
-maxAll = 0.0103398
-maxLiquid = 0.0115986
-maxGas = 0.0198113
-maxofthree = 0.0198113
-time = 145.216
-timeStep = 0.25
-
-maxAll = 65.1497
-maxLiquid = 2.89806
-maxGas = 4.98078
-maxofthree = 65.1497
-time = 145.466
-timeStep = 0.000976562
-
-maxAll = 0.0103223
-maxLiquid = 0.0115751
-maxGas = 0.019741
-maxofthree = 0.019741
-time = 145.467
-timeStep = 0.25
-
-maxAll = 65.1497
-maxLiquid = 2.89194
-maxGas = 4.96194
-maxofthree = 65.1497
-time = 145.717
-timeStep = 0.000976562
-
-maxAll = 0.0103049
-maxLiquid = 0.0115515
-maxGas = 0.0196688
-maxofthree = 0.0196688
-time = 145.718
-timeStep = 0.25
-
-maxAll = 65.1497
-maxLiquid = 2.8858
-maxGas = 4.9426
-maxofthree = 65.1497
-time = 145.968
-timeStep = 0.000976562
-
-maxAll = 0.0102876
-maxLiquid = 0.0115279
-maxGas = 0.0195948
-maxofthree = 0.0195948
-time = 145.969
-timeStep = 0.25
-
-maxAll = 65.1498
-maxLiquid = 2.87966
-maxGas = 4.92278
-maxofthree = 65.1498
-time = 146.219
-timeStep = 0.000976562
-
-maxAll = 0.0102703
-maxLiquid = 0.0115042
-maxGas = 0.0195391
-maxofthree = 0.0195391
-time = 146.22
-timeStep = 0.25
-
-maxAll = 65.1498
-maxLiquid = 2.87352
-maxGas = 4.90247
-maxofthree = 65.1498
-time = 146.47
-timeStep = 0.000976562
-
-maxAll = 0.0102531
-maxLiquid = 0.0114805
-maxGas = 0.0194817
-maxofthree = 0.0194817
-time = 146.471
-timeStep = 0.25
-
-maxAll = 65.1498
-maxLiquid = 2.86737
-maxGas = 4.88168
-maxofthree = 65.1498
-time = 146.721
-timeStep = 0.000976562
-
-maxAll = 0.0102359
-maxLiquid = 0.0114569
-maxGas = 0.0194226
-maxofthree = 0.0194226
-time = 146.722
-timeStep = 0.25
-
-maxAll = 65.1499
-maxLiquid = 2.86121
-maxGas = 4.86041
-maxofthree = 65.1499
-time = 146.972
-timeStep = 0.000976562
-
-maxAll = 0.0102188
-maxLiquid = 0.0114331
-maxGas = 0.0193617
-maxofthree = 0.0193617
-time = 146.973
-timeStep = 0.25
-
-maxAll = 65.1499
-maxLiquid = 2.85505
-maxGas = 4.83867
-maxofthree = 65.1499
-time = 147.223
-timeStep = 0.000976562
-
-maxAll = 0.0102017
-maxLiquid = 0.0114094
-maxGas = 0.019299
-maxofthree = 0.019299
-time = 147.224
-timeStep = 0.25
-
-maxAll = 65.1499
-maxLiquid = 2.84888
-maxGas = 4.81647
-maxofthree = 65.1499
-time = 147.474
-timeStep = 0.000976562
-
-maxAll = 0.0101847
-maxLiquid = 0.0113857
-maxGas = 0.0192345
-maxofthree = 0.0192345
-time = 147.475
-timeStep = 0.25
-
-maxAll = 65.1499
-maxLiquid = 2.84271
-maxGas = 4.7938
-maxofthree = 65.1499
-time = 147.725
-timeStep = 0.000976562
-
-maxAll = 0.0101678
-maxLiquid = 0.0113619
-maxGas = 0.0191684
-maxofthree = 0.0191684
-time = 147.726
-timeStep = 0.25
-
-maxAll = 65.15
-maxLiquid = 2.83654
-maxGas = 4.77067
-maxofthree = 65.15
-time = 147.976
-timeStep = 0.000976562
-
-maxAll = 0.0101509
-maxLiquid = 0.0113381
-maxGas = 0.0191005
-maxofthree = 0.0191005
-time = 147.977
-timeStep = 0.25
-
-maxAll = 65.15
-maxLiquid = 2.83036
-maxGas = 4.74709
-maxofthree = 65.15
-time = 148.227
-timeStep = 0.000976562
-
-maxAll = 0.0101341
-maxLiquid = 0.0113143
-maxGas = 0.0190309
-maxofthree = 0.0190309
-time = 148.228
-timeStep = 0.25
-
-maxAll = 65.15
-maxLiquid = 2.82418
-maxGas = 4.72307
-maxofthree = 65.15
-time = 148.478
-timeStep = 0.000976562
-
-maxAll = 0.0101174
-maxLiquid = 0.0112905
-maxGas = 0.0189596
-maxofthree = 0.0189596
-time = 148.479
-timeStep = 0.25
-
-maxAll = 65.1501
-maxLiquid = 2.81799
-maxGas = 4.6986
-maxofthree = 65.1501
-time = 148.729
-timeStep = 0.000976562
-
-maxAll = 0.0101007
-maxLiquid = 0.0112666
-maxGas = 0.0188866
-maxofthree = 0.0188866
-time = 148.73
-timeStep = 0.25
+maxAll = -1.45098
+maxLiquid = -1.79769e+308
+maxGas = 0.579182
+maxofthree = 0.579182
+time = 0.688171
+timeStep = 0.125
 
-maxAll = 65.1501
-maxLiquid = 2.8118
-maxGas = 4.6737
-maxofthree = 65.1501
-time = 148.98
-timeStep = 0.000976562
+maxAll = -1.21587
+maxLiquid = -1.79769e+308
+maxGas = 1.17913
+maxofthree = 1.17913
+time = 0.813171
+timeStep = 0.0625
 
-maxAll = 0.010084
-maxLiquid = 0.0112428
-maxGas = 0.0188119
-maxofthree = 0.0188119
-time = 148.981
+maxAll = -1.13524
+maxLiquid = -1.79769e+308
+maxGas = 0.305063
+maxofthree = 0.305063
+time = 0.875671
 timeStep = 0.25
 
-maxAll = 65.1501
-maxLiquid = 2.8056
-maxGas = 4.64837
-maxofthree = 65.1501
-time = 149.231
-timeStep = 0.000976562
+maxAll = -0.847261
+maxLiquid = -1.79769e+308
+maxGas = 0.651086
+maxofthree = 0.651086
+time = 1.12567
+timeStep = 0.125
 
-maxAll = 0.0100674
-maxLiquid = 0.0112189
-maxGas = 0.0187357
-maxofthree = 0.0187357
-time = 149.232
+maxAll = -0.781805
+maxLiquid = -1.79769e+308
+maxGas = 0.183202
+maxofthree = 0.183202
+time = 1.25067
 timeStep = 0.25
-
-maxAll = 65.1501
-maxLiquid = 2.7994
-maxGas = 4.62262
-maxofthree = 65.1501
-time = 149.482
-timeStep = 0.000976562
 
-maxAll = 0.0100509
-maxLiquid = 0.011195
-maxGas = 0.0186577
-maxofthree = 0.0186577
-time = 149.483
+maxAll = -0.620979
+maxLiquid = -1.79769e+308
+maxGas = 0.271689
+maxofthree = 0.271689
+time = 1.50067
 timeStep = 0.25
-
-maxAll = 65.1502
-maxLiquid = 2.7932
-maxGas = 4.59645
-maxofthree = 65.1502
-time = 149.733
-timeStep = 0.000976562
 
-maxAll = 0.0100344
-maxLiquid = 0.0111711
-maxGas = 0.0185782
-maxofthree = 0.0185782
-time = 149.734
+maxAll = -0.52656
+maxLiquid = -1.79769e+308
+maxGas = 0.1957
+maxofthree = 0.1957
+time = 1.75067
 timeStep = 0.25
-
-maxAll = 65.1502
-maxLiquid = 2.78699
-maxGas = 4.56987
-maxofthree = 65.1502
-time = 149.984
-timeStep = 0.000976562
 
-maxAll = 0.010018
-maxLiquid = 0.0111471
-maxGas = 0.018497
-maxofthree = 0.018497
-time = 149.985
+maxAll = -0.455811
+maxLiquid = -1.79769e+308
+maxGas = 0.163212
+maxofthree = 0.163212
+time = 2.00067
 timeStep = 0.25
-
-
-Number of time steps = 1045
 
+maxAll = -0.400833
+maxLiquid = -1.79769e+308
+maxGas = 0.145166
+maxofthree = 0.145166
+time = 2.25067
+timeStep = 0.25
+
+maxAll = -0.356889
+maxLiquid = -1.79769e+308
+maxGas = 0.133672
+maxofthree = 0.133672
+time = 2.50067
+timeStep = 0.25
+
+maxAll = -0.320968
+maxLiquid = -1.79769e+308
+maxGas = 0.125702
+maxofthree = 0.125702
+time = 2.75067
+timeStep = 0.25
+
+maxAll = -0.291062
+maxLiquid = -1.79769e+308
+maxGas = 0.119845
+maxofthree = 0.119845
+time = 3.00067
+timeStep = 0.25
+
+maxAll = -0.265783
+maxLiquid = -1.79769e+308
+maxGas = 0.115353
+maxofthree = 0.115353
+time = 3.25067
+timeStep = 0.25
+
+maxAll = -0.244137
+maxLiquid = -1.79769e+308
+maxGas = 0.111795
+maxofthree = 0.111795
+time = 3.50067
+timeStep = 0.25
+
+maxAll = -0.225397
+maxLiquid = -1.79769e+308
+maxGas = 0.108904
+maxofthree = 0.108904
+time = 3.75067
+timeStep = 0.25
+
+maxAll = -0.209019
+maxLiquid = -1.79769e+308
+maxGas = 0.106505
+maxofthree = 0.106505
+time = 4.00067
+timeStep = 0.25
+
+maxAll = -0.194586
+maxLiquid = -1.79769e+308
+maxGas = 0.10448
+maxofthree = 0.10448
+time = 4.25067
+timeStep = 0.25
+
+maxAll = -0.181772
+maxLiquid = -1.79769e+308
+maxGas = 0.102745
+maxofthree = 0.102745
+time = 4.50067
+timeStep = 0.25
+
+maxAll = -0.170322
+maxLiquid = -1.79769e+308
+maxGas = 0.10124
+maxofthree = 0.10124
+time = 4.75067
+timeStep = 0.25
+
+maxAll = -0.160032
+maxLiquid = -1.79769e+308
+maxGas = 0.0999208
+maxofthree = 0.0999208
+time = 5.00067
+timeStep = 0.25
+
+maxAll = 22168.6
+maxLiquid = 21143.8
+maxGas = 15824.2
+maxofthree = 22168.6
+time = 5.25067
+timeStep = 3.05176e-05
+
+maxAll = 3.11708
+maxLiquid = 2.04254
+maxGas = 2.23062
+maxofthree = 3.11708
+time = 5.2507
+timeStep = 0.03125
+
+maxAll = 3233.16
+maxLiquid = 2059.24
+maxGas = 27343.8
+maxofthree = 27343.8
+time = 5.28195
+timeStep = 3.05176e-05
+
+maxAll = 3.16019
+maxLiquid = 4136.35
+maxGas = 2.43303e+07
+maxofthree = 2.43303e+07
+time = 5.28198
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 5.564e+11
+maxGas = 1.55894e+16
+maxofthree = 1.55894e+16
+time = 5.28201
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 2.79095e+20
+maxGas = 9.1024e+25
+maxofthree = 9.1024e+25
+time = 5.28204
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 8.06958e+29
+maxGas = 1.21712e+36
+maxofthree = 1.21712e+36
+time = 5.28207
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 5.19263e+33
+maxGas = 2.7528e+39
+maxofthree = 2.7528e+39
+time = 5.2821
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 5.27755e+36
+maxGas = 2.42531e+42
+maxofthree = 2.42531e+42
+time = 5.28214
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 6.04174e+39
+maxGas = 1.59388e+45
+maxofthree = 1.59388e+45
+time = 5.28217
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 6.03955e+39
+maxGas = 1.25005e+45
+maxofthree = 1.25005e+45
+time = 5.2822
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 6.03945e+39
+maxGas = 1.21619e+45
+maxofthree = 1.21619e+45
+time = 5.28223
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 6.03945e+39
+maxGas = 1.21569e+45
+maxofthree = 1.21569e+45
+time = 5.28226
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 6.03945e+39
+maxGas = 1.21711e+45
+maxofthree = 1.21711e+45
+time = 5.28229
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 6.03945e+39
+maxGas = 1.21875e+45
+maxofthree = 1.21875e+45
+time = 5.28232
+timeStep = 3.05176e-05
+
+maxAll = 3.16034
+maxLiquid = 6.03945e+39
+maxGas = 1.22058e+45
+maxofthree = 1.22058e+45
+time = 5.28235
+timeStep = 3.05176e-05
+
+maxAll = 3.16026
+maxLiquid = 6.03945e+39
+maxGas = 1.22263e+45
+maxofthree = 1.22263e+45
+time = 5.28238
+timeStep = 3.05176e-05
+
+maxAll = 3.16018
+maxLiquid = 6.03945e+39
+maxGas = 1.22495e+45
+maxofthree = 1.22495e+45
+time = 5.28241
+timeStep = 3.05176e-05
+
+maxAll = 3.1601
+maxLiquid = 6.03945e+39
+maxGas = 1.22762e+45
+maxofthree = 1.22762e+45
+time = 5.28244
+timeStep = 3.05176e-05
+
+maxAll = 3.16002
+maxLiquid = 6.03945e+39
+maxGas = 1.23076e+45
+maxofthree = 1.23076e+45
+time = 5.28247
+timeStep = 3.05176e-05
+
+maxAll = 3.15993
+maxLiquid = 6.03945e+39
+maxGas = 1.23455e+45
+maxofthree = 1.23455e+45
+time = 5.2825
+timeStep = 3.05176e-05
+
+maxAll = 3.15985
+maxLiquid = 6.03945e+39
+maxGas = 1.23929e+45
+maxofthree = 1.23929e+45
+time = 5.28253
+timeStep = 3.05176e-05
+
+maxAll = 3.15977
+maxLiquid = 408.185
+maxGas = 13041
+maxofthree = 13041
+time = 5.28256
+timeStep = 3.05176e-05
+
+maxAll = 3.15969
+maxLiquid = 372.808
+maxGas = 6520.85
+maxofthree = 6520.85
+time = 5.28259
+timeStep = 3.05176e-05
+
+maxAll = 3.15961
+maxLiquid = 342.51
+maxGas = 4347.38
+maxofthree = 4347.38
+time = 5.28262
+timeStep = 3.05176e-05
+
+maxAll = 3.15952
+maxLiquid = 316.293
+maxGas = 3260.58
+maxofthree = 3260.58
+time = 5.28265
+timeStep = 3.05176e-05
+
+maxAll = 3.15944
+maxLiquid = 293.405
+maxGas = 2608.44
+maxofthree = 2608.44
+time = 5.28268
+timeStep = 3.05176e-05
+
+maxAll = 3.15936
+maxLiquid = 273.263
+maxGas = 2173.63
+maxofthree = 2173.63
+time = 5.28271
+timeStep = 3.05176e-05
+
+maxAll = 3.15928
+maxLiquid = 255.412
+maxGas = 1863
+maxofthree = 1863
+time = 5.28275
+timeStep = 3.05176e-05
+
+maxAll = 3.1592
+maxLiquid = 239.493
+maxGas = 1629.98
+maxofthree = 1629.98
+time = 5.28278
+timeStep = 6.10352e-05
+
+maxAll = 6.31807
+maxLiquid = 424.401
+maxGas = 2607.28
+maxofthree = 2607.28
+time = 5.28284
+timeStep = 3.05176e-05
+
+maxAll = 3.15887
+maxLiquid = 189.844
+maxGas = 1085.94
+maxofthree = 1085.94
+time = 5.28287
+timeStep = 6.10352e-05
+
+maxAll = 6.31741
+maxLiquid = 342.449
+maxGas = 1860.6
+maxofthree = 1860.6
+time = 5.28293
+timeStep = 3.05176e-05
+
+maxAll = 3.15854
+maxLiquid = 155.5
+maxGas = 813.454
+maxofthree = 813.454
+time = 5.28296
+timeStep = 0.00012207
+
+maxAll = 12.6329
+maxLiquid = 521.017
+maxGas = 2598.23
+maxofthree = 2598.23
+time = 5.28308
+timeStep = 3.05176e-05
+
+maxAll = 3.15789
+maxLiquid = 111.14
+maxGas = 539.914
+maxofthree = 539.914
+time = 5.28311
+timeStep = 0.00012207
+
+maxAll = 12.6302
+maxLiquid = 384.857
+maxGas = 1844.99
+maxofthree = 1844.99
+time = 5.28323
+timeStep = 3.05176e-05
+
+maxAll = 3.15724
+maxLiquid = 84.2677
+maxGas = 401.922
+maxofthree = 401.922
+time = 5.28326
+timeStep = 0.000244141
+
+maxAll = 25.2527
+maxLiquid = 529.718
+maxGas = 2544.38
+maxofthree = 2544.38
+time = 5.28351
+timeStep = 3.05176e-05
+
+maxAll = 3.15593
+maxLiquid = 53.478
+maxGas = 261.126
+maxofthree = 261.126
+time = 5.28354
+timeStep = 0.000244141
+
+maxAll = 25.2422
+maxLiquid = 359.206
+maxGas = 1756.39
+maxofthree = 1756.39
+time = 5.28378
+timeStep = 3.05176e-05
+
+maxAll = 3.15463
+maxLiquid = 38.3278
+maxGas = 187.521
+maxofthree = 187.521
+time = 5.28381
+timeStep = 0.000488281
+
+maxAll = 50.4531
+maxLiquid = 458.539
+maxGas = 2249.68
+maxofthree = 2249.68
+time = 5.2843
+timeStep = 3.05176e-05
+
+maxAll = 3.15202
+maxLiquid = 21.9756
+maxGas = 106.856
+maxofthree = 106.856
+time = 5.28433
+timeStep = 0.000488281
+
+maxAll = 50.4115
+maxLiquid = 272.601
+maxGas = 1289.82
+maxofthree = 1289.82
+time = 5.28482
+timeStep = 6.10352e-05
+
+maxAll = 6.29624
+maxLiquid = 20.0353
+maxGas = 81.7876
+maxofthree = 81.7876
+time = 5.28488
+timeStep = 0.000976562
+
+maxAll = 100.574
+maxLiquid = 63.1846
+maxGas = 69.8999
+maxofthree = 100.574
+time = 5.28586
+timeStep = 0.000976562
+
+maxAll = 97.9124
+maxLiquid = 62.2716
+maxGas = 67.6421
+maxofthree = 97.9124
+time = 5.28683
+timeStep = 0.000976562
+
+maxAll = 95.4394
+maxLiquid = 61.396
+maxGas = 65.5864
+maxofthree = 95.4394
+time = 5.28781
+timeStep = 0.000976562
+
+maxAll = 93.1306
+maxLiquid = 60.555
+maxGas = 63.7058
+maxofthree = 93.1306
+time = 5.28879
+timeStep = 0.000976562
+
+maxAll = 90.9654
+maxLiquid = 59.7461
+maxGas = 61.978
+maxofthree = 90.9654
+time = 5.28976
+timeStep = 0.000976562
+
+maxAll = 88.9267
+maxLiquid = 58.9669
+maxGas = 60.3843
+maxofthree = 88.9267
+time = 5.29074
+timeStep = 0.000976562
+
+maxAll = 86.9995
+maxLiquid = 58.2154
+maxGas = 58.9087
+maxofthree = 86.9995
+time = 5.29172
+timeStep = 0.000976562
+
+maxAll = 85.1714
+maxLiquid = 57.4898
+maxGas = 57.5471
+maxofthree = 85.1714
+time = 5.29269
+timeStep = 0.000976562
+
+maxAll = 83.4314
+maxLiquid = 56.7882
+maxGas = 56.3294
+maxofthree = 83.4314
+time = 5.29367
+timeStep = 0.000976562
+
+maxAll = 81.77
+maxLiquid = 56.1091
+maxGas = 55.1879
+maxofthree = 81.77
+time = 5.29465
+timeStep = 0.000976562
+
+maxAll = 80.1791
+maxLiquid = 55.4511
+maxGas = 54.1151
+maxofthree = 80.1791
+time = 5.29562
+timeStep = 0.000976562
+
+maxAll = 78.6513
+maxLiquid = 54.8128
+maxGas = 53.2834
+maxofthree = 78.6513
+time = 5.2966
+timeStep = 0.000976562
+
+maxAll = 77.1805
+maxLiquid = 54.193
+maxGas = 52.5646
+maxofthree = 77.1805
+time = 5.29758
+timeStep = 0.000976562
+
+maxAll = 75.7611
+maxLiquid = 53.5906
+maxGas = 51.8672
+maxofthree = 75.7611
+time = 5.29855
+timeStep = 0.000976562
+
+maxAll = 74.3882
+maxLiquid = 53.0046
+maxGas = 51.1897
+maxofthree = 74.3882
+time = 5.29953
+timeStep = 0.000976562
+
+maxAll = 73.0575
+maxLiquid = 52.434
+maxGas = 50.5306
+maxofthree = 73.0575
+time = 5.30051
+timeStep = 0.000976562
+
+maxAll = 71.7651
+maxLiquid = 51.8779
+maxGas = 49.8888
+maxofthree = 71.7651
+time = 5.30148
+timeStep = 0.000976562
+
+maxAll = 70.5076
+maxLiquid = 51.3355
+maxGas = 49.2631
+maxofthree = 70.5076
+time = 5.30246
+timeStep = 0.000976562
+
+maxAll = 69.282
+maxLiquid = 50.8061
+maxGas = 48.6524
+maxofthree = 69.282
+time = 5.30344
+timeStep = 0.000976562
+
+maxAll = 68.0856
+maxLiquid = 50.2889
+maxGas = 48.0558
+maxofthree = 68.0856
+time = 5.30441
+timeStep = 0.000976562
+
+maxAll = 66.9159
+maxLiquid = 49.7834
+maxGas = 47.4724
+maxofthree = 66.9159
+time = 5.30539
+timeStep = 0.000976562
+
+maxAll = 65.771
+maxLiquid = 49.2888
+maxGas = 46.9014
+maxofthree = 65.771
+time = 5.30637
+timeStep = 0.000976562
+
+maxAll = 64.6487
+maxLiquid = 48.8047
+maxGas = 46.342
+maxofthree = 64.6487
+time = 5.30734
+timeStep = 0.000976562
+
+maxAll = 63.5476
+maxLiquid = 48.3305
+maxGas = 45.7936
+maxofthree = 63.5476
+time = 5.30832
+timeStep = 0.000976562
+
+maxAll = 62.47
+maxLiquid = 47.8657
+maxGas = 45.2555
+maxofthree = 62.47
+time = 5.3093
+timeStep = 0.000976562
+
+maxAll = 61.6247
+maxLiquid = 47.4099
+maxGas = 44.7272
+maxofthree = 61.6247
+time = 5.31027
+timeStep = 0.000976562
+
+maxAll = 60.8011
+maxLiquid = 46.9625
+maxGas = 44.2083
+maxofthree = 60.8011
+time = 5.31125
+timeStep = 0.000976562
+
+maxAll = 59.9978
+maxLiquid = 46.5233
+maxGas = 43.6981
+maxofthree = 59.9978
+time = 5.31223
+timeStep = 0.000976562
+
+maxAll = 59.2134
+maxLiquid = 46.0918
+maxGas = 43.1963
+maxofthree = 59.2134
+time = 5.3132
+timeStep = 0.000976562
+
+maxAll = 58.4632
+maxLiquid = 45.6678
+maxGas = 42.7024
+maxofthree = 58.4632
+time = 5.31418
+timeStep = 0.000976562
+
+maxAll = 57.7939
+maxLiquid = 45.2507
+maxGas = 42.2162
+maxofthree = 57.7939
+time = 5.31516
+timeStep = 0.000976562
+
+maxAll = 57.1423
+maxLiquid = 44.8404
+maxGas = 41.7372
+maxofthree = 57.1423
+time = 5.31613
+timeStep = 0.000976562
+
+maxAll = 56.5074
+maxLiquid = 44.4366
+maxGas = 41.2651
+maxofthree = 56.5074
+time = 5.31711
+timeStep = 0.000976562
+
+maxAll = 55.8881
+maxLiquid = 44.0389
+maxGas = 40.7998
+maxofthree = 55.8881
+time = 5.31808
+timeStep = 0.000976562
+
+maxAll = 55.2837
+maxLiquid = 43.6471
+maxGas = 40.3408
+maxofthree = 55.2837
+time = 5.31906
+timeStep = 0.000976562
+
+maxAll = 54.6933
+maxLiquid = 43.261
+maxGas = 39.888
+maxofthree = 54.6933
+time = 5.32004
+timeStep = 0.000976562
+
+maxAll = 54.1162
+maxLiquid = 42.8803
+maxGas = 39.4412
+maxofthree = 54.1162
+time = 5.32101
+timeStep = 0.000976562
+
+maxAll = 53.5515
+maxLiquid = 42.5048
+maxGas = 39.0001
+maxofthree = 53.5515
+time = 5.32199
+timeStep = 0.000976562
+
+maxAll = 52.9986
+maxLiquid = 42.1343
+maxGas = 38.5645
+maxofthree = 52.9986
+time = 5.32297
+timeStep = 0.000976562
+
+maxAll = 52.457
+maxLiquid = 41.7687
+maxGas = 38.1344
+maxofthree = 52.457
+time = 5.32394
+timeStep = 0.000976562
+
+maxAll = 51.9261
+maxLiquid = 41.4076
+maxGas = 37.7095
+maxofthree = 51.9261
+time = 5.32492
+timeStep = 0.000976562
+
+maxAll = 51.4052
+maxLiquid = 41.051
+maxGas = 37.2897
+maxofthree = 51.4052
+time = 5.3259
+timeStep = 0.000976562
+
+maxAll = 50.894
+maxLiquid = 40.6987
+maxGas = 36.8748
+maxofthree = 50.894
+time = 5.32687
+timeStep = 0.00195312
+
+maxAll = 99.765
+maxLiquid = 79.9927
+maxGas = 72.0907
+maxofthree = 99.765
+time = 5.32883
+timeStep = 0.000976562
+
+maxAll = 48.9053
+maxLiquid = 39.3098
+maxGas = 35.2347
+maxofthree = 48.9053
+time = 5.3298
+timeStep = 0.00195312
+
+maxAll = 95.9186
+maxLiquid = 77.2753
+maxGas = 68.884
+maxofthree = 95.9186
+time = 5.33176
+timeStep = 0.000976562
+
+maxAll = 47.0416
+maxLiquid = 37.9792
+maxGas = 33.6668
+maxofthree = 47.0416
+time = 5.33273
+timeStep = 0.00195312
+
+maxAll = 92.2994
+maxLiquid = 74.667
+maxGas = 66.19
+maxofthree = 92.2994
+time = 5.33469
+timeStep = 0.000976562
+
+maxAll = 45.2816
+maxLiquid = 36.6998
+maxGas = 32.5536
+maxofthree = 45.2816
+time = 5.33566
+timeStep = 0.00195312
+
+maxAll = 88.8706
+maxLiquid = 72.1544
+maxGas = 64.0598
+maxofthree = 88.8706
+time = 5.33762
+timeStep = 0.000976562
+
+maxAll = 43.6091
+maxLiquid = 35.4654
+maxGas = 31.5228
+maxofthree = 43.6091
+time = 5.33859
+timeStep = 0.00195312
+
+maxAll = 85.6031
+maxLiquid = 69.7271
+maxGas = 62.0623
+maxofthree = 85.6031
+time = 5.34055
+timeStep = 0.000976562
+
+maxAll = 42.0114
+maxLiquid = 34.2714
+maxGas = 30.5539
+maxofthree = 42.0114
+time = 5.34152
+timeStep = 0.00195312
+
+maxAll = 82.4747
+maxLiquid = 67.3766
+maxGas = 60.1803
+maxofthree = 82.4747
+time = 5.34348
+timeStep = 0.000976562
+
+maxAll = 40.4785
+maxLiquid = 33.114
+maxGas = 29.6391
+maxofthree = 40.4785
+time = 5.34445
+timeStep = 0.00195312
+
+maxAll = 79.4676
+maxLiquid = 65.0962
+maxGas = 58.4
+maxofthree = 79.4676
+time = 5.34641
+timeStep = 0.000976562
+
+maxAll = 39.0026
+maxLiquid = 31.9903
+maxGas = 28.7722
+maxofthree = 39.0026
+time = 5.34738
+timeStep = 0.00195312
+
+maxAll = 76.5682
+maxLiquid = 62.8807
+maxGas = 56.71
+maxofthree = 76.5682
+time = 5.34933
+timeStep = 0.000976562
+
+maxAll = 37.5777
+maxLiquid = 30.898
+maxGas = 27.9479
+maxofthree = 37.5777
+time = 5.35031
+timeStep = 0.00195312
+
+maxAll = 73.7657
+maxLiquid = 60.7261
+maxGas = 55.1009
+maxofthree = 73.7657
+time = 5.35226
+timeStep = 0.000976562
+
+maxAll = 36.1991
+maxLiquid = 29.8354
+maxGas = 27.1621
+maxofthree = 36.1991
+time = 5.35324
+timeStep = 0.00195312
+
+maxAll = 71.052
+maxLiquid = 58.6293
+maxGas = 53.5649
+maxofthree = 71.052
+time = 5.35519
+timeStep = 0.000976562
+
+maxAll = 34.8632
+maxLiquid = 28.801
+maxGas = 26.4111
+maxofthree = 34.8632
+time = 5.35617
+timeStep = 0.00195312
+
+maxAll = 68.4207
+maxLiquid = 56.5881
+maxGas = 52.0954
+maxofthree = 68.4207
+time = 5.35812
+timeStep = 0.000976562
+
+maxAll = 33.5673
+maxLiquid = 27.794
+maxGas = 25.6919
+maxofthree = 33.5673
+time = 5.3591
+timeStep = 0.00195312
+
+maxAll = 65.8674
+maxLiquid = 54.6009
+maxGas = 50.6867
+maxofthree = 65.8674
+time = 5.36105
+timeStep = 0.000976562
+
+maxAll = 32.3094
+maxLiquid = 26.8137
+maxGas = 25.0018
+maxofthree = 32.3094
+time = 5.36203
+timeStep = 0.00195312
+
+maxAll = 63.3886
+maxLiquid = 52.6666
+maxGas = 49.3341
+maxofthree = 63.3886
+time = 5.36398
+timeStep = 0.000976562
+
+maxAll = 31.0883
+maxLiquid = 25.8596
+maxGas = 24.3387
+maxofthree = 31.0883
+time = 5.36496
+timeStep = 0.00195312
+
+maxAll = 60.9823
+maxLiquid = 50.7846
+maxGas = 48.0332
+maxofthree = 60.9823
+time = 5.36691
+timeStep = 0.000976562
+
+maxAll = 29.9029
+maxLiquid = 24.9316
+maxGas = 23.7005
+maxofthree = 29.9029
+time = 5.36789
+timeStep = 0.00195312
+
+maxAll = 58.6469
+maxLiquid = 48.9544
+maxGas = 46.7805
+maxofthree = 58.6469
+time = 5.36984
+timeStep = 0.000976562
+
+maxAll = 28.7528
+maxLiquid = 24.0294
+maxGas = 23.0896
+maxofthree = 28.7528
+time = 5.37082
+timeStep = 0.00195312
+
+maxAll = 56.3817
+maxLiquid = 47.1759
+maxGas = 45.5961
+maxofthree = 56.3817
+time = 5.37277
+timeStep = 0.000976562
+
+maxAll = 27.6376
+maxLiquid = 23.1531
+maxGas = 22.5116
+maxofthree = 27.6376
+time = 5.37375
+timeStep = 0.00195312
+
+maxAll = 54.1862
+maxLiquid = 45.4492
+maxGas = 44.46
+maxofthree = 54.1862
+time = 5.3757
+timeStep = 0.000976562
+
+maxAll = 26.5573
+maxLiquid = 22.3027
+maxGas = 21.9532
+maxofthree = 26.5573
+time = 5.37668
+timeStep = 0.00195312
+
+maxAll = 52.0605
+maxLiquid = 43.7743
+maxGas = 43.3621
+maxofthree = 52.0605
+time = 5.37863
+timeStep = 0.000976562
+
+maxAll = 25.5119
+maxLiquid = 21.4782
+maxGas = 21.4134
+maxofthree = 25.5119
+time = 5.37961
+timeStep = 0.00390625
+
+maxAll = 97.873
+maxLiquid = 84.0878
+maxGas = 83.5288
+maxofthree = 97.873
+time = 5.38351
+timeStep = 0.000976562
+
+maxAll = 23.4614
+maxLiquid = 20.6101
+maxGas = 20.368
+maxofthree = 23.4614
+time = 5.38449
+timeStep = 0.00390625
+
+maxAll = 91.6173
+maxLiquid = 80.8341
+maxGas = 79.4798
+maxofthree = 91.6173
+time = 5.3884
+timeStep = 0.000976562
+
+maxAll = 22.4306
+maxLiquid = 19.8172
+maxGas = 19.3873
+maxofthree = 22.4306
+time = 5.38937
+timeStep = 0.00390625
+
+maxAll = 87.8847
+maxLiquid = 77.7393
+maxGas = 75.6768
+maxofthree = 87.8847
+time = 5.39328
+timeStep = 0.000976562
+
+maxAll = 21.5252
+maxLiquid = 19.0615
+maxGas = 18.4651
+maxofthree = 21.5252
+time = 5.39426
+timeStep = 0.00390625
+
+maxAll = 84.3673
+maxLiquid = 74.7842
+maxGas = 72.0977
+maxofthree = 84.3673
+time = 5.39816
+timeStep = 0.000976562
+
+maxAll = 20.6704
+maxLiquid = 18.3386
+maxGas = 17.5966
+maxofthree = 20.6704
+time = 5.39914
+timeStep = 0.00390625
+
+maxAll = 81.0408
+maxLiquid = 71.9525
+maxGas = 69.0088
+maxofthree = 81.0408
+time = 5.40305
+timeStep = 0.000976562
+
+maxAll = 19.8606
+maxLiquid = 17.6447
+maxGas = 16.9649
+maxofthree = 19.8606
+time = 5.40402
+timeStep = 0.00390625
+
+maxAll = 77.8841
+maxLiquid = 69.2299
+maxGas = 66.7459
+maxofthree = 77.8841
+time = 5.40793
+timeStep = 0.000976562
+
+maxAll = 19.0909
+maxLiquid = 16.9765
+maxGas = 16.4166
+maxofthree = 19.0909
+time = 5.40891
+timeStep = 0.00390625
+
+maxAll = 74.8794
+maxLiquid = 66.6042
+maxGas = 64.6188
+maxofthree = 74.8794
+time = 5.41281
+timeStep = 0.000976562
+
+maxAll = 18.3573
+maxLiquid = 16.3312
+maxGas = 15.9006
+maxofthree = 18.3573
+time = 5.41379
+timeStep = 0.00390625
+
+maxAll = 72.0111
+maxLiquid = 64.0648
+maxGas = 62.615
+maxofthree = 72.0111
+time = 5.41769
+timeStep = 0.000976562
+
+maxAll = 17.656
+maxLiquid = 15.7062
+maxGas = 15.4139
+maxofthree = 17.656
+time = 5.41867
+timeStep = 0.00390625
+
+maxAll = 69.2658
+maxLiquid = 61.6023
+maxGas = 60.7232
+maxofthree = 69.2658
+time = 5.42258
+timeStep = 0.000976562
+
+maxAll = 16.9839
+maxLiquid = 15.0994
+maxGas = 14.9541
+maxofthree = 16.9839
+time = 5.42355
+timeStep = 0.00390625
+
+maxAll = 66.6317
+maxLiquid = 59.2089
+maxGas = 58.934
+maxofthree = 66.6317
+time = 5.42746
+timeStep = 0.000976562
+
+maxAll = 16.3383
+maxLiquid = 14.509
+maxGas = 14.5188
+maxofthree = 16.3383
+time = 5.42844
+timeStep = 0.00390625
+
+maxAll = 64.0985
+maxLiquid = 56.8776
+maxGas = 57.2386
+maxofthree = 64.0985
+time = 5.43234
+timeStep = 0.000976562
+
+maxAll = 15.7167
+maxLiquid = 13.9333
+maxGas = 14.1059
+maxofthree = 15.7167
+time = 5.43332
+timeStep = 0.00390625
+
+maxAll = 61.6572
+maxLiquid = 54.6028
+maxGas = 55.6294
+maxofthree = 61.6572
+time = 5.43723
+timeStep = 0.000976562
+
+maxAll = 15.1171
+maxLiquid = 13.3711
+maxGas = 13.7138
+maxofthree = 15.1171
+time = 5.4382
+timeStep = 0.00390625
+
+maxAll = 59.3
+maxLiquid = 52.3796
+maxGas = 54.0997
+maxofthree = 59.3
+time = 5.44211
+timeStep = 0.000976562
+
+maxAll = 14.5377
+maxLiquid = 12.8213
+maxGas = 13.3407
+maxofthree = 14.5377
+time = 5.44308
+timeStep = 0.00390625
+
+maxAll = 57.0199
+maxLiquid = 50.2041
+maxGas = 52.6432
+maxofthree = 57.0199
+time = 5.44699
+timeStep = 0.000976562
+
+maxAll = 13.9767
+maxLiquid = 12.283
+maxGas = 12.9852
+maxofthree = 13.9767
+time = 5.44797
+timeStep = 0.00390625
+
+maxAll = 54.8109
+maxLiquid = 48.0732
+maxGas = 51.2545
+maxofthree = 54.8109
+time = 5.45187
+timeStep = 0.000976562
+
+maxAll = 13.4329
+maxLiquid = 11.7555
+maxGas = 12.646
+maxofthree = 13.4329
+time = 5.45285
+timeStep = 0.00390625
+
+maxAll = 52.6679
+maxLiquid = 45.9846
+maxGas = 49.9286
+maxofthree = 52.6679
+time = 5.45676
+timeStep = 0.000976562
+
+maxAll = 12.9049
+maxLiquid = 11.2384
+maxGas = 12.3219
+maxofthree = 12.9049
+time = 5.45773
+timeStep = 0.00390625
+
+maxAll = 50.5863
+maxLiquid = 43.9367
+maxGas = 48.6608
+maxofthree = 50.5863
+time = 5.46164
+timeStep = 0.00195312
+
+maxAll = 24.2565
+maxLiquid = 20.9372
+maxGas = 23.7161
+maxofthree = 24.2565
+time = 5.46359
+timeStep = 0.00390625
+
+maxAll = 46.4956
+maxLiquid = 40.0908
+maxGas = 46.2551
+maxofthree = 46.4956
+time = 5.4675
+timeStep = 0.00195312
+
+maxAll = 22.462
+maxLiquid = 19.4128
+maxGas = 22.5629
+maxofthree = 22.5629
+time = 5.46945
+timeStep = 0.00390625
+
+maxAll = 43.8756
+maxLiquid = 37.583
+maxGas = 44.0413
+maxofthree = 44.0413
+time = 5.47336
+timeStep = 0.00195312
+
+maxAll = 21.4349
+maxLiquid = 18.1802
+maxGas = 21.4991
+maxofthree = 21.4991
+time = 5.47531
+timeStep = 0.00390625
+
+maxAll = 41.9015
+maxLiquid = 35.1571
+maxGas = 41.994
+maxofthree = 41.994
+time = 5.47922
+timeStep = 0.00195312
+
+maxAll = 20.4854
+maxLiquid = 16.9853
+maxGas = 20.5129
+maxofthree = 20.5129
+time = 5.48117
+timeStep = 0.00390625
+
+maxAll = 40.0727
+maxLiquid = 32.8013
+maxGas = 40.0914
+maxofthree = 40.0914
+time = 5.48508
+timeStep = 0.00195312
+
+maxAll = 19.604
+maxLiquid = 15.8232
+maxGas = 19.5942
+maxofthree = 19.604
+time = 5.48703
+timeStep = 0.00390625
+
+maxAll = 38.3713
+maxLiquid = 30.5076
+maxGas = 38.3151
+maxofthree = 38.3713
+time = 5.49094
+timeStep = 0.00195312
+
+maxAll = 18.7823
+maxLiquid = 14.691
+maxGas = 18.7347
+maxofthree = 18.7823
+time = 5.49289
+timeStep = 0.00390625
+
+maxAll = 36.7819
+maxLiquid = 28.2721
+maxGas = 36.6494
+maxofthree = 36.7819
+time = 5.4968
+timeStep = 0.00195312
+
+maxAll = 18.0131
+maxLiquid = 13.5873
+maxGas = 17.9269
+maxofthree = 18.0131
+time = 5.49875
+timeStep = 0.00390625
+
+maxAll = 35.2912
+maxLiquid = 26.0936
+maxGas = 35.0807
+maxofthree = 35.2912
+time = 5.50266
+timeStep = 0.00195312
+
+maxAll = 17.2903
+maxLiquid = 12.5126
+maxGas = 17.1645
+maxofthree = 17.2903
+time = 5.50461
+timeStep = 0.00390625
+
+maxAll = 33.8874
+maxLiquid = 23.9742
+maxGas = 33.5974
+maxofthree = 33.8874
+time = 5.50851
+timeStep = 0.00195312
+
+maxAll = 16.6082
+maxLiquid = 11.4682
+maxGas = 16.4423
+maxofthree = 16.6082
+time = 5.51047
+timeStep = 0.00390625
+
+maxAll = 32.5603
+maxLiquid = 21.9179
+maxGas = 32.1895
+maxofthree = 32.5603
+time = 5.51437
+timeStep = 0.00195312
+
+maxAll = 15.9623
+maxLiquid = 10.4567
+maxGas = 15.7555
+maxofthree = 15.9623
+time = 5.51633
+timeStep = 0.00390625
+
+maxAll = 31.301
+maxLiquid = 19.93
+maxGas = 30.8484
+maxofthree = 31.301
+time = 5.52023
+timeStep = 0.00195312
+
+maxAll = 15.3482
+maxLiquid = 9.48141
+maxGas = 15.1003
+maxofthree = 15.3482
+time = 5.52219
+timeStep = 0.00390625
+
+maxAll = 30.1015
+maxLiquid = 18.1753
+maxGas = 29.5669
+maxofthree = 30.1015
+time = 5.52609
+timeStep = 0.00195312
+
+maxAll = 14.7622
+maxLiquid = 8.69306
+maxGas = 14.4732
+maxofthree = 14.7622
+time = 5.52805
+timeStep = 0.00390625
+
+maxAll = 28.9549
+maxLiquid = 16.6301
+maxGas = 28.3387
+maxofthree = 28.9549
+time = 5.53195
+timeStep = 0.00195312
+
+maxAll = 14.201
+maxLiquid = 7.93579
+maxGas = 13.8715
+maxofthree = 14.201
+time = 5.53391
+timeStep = 0.00390625
+
+maxAll = 27.8548
+maxLiquid = 15.1481
+maxGas = 27.1587
+maxofthree = 27.8548
+time = 5.53781
+timeStep = 0.00195312
+
+maxAll = 13.6618
+maxLiquid = 7.21084
+maxGas = 13.2927
+maxofthree = 13.6618
+time = 5.53976
+timeStep = 0.00390625
+
+maxAll = 26.796
+maxLiquid = 14.0347
+maxGas = 26.0225
+maxofthree = 26.796
+time = 5.54367
+timeStep = 0.00195312
+
+maxAll = 13.1419
+maxLiquid = 6.92975
+maxGas = 12.7349
+maxofthree = 13.1419
+time = 5.54562
+timeStep = 0.00390625
+
+maxAll = 25.7736
+maxLiquid = 13.6884
+maxGas = 24.9267
+maxofthree = 25.7736
+time = 5.54953
+timeStep = 0.00195312
+
+maxAll = 12.6392
+maxLiquid = 6.76073
+maxGas = 12.1965
+maxofthree = 12.6392
+time = 5.55148
+timeStep = 0.0078125
+
+maxAll = 48.5513
+maxLiquid = 26.3751
+maxGas = 46.6607
+maxofthree = 48.5513
+time = 5.5593
+timeStep = 0.00195312
+
+maxAll = 11.6631
+maxLiquid = 6.43514
+maxGas = 11.1514
+maxofthree = 11.6631
+time = 5.56125
+timeStep = 0.0078125
+
+maxAll = 44.7462
+maxLiquid = 25.1366
+maxGas = 42.8026
+maxofthree = 44.7462
+time = 5.56906
+timeStep = 0.00195312
+
+maxAll = 10.7365
+maxLiquid = 6.14025
+maxGas = 10.2581
+maxofthree = 10.7365
+time = 5.57101
+timeStep = 0.0078125
+
+maxAll = 41.1183
+maxLiquid = 24.0116
+maxGas = 39.3866
+maxofthree = 41.1183
+time = 5.57883
+timeStep = 0.00195312
+
+maxAll = 9.8502
+maxLiquid = 5.87165
+maxGas = 9.4241
+maxofthree = 9.8502
+time = 5.58078
+timeStep = 0.0078125
+
+maxAll = 37.6369
+maxLiquid = 22.9842
+maxGas = 36.3578
+maxofthree = 37.6369
+time = 5.58859
+timeStep = 0.00195312
+
+maxAll = 8.99796
+maxLiquid = 5.62578
+maxGas = 8.78948
+maxofthree = 8.99796
+time = 5.59055
+timeStep = 0.0078125
+
+maxAll = 34.2837
+maxLiquid = 22.0417
+maxGas = 33.966
+maxofthree = 34.2837
+time = 5.59836
+timeStep = 0.00195312
+
+maxAll = 8.1766
+maxLiquid = 5.39973
+maxGas = 8.20746
+maxofthree = 8.20746
+time = 5.60031
+timeStep = 0.0078125
+
+maxAll = 31.051
+maxLiquid = 21.1734
+maxGas = 31.693
+maxofthree = 31.693
+time = 5.60812
+timeStep = 0.00195312
+
+maxAll = 7.3853
+maxLiquid = 5.1911
+maxGas = 7.65324
+maxofthree = 7.65324
+time = 5.61008
+timeStep = 0.0078125
+
+maxAll = 27.9397
+maxLiquid = 20.3707
+maxGas = 29.5243
+maxofthree = 29.5243
+time = 5.61789
+timeStep = 0.00195312
+
+maxAll = 6.62508
+maxLiquid = 4.9979
+maxGas = 7.12364
+maxofthree = 7.12364
+time = 5.61984
+timeStep = 0.0078125
+
+maxAll = 24.9567
+maxLiquid = 19.6261
+maxGas = 27.4491
+maxofthree = 27.4491
+time = 5.62766
+timeStep = 0.00195312
+
+maxAll = 5.89825
+maxLiquid = 4.8184
+maxGas = 6.61642
+maxofthree = 6.61642
+time = 5.62961
+timeStep = 0.0078125
+
+maxAll = 22.1132
+maxLiquid = 18.9333
+maxGas = 25.4602
+maxofthree = 25.4602
+time = 5.63742
+timeStep = 0.00390625
+
+maxAll = 9.7452
+maxLiquid = 9.12235
+maxGas = 11.7698
+maxofthree = 11.7698
+time = 5.64133
+timeStep = 0.0078125
+
+maxAll = 17.6186
+maxLiquid = 17.6093
+maxGas = 21.6679
+maxofthree = 21.6679
+time = 5.64914
+timeStep = 0.00390625
+
+maxAll = 8.51721
+maxLiquid = 8.5099
+maxGas = 9.9545
+maxofthree = 9.9545
+time = 5.65305
+timeStep = 0.0078125
+
+maxAll = 16.4927
+maxLiquid = 16.4704
+maxGas = 18.1984
+maxofthree = 18.1984
+time = 5.66086
+timeStep = 0.00390625
+
+maxAll = 7.99405
+maxLiquid = 7.97815
+maxGas = 8.30155
+maxofthree = 8.30155
+time = 5.66476
+timeStep = 0.0078125
+
+maxAll = 15.5163
+maxLiquid = 15.4735
+maxGas = 15.2485
+maxofthree = 15.5163
+time = 5.67258
+timeStep = 0.00390625
+
+maxAll = 7.5369
+maxLiquid = 7.50936
+maxGas = 7.43004
+maxofthree = 7.5369
+time = 5.67648
+timeStep = 0.0078125
+
+maxAll = 14.6576
+maxLiquid = 14.589
+maxGas = 14.4924
+maxofthree = 14.6576
+time = 5.6843
+timeStep = 0.00390625
+
+maxAll = 7.13251
+maxLiquid = 7.12071
+maxGas = 7.07189
+maxofthree = 7.13251
+time = 5.6882
+timeStep = 0.0078125
+
+maxAll = 13.894
+maxLiquid = 13.913
+maxGas = 13.8125
+maxofthree = 13.913
+time = 5.69601
+timeStep = 0.00390625
+
+maxAll = 6.77124
+maxLiquid = 6.79939
+maxGas = 6.74844
+maxofthree = 6.79939
+time = 5.69992
+timeStep = 0.0078125
+
+maxAll = 13.2088
+maxLiquid = 13.298
+maxGas = 13.203
+maxofthree = 13.298
+time = 5.70773
+timeStep = 0.00390625
+
+maxAll = 6.44566
+maxLiquid = 6.5046
+maxGas = 6.46235
+maxofthree = 6.5046
+time = 5.71164
+timeStep = 0.0078125
+
+maxAll = 12.5888
+maxLiquid = 12.7317
+maxGas = 12.6575
+maxofthree = 12.7317
+time = 5.71945
+timeStep = 0.0078125
+
+maxAll = 11.9552
+maxLiquid = 12.1069
+maxGas = 12.0541
+maxofthree = 12.1069
+time = 5.72726
+timeStep = 0.0078125
+
+maxAll = 11.419
+maxLiquid = 11.5597
+maxGas = 11.5246
+maxofthree = 11.5597
+time = 5.73508
+timeStep = 0.0078125
+
+maxAll = 10.9376
+maxLiquid = 11.0689
+maxGas = 11.0493
+maxofthree = 11.0689
+time = 5.74289
+timeStep = 0.0078125
+
+maxAll = 10.4969
+maxLiquid = 10.6201
+maxGas = 10.6149
+maxofthree = 10.6201
+time = 5.7507
+timeStep = 0.0078125
+
+maxAll = 10.1263
+maxLiquid = 10.2037
+maxGas = 10.2627
+maxofthree = 10.2627
+time = 5.75851
+timeStep = 0.0078125
+
+maxAll = 9.7778
+maxLiquid = 9.81319
+maxGas = 9.93027
+maxofthree = 9.93027
+time = 5.76633
+timeStep = 0.0078125
+
+maxAll = 9.44773
+maxLiquid = 9.493
+maxGas = 9.61013
+maxofthree = 9.61013
+time = 5.77414
+timeStep = 0.0078125
+
+maxAll = 9.13349
+maxLiquid = 9.19
+maxGas = 9.30128
+maxofthree = 9.30128
+time = 5.78195
+timeStep = 0.0078125
+
+maxAll = 8.83317
+maxLiquid = 8.89719
+maxGas = 9.0029
+maxofthree = 9.0029
+time = 5.78976
+timeStep = 0.0078125
+
+maxAll = 8.54528
+maxLiquid = 8.61397
+maxGas = 8.71431
+maxofthree = 8.71431
+time = 5.79758
+timeStep = 0.0078125
+
+maxAll = 8.26866
+maxLiquid = 8.3398
+maxGas = 8.4349
+maxofthree = 8.4349
+time = 5.80539
+timeStep = 0.0078125
+
+maxAll = 8.00235
+maxLiquid = 8.07421
+maxGas = 8.16415
+maxofthree = 8.16415
+time = 5.8132
+timeStep = 0.0078125
+
+maxAll = 7.74558
+maxLiquid = 7.81677
+maxGas = 7.90161
+maxofthree = 7.90161
+time = 5.82101
+timeStep = 0.0078125
+
+maxAll = 7.49769
+maxLiquid = 7.56709
+maxGas = 7.64687
+maxofthree = 7.64687
+time = 5.82883
+timeStep = 0.0078125
+
+maxAll = 7.25814
+maxLiquid = 7.32483
+maxGas = 7.39958
+maxofthree = 7.39958
+time = 5.83664
+timeStep = 0.0078125
+
+maxAll = 7.02646
+maxLiquid = 7.08968
+maxGas = 7.15944
+maxofthree = 7.15944
+time = 5.84445
+timeStep = 0.0078125
+
+maxAll = 6.8728
+maxLiquid = 6.86137
+maxGas = 6.92618
+maxofthree = 6.92618
+time = 5.85226
+timeStep = 0.0078125
+
+maxAll = 6.86279
+maxLiquid = 6.63967
+maxGas = 6.70262
+maxofthree = 6.86279
+time = 5.86008
+timeStep = 0.0078125
+
+maxAll = 6.85128
+maxLiquid = 6.42436
+maxGas = 6.48957
+maxofthree = 6.85128
+time = 5.86789
+timeStep = 0.0078125
+
+maxAll = 6.83801
+maxLiquid = 6.21526
+maxGas = 6.28252
+maxofthree = 6.83801
+time = 5.8757
+timeStep = 0.0078125
+
+maxAll = 6.82271
+maxLiquid = 6.02419
+maxGas = 6.23381
+maxofthree = 6.82271
+time = 5.88351
+timeStep = 0.0078125
+
+maxAll = 6.80515
+maxLiquid = 6.03085
+maxGas = 6.23585
+maxofthree = 6.80515
+time = 5.89133
+timeStep = 0.0078125
+
+maxAll = 6.78508
+maxLiquid = 6.0339
+maxGas = 6.23421
+maxofthree = 6.78508
+time = 5.89914
+timeStep = 0.0078125
+
+maxAll = 6.76226
+maxLiquid = 6.03323
+maxGas = 6.22876
+maxofthree = 6.76226
+time = 5.90695
+timeStep = 0.0078125
+
+maxAll = 6.73647
+maxLiquid = 6.02871
+maxGas = 6.21935
+maxofthree = 6.73647
+time = 5.91476
+timeStep = 0.0078125
+
+maxAll = 6.7075
+maxLiquid = 6.02023
+maxGas = 6.20586
+maxofthree = 6.7075
+time = 5.92258
+timeStep = 0.0078125
+
+maxAll = 6.67512
+maxLiquid = 6.00767
+maxGas = 6.18815
+maxofthree = 6.67512
+time = 5.93039
+timeStep = 0.0078125
+
+maxAll = 6.63915
+maxLiquid = 5.99092
+maxGas = 6.16609
+maxofthree = 6.63915
+time = 5.9382
+timeStep = 0.0078125
+
+maxAll = 6.5994
+maxLiquid = 5.96987
+maxGas = 6.13958
+maxofthree = 6.5994
+time = 5.94601
+timeStep = 0.0078125
+
+maxAll = 6.5557
+maxLiquid = 5.94444
+maxGas = 6.10851
+maxofthree = 6.5557
+time = 5.95383
+timeStep = 0.0078125
+
+maxAll = 6.50788
+maxLiquid = 5.91453
+maxGas = 6.07279
+maxofthree = 6.50788
+time = 5.96164
+timeStep = 0.0078125
+
+maxAll = 6.45581
+maxLiquid = 5.88008
+maxGas = 6.03233
+maxofthree = 6.45581
+time = 5.96945
+timeStep = 0.0078125
+
+maxAll = 6.39936
+maxLiquid = 5.84102
+maxGas = 5.98709
+maxofthree = 6.39936
+time = 5.97726
+timeStep = 0.015625
+
+maxAll = 16.2117
+maxLiquid = 11.4833
+maxGas = 11.7481
+maxofthree = 16.2117
+time = 5.99289
+timeStep = 0.00390625
+
+maxAll = 3.09654
+maxLiquid = 2.84416
+maxGas = 2.90699
+maxofthree = 3.09654
+time = 5.9968
+timeStep = 0.03125
+
+maxAll = 52.4705
+maxLiquid = 22.2358
+maxGas = 22.6795
+maxofthree = 52.4705
+time = 6.02805
+timeStep = 0.000976562
+
+maxAll = 0.748432
+maxLiquid = 0.690909
+maxGas = 0.704329
+maxofthree = 0.748432
+time = 6.02902
+timeStep = 0.125
+
+maxAll = 261.091
+maxLiquid = 86.0044
+maxGas = 87.4648
+maxofthree = 261.091
+time = 6.15402
+timeStep = 0.000244141
+
+maxAll = 0.179767
+maxLiquid = 0.166816
+maxGas = 0.169541
+maxofthree = 0.179767
+time = 6.15427
+timeStep = 0.25
+
+maxAll = 586.911
+maxLiquid = 168.288
+maxGas = 170.798
+maxofthree = 586.911
+time = 6.40427
+timeStep = 0.00012207
+
+maxAll = 0.0875953
+maxLiquid = 0.0815554
+maxGas = 0.0827077
+maxofthree = 0.0875953
+time = 6.40439
+timeStep = 0.25
+
+maxAll = 679.103
+maxLiquid = 165.737
+maxGas = 167.942
+maxofthree = 679.103
+time = 6.65439
+timeStep = 0.00012207
+
+maxAll = 0.0860223
+maxLiquid = 0.0802786
+maxGas = 0.0812832
+maxofthree = 0.0860223
+time = 6.65451
+timeStep = 0.25
+
+maxAll = 727.43
+maxLiquid = 163.055
+maxGas = 165.05
+maxofthree = 727.43
+time = 6.90451
+timeStep = 0.00012207
+
+maxAll = 0.0843907
+maxLiquid = 0.078937
+maxGas = 0.079947
+maxofthree = 0.0843907
+time = 6.90463
+timeStep = 0.25
+
+maxAll = 757.114
+maxLiquid = 160.243
+maxGas = 162.383
+maxofthree = 757.114
+time = 7.15463
+timeStep = 0.00012207
+
+maxAll = 0.082704
+maxLiquid = 0.0775336
+maxGas = 0.0786135
+maxofthree = 0.082704
+time = 7.15475
+timeStep = 0.25
+
+maxAll = 777.212
+maxLiquid = 157.309
+maxGas = 159.59
+maxofthree = 777.212
+time = 7.40475
+timeStep = 0.00012207
+
+maxAll = 0.0809658
+maxLiquid = 0.0760731
+maxGas = 0.0772203
+maxofthree = 0.0809658
+time = 7.40488
+timeStep = 0.25
+
+maxAll = 791.78
+maxLiquid = 154.262
+maxGas = 156.679
+maxofthree = 791.78
+time = 7.65488
+timeStep = 0.00012207
+
+maxAll = 0.0791806
+maxLiquid = 0.0745603
+maxGas = 0.0757722
+maxofthree = 0.0791806
+time = 7.655
+timeStep = 0.25
+
+maxAll = 802.909
+maxLiquid = 151.114
+maxGas = 153.66
+maxofthree = 802.909
+time = 7.905
+timeStep = 0.00012207
+
+maxAll = 0.0773528
+maxLiquid = 0.0730002
+maxGas = 0.0742738
+maxofthree = 0.0773528
+time = 7.90512
+timeStep = 0.25
+
+maxAll = 811.785
+maxLiquid = 147.875
+maxGas = 150.544
+maxofthree = 811.785
+time = 8.15512
+timeStep = 0.00012207
+
+maxAll = 0.0754875
+maxLiquid = 0.0713981
+maxGas = 0.0727303
+maxofthree = 0.0754875
+time = 8.15524
+timeStep = 0.25
+
+maxAll = 819.133
+maxLiquid = 144.554
+maxGas = 147.34
+maxofthree = 819.133
+time = 8.40524
+timeStep = 0.00012207
+
+maxAll = 0.0736918
+maxLiquid = 0.0697591
+maxGas = 0.0711465
+maxofthree = 0.0736918
+time = 8.40536
+timeStep = 0.25
+
+maxAll = 825.416
+maxLiquid = 141.164
+maxGas = 144.059
+maxofthree = 825.416
+time = 8.65536
+timeStep = 6.10352e-05
+
+maxAll = 0.0361776
+maxLiquid = 0.0342572
+maxGas = 0.0349704
+maxofthree = 0.0361776
+time = 8.65543
+timeStep = 0.25
+
+maxAll = 844.635
+maxLiquid = 139.483
+maxGas = 142.431
+maxofthree = 844.635
+time = 8.90543
+timeStep = 6.10352e-05
+
+maxAll = 0.0357373
+maxLiquid = 0.033846
+maxGas = 0.0345719
+maxofthree = 0.0357373
+time = 8.90549
+timeStep = 0.25
+
+maxAll = 859.306
+maxLiquid = 137.793
+maxGas = 140.792
+maxofthree = 859.306
+time = 9.15549
+timeStep = 6.10352e-05
+
+maxAll = 0.035486
+maxLiquid = 0.0334321
+maxGas = 0.0341702
+maxofthree = 0.035486
+time = 9.15555
+timeStep = 0.25
+
+maxAll = 870.939
+maxLiquid = 136.091
+maxGas = 139.139
+maxofthree = 870.939
+time = 9.40555
+timeStep = 6.10352e-05
+
+maxAll = 0.0353208
+maxLiquid = 0.033015
+maxGas = 0.0337648
+maxofthree = 0.0353208
+time = 9.40561
+timeStep = 0.25
+
+maxAll = 880.444
+maxLiquid = 134.376
+maxGas = 137.47
+maxofthree = 880.444
+time = 9.65561
+timeStep = 6.10352e-05
+
+maxAll = 0.0351536
+maxLiquid = 0.0325949
+maxGas = 0.0333558
+maxofthree = 0.0351536
+time = 9.65567
+timeStep = 0.25
+
+maxAll = 888.404
+maxLiquid = 132.649
+maxGas = 135.788
+maxofthree = 888.404
+time = 9.90567
+timeStep = 6.10352e-05
+
+maxAll = 0.0349844
+maxLiquid = 0.032172
+maxGas = 0.0329436
+maxofthree = 0.0349844
+time = 9.90573
+timeStep = 0.25
+
+maxAll = 895.208
+maxLiquid = 130.911
+maxGas = 134.093
+maxofthree = 895.208
+time = 10.1557
+timeStep = 6.10352e-05
+
+maxAll = 0.0348131
+maxLiquid = 0.0317467
+maxGas = 0.0325284
+maxofthree = 0.0348131
+time = 10.1558
+timeStep = 0.25
+
+maxAll = 901.126
+maxLiquid = 129.165
+maxGas = 134.428
+maxofthree = 901.126
+time = 10.4058
+timeStep = 6.10352e-05
+
+maxAll = 0.0346399
+maxLiquid = 0.0313194
+maxGas = 0.0326916
+maxofthree = 0.0346399
+time = 10.4059
+timeStep = 0.25
+
+maxAll = 906.355
+maxLiquid = 127.411
+maxGas = 135.292
+maxofthree = 906.355
+time = 10.6559
+timeStep = 6.10352e-05
+
+maxAll = 0.0344647
+maxLiquid = 0.0308905
+maxGas = 0.0328989
+maxofthree = 0.0344647
+time = 10.6559
+timeStep = 0.25
+
+maxAll = 911.036
+maxLiquid = 125.651
+maxGas = 136.126
+maxofthree = 911.036
+time = 10.9059
+timeStep = 6.10352e-05
+
+maxAll = 0.0342876
+maxLiquid = 0.0304605
+maxGas = 0.0330989
+maxofthree = 0.0342876
+time = 10.906
+timeStep = 0.25
+
+maxAll = 915.277
+maxLiquid = 123.888
+maxGas = 136.93
+maxofthree = 915.277
+time = 11.156
+timeStep = 6.10352e-05
+
+maxAll = 0.0341084
+maxLiquid = 0.0300296
+maxGas = 0.0332913
+maxofthree = 0.0341084
+time = 11.156
+timeStep = 0.25
+
+maxAll = 919.161
+maxLiquid = 122.122
+maxGas = 137.703
+maxofthree = 919.161
+time = 11.406
+timeStep = 6.10352e-05
+
+maxAll = 0.0339272
+maxLiquid = 0.0295984
+maxGas = 0.033476
+maxofthree = 0.0339272
+time = 11.4061
+timeStep = 0.25
+
+maxAll = 922.752
+maxLiquid = 120.355
+maxGas = 138.443
+maxofthree = 922.752
+time = 11.6561
+timeStep = 6.10352e-05
+
+maxAll = 0.0337441
+maxLiquid = 0.029167
+maxGas = 0.0336528
+maxofthree = 0.0337441
+time = 11.6562
+timeStep = 0.25
+
+maxAll = 926.101
+maxLiquid = 118.588
+maxGas = 139.151
+maxofthree = 926.101
+time = 11.9062
+timeStep = 6.10352e-05
+
+maxAll = 0.033559
+maxLiquid = 0.028736
+maxGas = 0.0338215
+maxofthree = 0.0338215
+time = 11.9062
+timeStep = 0.25
+
+maxAll = 929.249
+maxLiquid = 116.824
+maxGas = 139.827
+maxofthree = 929.249
+time = 12.1562
+timeStep = 6.10352e-05
+
+maxAll = 0.0333719
+maxLiquid = 0.0283055
+maxGas = 0.0339823
+maxofthree = 0.0339823
+time = 12.1563
+timeStep = 0.25
+
+maxAll = 932.23
+maxLiquid = 115.062
+maxGas = 140.469
+maxofthree = 932.23
+time = 12.4063
+timeStep = 6.10352e-05
+
+maxAll = 0.0331828
+maxLiquid = 0.0278761
+maxGas = 0.0341352
+maxofthree = 0.0341352
+time = 12.4063
+timeStep = 0.25
+
+maxAll = 935.069
+maxLiquid = 113.306
+maxGas = 141.08
+maxofthree = 935.069
+time = 12.6563
+timeStep = 6.10352e-05
+
+maxAll = 0.0329917
+maxLiquid = 0.0274479
+maxGas = 0.0342801
+maxofthree = 0.0342801
+time = 12.6564
+timeStep = 0.25
+
+maxAll = 937.789
+maxLiquid = 111.555
+maxGas = 141.658
+maxofthree = 937.789
+time = 12.9064
+timeStep = 6.10352e-05
+
+maxAll = 0.0327987
+maxLiquid = 0.0270213
+maxGas = 0.0344174
+maxofthree = 0.0344174
+time = 12.9065
+timeStep = 0.25
+
+maxAll = 940.409
+maxLiquid = 109.94
+maxGas = 142.205
+maxofthree = 940.409
+time = 13.1565
+timeStep = 6.10352e-05
+
+maxAll = 0.0326037
+maxLiquid = 0.0267402
+maxGas = 0.0345472
+maxofthree = 0.0345472
+time = 13.1565
+timeStep = 0.25
+
+maxAll = 942.945
+maxLiquid = 109.118
+maxGas = 142.722
+maxofthree = 942.945
+time = 13.4065
+timeStep = 6.10352e-05
+
+maxAll = 0.0324068
+maxLiquid = 0.0265388
+maxGas = 0.0346697
+maxofthree = 0.0346697
+time = 13.4066
+timeStep = 0.25
+
+maxAll = 945.409
+maxLiquid = 108.29
+maxGas = 143.21
+maxofthree = 945.409
+time = 13.6566
+timeStep = 6.10352e-05
+
+maxAll = 0.032208
+maxLiquid = 0.0263359
+maxGas = 0.0347852
+maxofthree = 0.0347852
+time = 13.6566
+timeStep = 0.25
+
+maxAll = 947.812
+maxLiquid = 107.456
+maxGas = 143.669
+maxofthree = 947.812
+time = 13.9066
+timeStep = 6.10352e-05
+
+maxAll = 0.0320072
+maxLiquid = 0.0261316
+maxGas = 0.034894
+maxofthree = 0.034894
+time = 13.9067
+timeStep = 0.25
+
+maxAll = 950.164
+maxLiquid = 106.616
+maxGas = 144.102
+maxofthree = 950.164
+time = 14.1567
+timeStep = 6.10352e-05
+
+maxAll = 0.0318045
+maxLiquid = 0.0259258
+maxGas = 0.0349963
+maxofthree = 0.0349963
+time = 14.1568
+timeStep = 0.25
+
+maxAll = 952.472
+maxLiquid = 105.771
+maxGas = 144.509
+maxofthree = 952.472
+time = 14.4068
+timeStep = 6.10352e-05
+
+maxAll = 0.0315999
+maxLiquid = 0.0257188
+maxGas = 0.0350925
+maxofthree = 0.0350925
+time = 14.4068
+timeStep = 0.25
+
+maxAll = 954.744
+maxLiquid = 104.92
+maxGas = 144.891
+maxofthree = 954.744
+time = 14.6568
+timeStep = 6.10352e-05
+
+maxAll = 0.0313934
+maxLiquid = 0.0255105
+maxGas = 0.0351828
+maxofthree = 0.0351828
+time = 14.6569
+timeStep = 0.25
+
+maxAll = 956.985
+maxLiquid = 104.065
+maxGas = 145.249
+maxofthree = 956.985
+time = 14.9069
+timeStep = 6.10352e-05
+
+maxAll = 0.0311851
+maxLiquid = 0.025301
+maxGas = 0.0352676
+maxofthree = 0.0352676
+time = 14.907
+timeStep = 0.25
+
+maxAll = 959.201
+maxLiquid = 103.204
+maxGas = 145.586
+maxofthree = 959.201
+time = 15.157
+timeStep = 6.10352e-05
+
+maxAll = 0.030975
+maxLiquid = 0.0250903
+maxGas = 0.0353471
+maxofthree = 0.0353471
+time = 15.157
+timeStep = 0.25
+
+maxAll = 961.394
+maxLiquid = 102.34
+maxGas = 145.902
+maxofthree = 961.394
+time = 15.407
+timeStep = 6.10352e-05
+
+maxAll = 0.030763
+maxLiquid = 0.0248786
+maxGas = 0.0354217
+maxofthree = 0.0354217
+time = 15.4071
+timeStep = 0.25
+
+maxAll = 963.571
+maxLiquid = 101.471
+maxGas = 146.198
+maxofthree = 963.571
+time = 15.6571
+timeStep = 6.10352e-05
+
+maxAll = 0.0305493
+maxLiquid = 0.024666
+maxGas = 0.0354915
+maxofthree = 0.0354915
+time = 15.6571
+timeStep = 0.25
+
+maxAll = 965.732
+maxLiquid = 100.598
+maxGas = 146.475
+maxofthree = 965.732
+time = 15.9071
+timeStep = 6.10352e-05
+
+maxAll = 0.0303338
+maxLiquid = 0.0244524
+maxGas = 0.035557
+maxofthree = 0.035557
+time = 15.9072
+timeStep = 0.25
+
+maxAll = 967.882
+maxLiquid = 99.721
+maxGas = 146.735
+maxofthree = 967.882
+time = 16.1572
+timeStep = 6.10352e-05
+
+maxAll = 0.0301166
+maxLiquid = 0.0242379
+maxGas = 0.0356183
+maxofthree = 0.0356183
+time = 16.1573
+timeStep = 0.25
+
+maxAll = 970.022
+maxLiquid = 98.8411
+maxGas = 146.978
+maxofthree = 970.022
+time = 16.4073
+timeStep = 6.10352e-05
+
+maxAll = 0.0298977
+maxLiquid = 0.0240227
+maxGas = 0.0356758
+maxofthree = 0.0356758
+time = 16.4073
+timeStep = 0.25
+
+maxAll = 972.155
+maxLiquid = 97.9581
+maxGas = 147.206
+maxofthree = 972.155
+time = 16.6573
+timeStep = 6.10352e-05
+
+maxAll = 0.0296772
+maxLiquid = 0.0238067
+maxGas = 0.0357295
+maxofthree = 0.0357295
+time = 16.6574
+timeStep = 0.25
+
+maxAll = 974.282
+maxLiquid = 97.0724
+maxGas = 147.419
+maxofthree = 974.282
+time = 16.9074
+timeStep = 6.10352e-05
+
+maxAll = 0.0294551
+maxLiquid = 0.0235902
+maxGas = 0.0357799
+maxofthree = 0.0357799
+time = 16.9074
+timeStep = 0.25
+
+maxAll = 976.405
+maxLiquid = 96.1841
+maxGas = 147.619
+maxofthree = 976.405
+time = 17.1574
+timeStep = 6.10352e-05
+
+maxAll = 0.0292314
+maxLiquid = 0.023373
+maxGas = 0.0358269
+maxofthree = 0.0358269
+time = 17.1575
+timeStep = 0.25
+
+maxAll = 978.525
+maxLiquid = 95.2936
+maxGas = 147.806
+maxofthree = 978.525
+time = 17.4075
+timeStep = 6.10352e-05
+
+maxAll = 0.0290061
+maxLiquid = 0.0231553
+maxGas = 0.035871
+maxofthree = 0.035871
+time = 17.4076
+timeStep = 0.25
+
+maxAll = 980.644
+maxLiquid = 94.4012
+maxGas = 147.98
+maxofthree = 980.644
+time = 17.6576
+timeStep = 6.10352e-05
+
+maxAll = 0.0287794
+maxLiquid = 0.0229372
+maxGas = 0.0359122
+maxofthree = 0.0359122
+time = 17.6576
+timeStep = 0.25
+
+maxAll = 982.761
+maxLiquid = 93.5072
+maxGas = 148.144
+maxofthree = 982.761
+time = 17.9076
+timeStep = 6.10352e-05
+
+maxAll = 0.0285513
+maxLiquid = 0.0227187
+maxGas = 0.0359508
+maxofthree = 0.0359508
+time = 17.9077
+timeStep = 0.25
+
+maxAll = 984.879
+maxLiquid = 92.6118
+maxGas = 148.297
+maxofthree = 984.879
+time = 18.1577
+timeStep = 6.10352e-05
+
+maxAll = 0.0283217
+maxLiquid = 0.0225
+maxGas = 0.0359868
+maxofthree = 0.0359868
+time = 18.1577
+timeStep = 0.25
+
+maxAll = 986.998
+maxLiquid = 91.7154
+maxGas = 148.44
+maxofthree = 986.998
+time = 18.4077
+timeStep = 6.10352e-05
+
+maxAll = 0.0280908
+maxLiquid = 0.022281
+maxGas = 0.0360205
+maxofthree = 0.0360205
+time = 18.4078
+timeStep = 0.25
+
+maxAll = 989.119
+maxLiquid = 90.8182
+maxGas = 148.573
+maxofthree = 989.119
+time = 18.6578
+timeStep = 6.10352e-05
+
+maxAll = 0.0278587
+maxLiquid = 0.0220618
+maxGas = 0.0360521
+maxofthree = 0.0360521
+time = 18.6579
+timeStep = 0.25
+
+maxAll = 991.241
+maxLiquid = 89.9205
+maxGas = 148.698
+maxofthree = 991.241
+time = 18.9079
+timeStep = 6.10352e-05
+
+maxAll = 0.0276252
+maxLiquid = 0.0218426
+maxGas = 0.0360815
+maxofthree = 0.0360815
+time = 18.9079
+timeStep = 0.25
+
+maxAll = 993.365
+maxLiquid = 89.0225
+maxGas = 148.815
+maxofthree = 993.365
+time = 19.1579
+timeStep = 6.10352e-05
+
+maxAll = 0.0273906
+maxLiquid = 0.0216234
+maxGas = 0.036109
+maxofthree = 0.036109
+time = 19.158
+timeStep = 0.25
+
+maxAll = 995.493
+maxLiquid = 88.1247
+maxGas = 148.924
+maxofthree = 995.493
+time = 19.408
+timeStep = 6.10352e-05
+
+maxAll = 0.0271549
+maxLiquid = 0.0214042
+maxGas = 0.0361347
+maxofthree = 0.0361347
+time = 19.4081
+timeStep = 0.25
+
+maxAll = 997.623
+maxLiquid = 87.2273
+maxGas = 149.026
+maxofthree = 997.623
+time = 19.6581
+timeStep = 6.10352e-05
+
+maxAll = 0.0269181
+maxLiquid = 0.0211851
+maxGas = 0.0361587
+maxofthree = 0.0361587
+time = 19.6581
+timeStep = 0.25
+
+maxAll = 999.757
+maxLiquid = 86.3304
+maxGas = 149.121
+maxofthree = 999.757
+time = 19.9081
+timeStep = 6.10352e-05
+
+maxAll = 0.0266803
+maxLiquid = 0.0209662
+maxGas = 0.036181
+maxofthree = 0.036181
+time = 19.9082
+timeStep = 0.25
+
+maxAll = 1001.89
+maxLiquid = 85.4346
+maxGas = 149.209
+maxofthree = 1001.89
+time = 20.1582
+timeStep = 6.10352e-05
+
+maxAll = 0.0264415
+maxLiquid = 0.0207476
+maxGas = 0.0362019
+maxofthree = 0.0362019
+time = 20.1582
+timeStep = 0.25
+
+maxAll = 1004.03
+maxLiquid = 84.5399
+maxGas = 149.292
+maxofthree = 1004.03
+time = 20.4082
+timeStep = 6.10352e-05
+
+maxAll = 0.0262019
+maxLiquid = 0.0205293
+maxGas = 0.0362213
+maxofthree = 0.0362213
+time = 20.4083
+timeStep = 0.25
+
+maxAll = 1006.18
+maxLiquid = 83.6467
+maxGas = 149.369
+maxofthree = 1006.18
+time = 20.6583
+timeStep = 6.10352e-05
+
+maxAll = 0.0259614
+maxLiquid = 0.0203114
+maxGas = 0.0362394
+maxofthree = 0.0362394
+time = 20.6584
+timeStep = 0.25
+
+maxAll = 1008.33
+maxLiquid = 82.7552
+maxGas = 149.44
+maxofthree = 1008.33
+time = 20.9084
+timeStep = 6.10352e-05
+
+maxAll = 0.0257202
+maxLiquid = 0.020094
+maxGas = 0.0362562
+maxofthree = 0.0362562
+time = 20.9084
+timeStep = 0.25
+
+maxAll = 1010.48
+maxLiquid = 81.8657
+maxGas = 149.506
+maxofthree = 1010.48
+time = 21.1584
+timeStep = 6.10352e-05
+
+maxAll = 0.0254783
+maxLiquid = 0.0198771
+maxGas = 0.0362718
+maxofthree = 0.0362718
+time = 21.1585
+timeStep = 0.25
+
+maxAll = 1012.64
+maxLiquid = 80.9786
+maxGas = 149.568
+maxofthree = 1012.64
+time = 21.4085
+timeStep = 6.10352e-05
+
+maxAll = 0.0252357
+maxLiquid = 0.0196608
+maxGas = 0.0362863
+maxofthree = 0.0362863
+time = 21.4085
+timeStep = 0.25
+
+maxAll = 1014.8
+maxLiquid = 80.0939
+maxGas = 149.625
+maxofthree = 1014.8
+time = 21.6585
+timeStep = 6.10352e-05
+
+maxAll = 0.0249926
+maxLiquid = 0.0194451
+maxGas = 0.0362997
+maxofthree = 0.0362997
+time = 21.6586
+timeStep = 0.25
+
+maxAll = 1016.96
+maxLiquid = 79.2121
+maxGas = 149.678
+maxofthree = 1016.96
+time = 21.9086
+timeStep = 6.10352e-05
+
+maxAll = 0.024749
+maxLiquid = 0.0192301
+maxGas = 0.036312
+maxofthree = 0.036312
+time = 21.9087
+timeStep = 0.25
+
+maxAll = 1019.13
+maxLiquid = 78.3333
+maxGas = 149.727
+maxofthree = 1019.13
+time = 22.1587
+timeStep = 6.10352e-05
+
+maxAll = 0.024505
+maxLiquid = 0.0190159
+maxGas = 0.0363235
+maxofthree = 0.0363235
+time = 22.1587
+timeStep = 0.25
+
+maxAll = 1021.3
+maxLiquid = 77.4578
+maxGas = 149.772
+maxofthree = 1021.3
+time = 22.4087
+timeStep = 6.10352e-05
+
+maxAll = 0.0242606
+maxLiquid = 0.0188026
+maxGas = 0.0363339
+maxofthree = 0.0363339
+time = 22.4088
+timeStep = 0.25
+
+maxAll = 1023.48
+maxLiquid = 76.5859
+maxGas = 149.813
+maxofthree = 1023.48
+time = 22.6588
+timeStep = 6.10352e-05
+
+maxAll = 0.024016
+maxLiquid = 0.0185901
+maxGas = 0.0363435
+maxofthree = 0.0363435
+time = 22.6588
+timeStep = 0.25
+
+maxAll = 1025.66
+maxLiquid = 75.7177
+maxGas = 149.851
+maxofthree = 1025.66
+time = 22.9088
+timeStep = 6.10352e-05
+
+maxAll = 0.0237711
+maxLiquid = 0.0183786
+maxGas = 0.0363523
+maxofthree = 0.0363523
+time = 22.9089
+timeStep = 0.25
+
+maxAll = 1027.85
+maxLiquid = 74.8535
+maxGas = 149.885
+maxofthree = 1027.85
+time = 23.1589
+timeStep = 6.10352e-05
+
+maxAll = 0.0235261
+maxLiquid = 0.0181681
+maxGas = 0.0363603
+maxofthree = 0.0363603
+time = 23.159
+timeStep = 0.25
+
+maxAll = 1030.04
+maxLiquid = 73.9936
+maxGas = 149.916
+maxofthree = 1030.04
+time = 23.409
+timeStep = 6.10352e-05
+
+maxAll = 0.023281
+maxLiquid = 0.0179587
+maxGas = 0.0363675
+maxofthree = 0.0363675
+time = 23.409
+timeStep = 0.25
+
+maxAll = 1032.23
+maxLiquid = 73.1381
+maxGas = 149.944
+maxofthree = 1032.23
+time = 23.659
+timeStep = 6.10352e-05
+
+maxAll = 0.0230359
+maxLiquid = 0.0177504
+maxGas = 0.036374
+maxofthree = 0.036374
+time = 23.6591
+timeStep = 0.25
+
+maxAll = 1034.42
+maxLiquid = 72.2874
+maxGas = 149.969
+maxofthree = 1034.42
+time = 23.9091
+timeStep = 6.10352e-05
+
+maxAll = 0.0227909
+maxLiquid = 0.0175432
+maxGas = 0.0363797
+maxofthree = 0.0363797
+time = 23.9091
+timeStep = 0.25
+
+maxAll = 1036.62
+maxLiquid = 71.4415
+maxGas = 149.991
+maxofthree = 1036.62
+time = 24.1591
+timeStep = 6.10352e-05
+
+maxAll = 0.022546
+maxLiquid = 0.0173373
+maxGas = 0.0363848
+maxofthree = 0.0363848
+time = 24.1592
+timeStep = 0.25
+
+maxAll = 1038.83
+maxLiquid = 70.6007
+maxGas = 150.011
+maxofthree = 1038.83
+time = 24.4092
+timeStep = 6.10352e-05
+
+maxAll = 0.0223014
+maxLiquid = 0.0171327
+maxGas = 0.0363892
+maxofthree = 0.0363892
+time = 24.4093
+timeStep = 0.25
+
+maxAll = 1041.04
+maxLiquid = 69.7652
+maxGas = 150.028
+maxofthree = 1041.04
+time = 24.6593
+timeStep = 6.10352e-05
+
+maxAll = 0.022057
+maxLiquid = 0.0169293
+maxGas = 0.036393
+maxofthree = 0.036393
+time = 24.6593
+timeStep = 0.25
+
+maxAll = 1043.25
+maxLiquid = 68.9352
+maxGas = 150.042
+maxofthree = 1043.25
+time = 24.9093
+timeStep = 6.10352e-05
+
+maxAll = 0.021813
+maxLiquid = 0.0167273
+maxGas = 0.0363962
+maxofthree = 0.0363962
+time = 24.9094
+timeStep = 0.25
+
+maxAll = 1045.46
+maxLiquid = 68.1109
+maxGas = 150.054
+maxofthree = 1045.46
+time = 25.1594
+timeStep = 6.10352e-05
+
+maxAll = 0.0215695
+maxLiquid = 0.0165268
+maxGas = 0.0363987
+maxofthree = 0.0363987
+time = 25.1595
+timeStep = 0.25
+
+maxAll = 1047.68
+maxLiquid = 67.2925
+maxGas = 150.063
+maxofthree = 1047.68
+time = 25.4095
+timeStep = 6.10352e-05
+
+maxAll = 0.0213264
+maxLiquid = 0.0163277
+maxGas = 0.0364007
+maxofthree = 0.0364007
+time = 25.4095
+timeStep = 0.25
+
+maxAll = 1049.9
+maxLiquid = 66.4801
+maxGas = 150.07
+maxofthree = 1049.9
+time = 25.6595
+timeStep = 6.10352e-05
+
+maxAll = 0.0210839
+maxLiquid = 0.01613
+maxGas = 0.0364021
+maxofthree = 0.0364021
+time = 25.6596
+timeStep = 0.25
+
+maxAll = 1052.13
+maxLiquid = 65.6738
+maxGas = 150.075
+maxofthree = 1052.13
+time = 25.9096
+timeStep = 6.10352e-05
+
+maxAll = 0.020842
+maxLiquid = 0.015934
+maxGas = 0.036403
+maxofthree = 0.036403
+time = 25.9096
+timeStep = 0.25
+
+maxAll = 1054.35
+maxLiquid = 64.874
+maxGas = 150.077
+maxofthree = 1054.35
+time = 26.1596
+timeStep = 6.10352e-05
+
+maxAll = 0.0206009
+maxLiquid = 0.0157394
+maxGas = 0.0364033
+maxofthree = 0.0364033
+time = 26.1597
+timeStep = 0.25
+
+maxAll = 1056.58
+maxLiquid = 64.0807
+maxGas = 150.077
+maxofthree = 1056.58
+time = 26.4097
+timeStep = 6.10352e-05
+
+maxAll = 0.0203605
+maxLiquid = 0.0155465
+maxGas = 0.0364031
+maxofthree = 0.0364031
+time = 26.4098
+timeStep = 0.25
+
+maxAll = 1058.82
+maxLiquid = 63.294
+maxGas = 150.075
+maxofthree = 1058.82
+time = 26.6598
+timeStep = 6.10352e-05
+
+maxAll = 0.020121
+maxLiquid = 0.0153553
+maxGas = 0.0364023
+maxofthree = 0.0364023
+time = 26.6598
+timeStep = 0.25
+
+maxAll = 1061.06
+maxLiquid = 62.5141
+maxGas = 150.071
+maxofthree = 1061.06
+time = 26.9098
+timeStep = 6.10352e-05
+
+maxAll = 0.0198824
+maxLiquid = 0.0151657
+maxGas = 0.036401
+maxofthree = 0.036401
+time = 26.9099
+timeStep = 0.25
+
+maxAll = 1063.3
+maxLiquid = 61.7412
+maxGas = 150.065
+maxofthree = 1063.3
+time = 27.1599
+timeStep = 6.10352e-05
+
+maxAll = 0.0196447
+maxLiquid = 0.0149779
+maxGas = 0.0363992
+maxofthree = 0.0363992
+time = 27.1599
+timeStep = 0.25
+
+maxAll = 1065.54
+maxLiquid = 60.9754
+maxGas = 150.056
+maxofthree = 1065.54
+time = 27.4099
+timeStep = 6.10352e-05
+
+maxAll = 0.0194081
+maxLiquid = 0.0147917
+maxGas = 0.0363969
+maxofthree = 0.0363969
+time = 27.41
+timeStep = 0.25
+
+maxAll = 1067.78
+maxLiquid = 60.2168
+maxGas = 150.046
+maxofthree = 1067.78
+time = 27.66
+timeStep = 6.10352e-05
+
+maxAll = 0.0191726
+maxLiquid = 0.0146074
+maxGas = 0.0363941
+maxofthree = 0.0363941
+time = 27.6601
+timeStep = 0.25
+
+maxAll = 1070.03
+maxLiquid = 59.4654
+maxGas = 150.033
+maxofthree = 1070.03
+time = 27.9101
+timeStep = 6.10352e-05
+
+maxAll = 0.0189383
+maxLiquid = 0.0144248
+maxGas = 0.0363908
+maxofthree = 0.0363908
+time = 27.9101
+timeStep = 0.25
+
+maxAll = 1072.28
+maxLiquid = 58.7215
+maxGas = 150.019
+maxofthree = 1072.28
+time = 28.1601
+timeStep = 6.10352e-05
+
+maxAll = 0.0187051
+maxLiquid = 0.0142441
+maxGas = 0.036387
+maxofthree = 0.036387
+time = 28.1602
+timeStep = 0.25
+
+maxAll = 1074.54
+maxLiquid = 57.9851
+maxGas = 150.002
+maxofthree = 1074.54
+time = 28.4102
+timeStep = 6.10352e-05
+
+maxAll = 0.0184733
+maxLiquid = 0.0140652
+maxGas = 0.0363827
+maxofthree = 0.0363827
+time = 28.4102
+timeStep = 0.25
+
+maxAll = 1076.8
+maxLiquid = 57.2563
+maxGas = 149.983
+maxofthree = 1076.8
+time = 28.6602
+timeStep = 6.10352e-05
+
+maxAll = 0.0182428
+maxLiquid = 0.0138882
+maxGas = 0.0363779
+maxofthree = 0.0363779
+time = 28.6603
+timeStep = 0.25
+
+maxAll = 1079.05
+maxLiquid = 56.5352
+maxGas = 149.963
+maxofthree = 1079.05
+time = 28.9103
+timeStep = 6.10352e-05
+
+maxAll = 0.0180137
+maxLiquid = 0.0137131
+maxGas = 0.0363726
+maxofthree = 0.0363726
+time = 28.9104
+timeStep = 0.25
+
+maxAll = 1081.32
+maxLiquid = 55.8219
+maxGas = 149.94
+maxofthree = 1081.32
+time = 29.1604
+timeStep = 6.10352e-05
+
+maxAll = 0.017786
+maxLiquid = 0.0135399
+maxGas = 0.0363668
+maxofthree = 0.0363668
+time = 29.1604
+timeStep = 0.25
+
+maxAll = 1083.58
+maxLiquid = 55.1164
+maxGas = 149.915
+maxofthree = 1083.58
+time = 29.4104
+timeStep = 6.10352e-05
+
+maxAll = 0.0175599
+maxLiquid = 0.0133686
+maxGas = 0.0363605
+maxofthree = 0.0363605
+time = 29.4105
+timeStep = 0.25
+
+maxAll = 1085.85
+maxLiquid = 54.4189
+maxGas = 149.888
+maxofthree = 1085.85
+time = 29.6605
+timeStep = 6.10352e-05
+
+maxAll = 0.0173353
+maxLiquid = 0.0131992
+maxGas = 0.0363537
+maxofthree = 0.0363537
+time = 29.6606
+timeStep = 0.25
+
+maxAll = 1088.12
+maxLiquid = 53.7293
+maxGas = 149.859
+maxofthree = 1088.12
+time = 29.9106
+timeStep = 6.10352e-05
+
+maxAll = 0.0171123
+maxLiquid = 0.0130319
+maxGas = 0.0363464
+maxofthree = 0.0363464
+time = 29.9106
+timeStep = 0.25
+
+
+Number of time steps = 517
+
+Testing... my process id = 3
+Testing... my process id = 2
 Testing... my process id = 1
 Testing... my process id = 0
-That took 128.54 seconds for parallel code
-wall clock time at beginning = 03 August 2017 02:54:44 PM
-wall clock time at end = 03 August 2017 02:56:50 PM
+That took 60.8577 seconds for parallel code
+wall clock time at beginning = 30 August 2017 10:44:17 AM
+wall clock time at end = 30 August 2017 10:45:24 AM
 Code End

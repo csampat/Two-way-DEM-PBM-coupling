@@ -78,7 +78,7 @@ arrayOfDouble4D DEMDependentBreakageKernel(CompartmentIn compartmentIn, Compartm
             for (int i = 0; i < NUMBEROFDEMBINS - 1; i++)
             {
                 if (fAll[s][ss] > 0.0)
-                    impactFrequency[s][ss] = (numberOfImpacts[i] * timeStep) / (fAll[s][ss] * TIMESTEPDEM);
+                    impactFrequency[s][ss] = (numberOfImpacts[i] * timeStep) / (fAll[s][ss]  * TIMESTEPDEM);
             }
 
     //Breakage Kernel Calculation
