@@ -7,7 +7,7 @@
 
 using namespace std;
 
-mapCollisionData collisionFileParser(string filePath, string collisionFileName, double &time)
+mapCollisionData collisionFileParser(string filePath, string collisionFileName, double &time, mapParticleIdToType& mapPartIdToType)
 {
     //Reading Dump files
     mapCollisionData mapData;
@@ -42,7 +42,7 @@ mapCollisionData collisionFileParser(string filePath, string collisionFileName, 
 
     if (tmpStr.compare("ATOMS") || collisionFile.eof())
     {
-        //cout << collisionFileName << " doesn't contain require info" << endl;
+        cout << collisionFileName << " doesn't contain ITEM:ATOMS row" << endl;
         return mapData;
     }
 
@@ -51,7 +51,7 @@ mapCollisionData collisionFileParser(string filePath, string collisionFileName, 
 
     if (tmpStr.compare("fz")) // || atomFile.eof())
     {
-        //cout << collisionFileName << " doesn't contain require info" << endl;
+        cout << collisionFileName << " doesn't contain all required columns" << endl;
         return mapData;
     }
 
@@ -65,21 +65,33 @@ mapCollisionData collisionFileParser(string filePath, string collisionFileName, 
 
     if (tmpStr.compare("f_fppacc")) // || atomFile.eof())
     {
-        //cout << fileName << " doesn't contain require info" << endl;
+        cout << collisionFileName << " doesn't contain all required columns" << endl;
         return mapData;
     }
 
     while (getline(collisionFile, line))
     {
         lineData = move(stringstream(line));
-        lineData >> tmpStr; //read and ignore particle id
-        lineData >> tmpStr; //read particle type
-        int particleType = stoi(tmpStr);
+
+        //read particle id
+        long int particleId = 0;
+        lineData >> particleId;         
+        
+        //read particle type
+        int particleType = 0;
+        lineData >> particleType; 
+
+        //auto mapEntry = make_pair<particleId, particleType>;
+        //mapPartIdToType.insert(mapEntry);
+        mapPartIdToType[particleId] = particleType;
+
         lineData >> tmpStr >> tmpStr >> tmpStr; //read and ignore x, y & z value;
         lineData >> tmpStr >> tmpStr >> tmpStr; //read and ignore ix, iy & iz value;
+
         collisionData cData;
         lineData >> cData.velocity[0] >> cData.velocity[1] >> cData.velocity[2]; //read vx, vy & vz value;
-        lineData >> tmpStr >> tmpStr >> tmpStr;                                  //read and ignore fx, fy & fz value;
+        lineData >> tmpStr >> tmpStr >> tmpStr;//read and ignore fx, fy & fz value;
+                                          
         //read collision data
         cData.c_ccVec.resize(c_ccCount);
         for (int i = 0; i < c_ccCount; i++)
@@ -114,18 +126,17 @@ mapCollisionData collisionFileParser(string filePath, string collisionFileName, 
     return mapData;
 }
 
-pairImpactData impactFileParser(string filePath, string impactFileName)
+mapImpactData impactFileParser(string filePath, string impactFileName, mapParticleIdToType mapPartIdToType)
 {
     //Read Collision file
-    pairImpactData pairData;
-    pairData.first = 0;
-    pairData.second = 0;
+    mapImpactData mapData;
+    
     ifstream impactFile;
     impactFile.open((filePath + impactFileName).c_str(), ifstream::in);
     if (!impactFile.is_open())
     {
         std::cout << "Unable to open " << impactFileName << " file" << endl;
-        return pairData;
+        return mapData;
     }
 
     string line;
@@ -134,8 +145,8 @@ pairImpactData impactFileParser(string filePath, string impactFileName)
 
     getline(impactFile, line); //Read first line as ITEM: TIMESTEP
     lineData = move(stringstream(line));
-    lineData >> tmpStr;
-    lineData >> tmpStr;
+    lineData >> tmpStr; //Read ITEM:
+    lineData >> tmpStr; //Read TIMESTEP
 
     while (tmpStr.compare("ENTRIES") && !impactFile.eof())
     {
@@ -147,21 +158,84 @@ pairImpactData impactFileParser(string filePath, string impactFileName)
 
     if (tmpStr.compare("ENTRIES") || impactFile.eof())
     {
-        //cout << impactFileName << " doesn't contain require info" << endl;
-        return pairData;
+        cout << impactFileName << " doesn't contain ITEM:ENTRIES row" << endl;
+        return mapData;
     }
 
-    int impactType = 0;
+    //int c_pwcCount = 0;
+    while (tmpStr.compare("c_pwc[14]"))
+    {
+        lineData >> tmpStr;
+        //c_pwcCount++;
+    }
+    //c_pwcCount--;
+
+    if (tmpStr.compare("c_pwc[14]")) // || atomFile.eof())
+    {
+        cout << impactFileName << " doesn't contain all required columns" << endl;
+        return mapData;
+    }
 
     while (getline(impactFile, line))
     {
         lineData = move(stringstream(line));
-        lineData >> impactType; //read impact type
-        if (impactType == 0)
-            pairData.first += 1;
-        if (impactType == 1)
-            pairData.second += 1;
+        impactData iData;
+        //Read velocity data: Column 1 to 6
+        for(int i = 0; i < 6; i++)
+        lineData >> iData.velocity[i];
+        
+        //Read impact type: column 7
+        lineData >> iData.impactType;
+
+        //Read & ignore mesh triangle id: column 8
+        lineData >> tmpStr;
+
+        //read particle id: column 9
+        lineData >> iData.particleId; 
+        
+        //get particle type from id
+        int particleType = 0;
+        bool flag = getParticleTypeFromId(mapPartIdToType, iData.particleId, particleType);
+        
+        if (flag == false)
+            {
+                cout << "Unknown Particle Id is found in impact file; missing in collision file " << endl;
+                continue;
+            }
+        
+        //Read & ignore force value: column 10 to 12
+        lineData >> tmpStr >> tmpStr >> tmpStr;
+
+        //Read contact area: column 13
+        lineData >> iData.contactArea;
+
+        //Read overlap area: column 14
+        lineData >> iData.overlapArea;
+
+        auto mapIt = mapData.find(particleType);
+        if (mapIt == mapData.end())
+        {
+            vector<impactData> tmpVec;
+            tmpVec.push_back(iData);
+            auto mapEntry = make_pair(particleType, tmpVec);
+            mapData.insert(mapEntry);
+        }
+        else
+            mapIt->second.push_back(iData);
     }
+
     impactFile.close();
-    return pairData;
+    return mapData;
+}
+
+bool getParticleTypeFromId (mapParticleIdToType mapPartIdToType, long int particleId, int& particleType)
+{
+  bool retVal = false;
+  auto mapIt = mapPartIdToType.find(particleId);
+  if (mapIt != mapPartIdToType.end())
+  {
+    particleType = mapIt->second;
+    retVal = true; 
+  }
+  return retVal;
 }

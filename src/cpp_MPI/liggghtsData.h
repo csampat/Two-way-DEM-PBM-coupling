@@ -15,7 +15,7 @@ class liggghtsData
     bool checkFileConsistency(std::string collisionFile, std::string impactFile);
 
     std::map<double, mapCollisionData> mapCollisionDataOverTime;
-    std::map<double, pairImpactData> mapImpactDataOverTime;
+    std::map<double, mapImpactData> mapImpactDataOverTime;
     //std::map <double, mapParticleDiameter> mapParticleDiameterOverTime;
 
   public:
@@ -25,7 +25,7 @@ class liggghtsData
     void readLiggghtsDataFiles(std::string coreVal, std::string diaVal);
 
     mapCollisionData getMapCollisionData(double time);
-    pairImpactData getPairImpactData(double time);
+    mapImpactData getMapImpactData(double time);
 
     arrayOfDouble2D getFinalDEMCollisionData();
     std::vector<double> getFinalDEMImpactData();

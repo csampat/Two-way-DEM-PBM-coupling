@@ -124,24 +124,25 @@ void liggghtsData::readLiggghtsDataFiles(string coreVal, string diaVal)
             continue;
 
         double time = 0.0;
-        mapCollisionData mapData = collisionFileParser(ATOMFILEPATH, collisionFile, time);
-        if (mapData.empty())
+        mapParticleIdToType mapPartIdToType;
+        mapCollisionData mapColData = collisionFileParser(ATOMFILEPATH, collisionFile, time, mapPartIdToType);
+        if (mapColData.empty())
         {
             cout << collisionFile << " file is invalid" << endl;
             continue;
         }
 
-        pairImpactData pairData = impactFileParser(ATOMFILEPATH, impactFile);
-        if (pairData.first == 0 && pairData.second == 0)
+        mapImpactData mapImpData = impactFileParser(ATOMFILEPATH, impactFile, mapPartIdToType);
+        if (mapImpData.empty())
         {
             cout << impactFile << " file is invalid" << endl;
             continue;
         }
 
-        pair<double, mapCollisionData> mapCollisionEntry(time, mapData);
+        pair<double, mapCollisionData> mapCollisionEntry(time, mapColData);
         mapCollisionDataOverTime.insert(mapCollisionEntry);
 
-        pair<double, pairImpactData> mapImpactEntry(time, pairData);
+        pair<double, mapImpactData> mapImpactEntry(time, mapImpData);
         mapImpactDataOverTime.insert(mapImpactEntry);
     }
 
@@ -195,20 +196,17 @@ mapCollisionData liggghtsData::getMapCollisionData(double time)
     return mapData;
 }
 
-pairImpactData liggghtsData::getPairImpactData(double time)
+mapImpactData liggghtsData::getMapImpactData(double time)
 {
-    pairImpactData pairData;
-    pairData.first = 0;
-    pairData.second = 0;
-
+    mapImpactData mapData;
     if (mapImpactDataOverTime.empty())
-        return pairData;
+       return mapData;
 
     auto it = mapImpactDataOverTime.find(time);
     if (it != mapImpactDataOverTime.end())
-        pairData = it->second;
+        mapData = it->second;
 
-    return pairData;
+    return mapData;
 }
 
 vector<double> liggghtsData::getFinalDEMImpactData()
@@ -223,9 +221,18 @@ vector<double> liggghtsData::getFinalDEMImpactData()
 
     auto mapIt = mapImpactDataOverTime.end();
 
-    pairImpactData pairData = getPairImpactData((--mapIt)->first);
+    mapImpactData mapData = getMapImpactData((--mapIt)->first);
 
-    nImpacts = vector<double>(NUMBEROFDEMBINS, static_cast<double>(pairData.first + pairData.second));
+    if (mapData.empty())
+    return nImpacts;
+
+    nImpacts.resize(NUMBEROFDEMBINS);
+
+    for (auto itMapData = mapData.begin(); itMapData != mapData.end(); itMapData++)
+        {
+            int row = itMapData->first;
+            nImpacts[row-1] = (itMapData->second).size();
+        }
 
     return nImpacts;
 }
