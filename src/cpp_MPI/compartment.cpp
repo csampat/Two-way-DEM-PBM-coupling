@@ -8,7 +8,7 @@
 
 using namespace std;
 
-#define INCLUDEBREAKAGE false
+#define INCLUDEBREAKAGE true
 #define DUMP2D(varName) dump2DData(varName, #varName)
 #define DUMP3D(varName) dump3DData(varName, #varName)
 #define DUMP4D(varName) dump4DData(varName, #varName)
@@ -572,7 +572,11 @@ CompartmentOut performCompartmentCalculations(PreviousCompartmentIn prevCompIn, 
             dfLiquiddt[s][ss] += formationOfLiquidThroughAggregationCA[s][ss] - depletionOfLiquidThroughAggregation[s][ss];
             dfLiquiddt[s][ss] += liquidBirthThroughBreakage1[s][ss] + formationOfLiquidThroughBreakageCA[s][ss];
             dfLiquiddt[s][ss] -= depletionOfLiquidthroughBreakage[s][ss];
-
+            
+            if(fGas[s][ss] > EPSILON)
+            {
+                transferThroughConsolidation[s][ss] = CONSOLIDATIONCONSTANT * internalVolumeBins[s][ss] * ((1 - MINIMUMPOROSITY) / (vs[s] + vss[ss])) * (gasBins[s][ss] - (MINIMUMPOROSITY/(1 - MINIMUMPOROSITY)) * (vs[s] + vss[ss]) + internalLiquid[s][ss]);
+            }
             dfGasdt[s][ss] = gasMovement[s][ss];
             dfGasdt[s][ss] += fAll[s][ss] * transferThroughConsolidation[s][ss];
             dfGasdt[s][ss] += formationOfGasThroughAggregationCA[s][ss] - depletionOfGasThroughAggregation[s][ss];

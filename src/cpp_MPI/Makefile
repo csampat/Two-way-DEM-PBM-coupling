@@ -2,7 +2,8 @@
 
 #target: dependencies
 #<tab>action
-CC=mpic++ -std=c++11 -O3
+#CC=mpic++ -std=c++11 -O3
+CC=mpic++ -std=c++11 
 
 all: model.out
 

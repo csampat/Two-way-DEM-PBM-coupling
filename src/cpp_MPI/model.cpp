@@ -718,7 +718,7 @@ int main(int argc, char *argv[])
         while (maxofthree < 0.1 / timeStep && timeStep < 0.25)
             timeStep *= 2.0;
 
-        while (maxofthree > 0.1 / timeStep && timeStep > 5.0e-5)
+        while (maxofthree > 0.1 / timeStep && timeStep > 5.0e-4)//5.0e-5)
             timeStep /= 2.0;
 
         int nanCount = 0;
@@ -738,7 +738,7 @@ int main(int argc, char *argv[])
                     value = fgAllCompartments[c][s][ss] + dfgdtAllCompartments[c][s][ss] * timeStep;
                     fgAllCompartments[c][s][ss] = value > 0.0 ? value : 0.0;
                 }
-
+        
         if (nanCount)
         {
             int mpi_err = 0;
@@ -748,15 +748,18 @@ int main(int argc, char *argv[])
             cout << " Aborting..." << endl;
             MPI_Abort(MPI_COMM_WORLD, mpi_err);
         }
-
-        minfAll = getMinimumOf3DArray(fAllCompartments);
-        if (minfAll < 0.0)
+        int countnegfAll = 0;
+        minfAll = getMinimumOf3DArray(fAllCompartments, countnegfAll);
+        if (minfAll < -1.0e-16)
         {
             int mpi_err = 0;
             cout << endl;
+            DUMP3DCSV(dfdtAllCompartments);
+            DUMP3DCSV(fAllCompartments);
             cout << "My process id = " << mpi_id << endl;
             cout << "minfAll" << minfAll << endl;
             cout << "******fAllCompartments has negative values********" << endl;
+            cout << countnegfAll << endl;
             cout << " Aborting..." << endl;
             MPI_Abort(MPI_COMM_WORLD, mpi_err);
         }

@@ -50,14 +50,17 @@ arrayOfDouble4D getArrayOfDouble4D(int n, int m, int p, int q, double val)
     return arrayDouble4D;
 }
 
-double getMinimumOf3DArray(arrayOfDouble3D array3D)
+double getMinimumOf3DArray(arrayOfDouble3D array3D, int& c)
 {
+    c = 0;
     double minValue = DBL_MAX;
     for (size_t d1 = 0; d1 < array3D.size(); d1++)
         for (size_t d2 = 0; d2 < array3D[d1].size(); d2++)
             for (size_t d3 = 0; d3 < array3D[d1][d2].size(); d3++)
             {
                 minValue = min(minValue, array3D[d1][d2][d3]);
+                if(minValue < array3D[d1][d2][d3] && minValue < 0.0)
+                    c++;
             }
     return minValue;
 }

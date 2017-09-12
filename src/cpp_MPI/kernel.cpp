@@ -67,26 +67,30 @@ arrayOfDouble4D DEMDependentBreakageKernel(CompartmentIn compartmentIn, Compartm
     arrayOfDouble4D breakageKernel = getArrayOfDouble4D(NUMBEROFFIRSTSOLIDBINS, NUMBEROFSECONDSOLIDBINS, NUMBEROFFIRSTSOLIDBINS, NUMBEROFSECONDSOLIDBINS);
 
     //INITIALIZATION
-    arrayOfDouble2D impactFrequency = getArrayOfDouble2D(NUMBEROFFIRSTSOLIDBINS, NUMBEROFSECONDSOLIDBINS);
+    //arrayOfDouble2D impactFrequency = getArrayOfDouble2D(NUMBEROFFIRSTSOLIDBINS, NUMBEROFSECONDSOLIDBINS);
 
     arrayOfDouble2D fAll = compartmentIn.fAll;
     vector<double> numberOfImpacts = compartmentDEMIn.DEMImpactData;
-   
+    vector<double> impactFrequency = compartmentDEMIn.DEMImpactData;   
     //Impact Frequency (from 1D Number of Impacts)
     for (int s = 0; s < NUMBEROFFIRSTSOLIDBINS; s++)
         for (int ss = 0; ss < NUMBEROFSECONDSOLIDBINS; ss++)
             for (int i = 0; i < NUMBEROFDEMBINS - 1; i++)
             {
                 if (fAll[s][ss] > 0.0)
-                    impactFrequency[s][ss] = (numberOfImpacts[i] * timeStep) / TIMESTEPDEM;
+                    //impactFrequency[s][ss] = (numberOfImpacts[i] * timeStep) / TIMESTEPDEM;
+                    impactFrequency[i] = (numberOfImpacts[i] * timeStep) / TIMESTEPDEM;
             }
 
+    DUMP(impactFrequency);
     //Breakage Kernel Calculation
     for (int s1 = 0; s1 < NUMBEROFFIRSTSOLIDBINS; s1++)
         for (int ss1 = 0; ss1 < NUMBEROFSECONDSOLIDBINS; ss1++)
             for (int s2 = 0; s2 < NUMBEROFFIRSTSOLIDBINS; s2++)
                 for (int ss2 = 0; ss2 < NUMBEROFSECONDSOLIDBINS; ss2++)
-                    breakageKernel[s1][ss1][s2][ss2] = impactFrequency[s1][ss1] * BREAKAGEPROBABILITY;
+                    breakageKernel[s1][ss1][s2][ss2] = impactFrequency[ss1] * BREAKAGEPROBABILITY * BREAKAGEKERNELCONSTANT;
+                    //breakageKernel[s1][ss1][s2][ss2] = impactFrequency[s1][ss1] * BREAKAGEPROBABILITY;
 
     return breakageKernel;
+    
 }

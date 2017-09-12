@@ -26,7 +26,7 @@ arrayOfDouble3D getArrayOfDouble3D(int n, int m, int p, double val = 0.0);
 arrayOfDouble4D getArrayOfDouble4D(int n, int m, int p, int q, double val = 0.0);
 
 double getMinimumOf2DArray(arrayOfDouble2D array2D);
-double getMinimumOf3DArray(arrayOfDouble3D array3D);
+double getMinimumOf3DArray(arrayOfDouble3D array3D, int& c);
 
 double getMaximumOfArray(std::vector<double> vec);
 double getMaximumOf2DArray(arrayOfDouble2D array2D);
