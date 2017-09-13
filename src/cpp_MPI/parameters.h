@@ -55,7 +55,7 @@
 #define SSBASE 3.0                 // Volume increment between two bins
 
 //DEM data
-#define COLLISIONEFFICIENCYCONSTANT 0.1
+#define COLLISIONEFFICIENCYCONSTANT 0.01
 #define TIMESTEPDEM 5.0e-7
 #define NUMBEROFDEMBINS 16
 
@@ -64,5 +64,11 @@
 
 #define DEMBREAKAGEKERNELVALUE 0.0
 #define DEMBREAKAGEKERNELCONST 1.0
+
+// Probablistic Breakage Kernel Constants
+
+#define CRITICALSTOKESDEFNUMBER 0.2 // Critical Stokes Deformation number
+#define BINDERVISCOSITY 0.05 // Pa.s
+
 
 #endif //PARAMETERS_H

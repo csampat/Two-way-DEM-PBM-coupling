@@ -478,6 +478,16 @@ int main(int argc, char *argv[])
         int mpi_err = 0;
         MPI_Abort(MPI_COMM_WORLD, mpi_err);
     }
+    vector<double> velocity = lData->getFinalDEMVelocity();
+    if (velocity.size() == 0)
+    {
+        cout << "My process id = " << mpi_id << endl;
+        cout << "Velocity is missing in LIGGGHTS output file" << endl;
+        cout << "Input parameters for DEM core and diameter aren't matching with LIGGGHTS output file" << endl;
+        int mpi_err = 0;
+        MPI_Abort(MPI_COMM_WORLD, mpi_err);
+    }
+
     // ************ read liggghts files end ******************
 
     if (mpi_id == MASTER)
@@ -485,6 +495,7 @@ int main(int argc, char *argv[])
         DUMP2D(DEMCollisionData);
         DUMP(DEMDiameter);
         DUMP(DEMImpactData);
+        DUMP(velocity);
     }
 
     vector<double> liquidAdditionRateAllCompartments(NUMBEROFCOMPARTMENTS, 0.0);

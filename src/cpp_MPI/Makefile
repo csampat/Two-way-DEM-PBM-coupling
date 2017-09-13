@@ -16,7 +16,7 @@ model.o: model.cpp liggghtsData.h compartment.h utility.h timeStamp.h parameters
 compartment.o: compartment.cpp compartment.h liggghtsData.h utility.h parameters.h
 	$(CC) -Wall -c compartment.cpp
 
-kernel.o: kernel.cpp kernel.h compartment.h
+kernel.o: kernel.cpp kernel.h compartment.h liggghtsData.h
 	$(CC) -Wall -c kernel.cpp
 
 liggghtsData.o: liggghtsData.cpp liggghtsData.h atomFileParser.h utility.h parameters.h
