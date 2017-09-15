@@ -12,11 +12,11 @@ echo "Running model.out"
 
 #export OMP_NUM_THREADS=2
 
-mpirun -n 2 ./model.out 256 200 > output_test.txt
+mpirun -n 2 ./model.out 128 200 > output_test.txt
 
 echo "DONE"
 
-#matlab -nojvm -nodisplay -nosplash -r d50andRatioplt;"quit"
+matlab -nodisplay -nosplash -r "d50andRatioplt;quit";
 #matlab -nodisplay -nosplash  exit;
 
 echo "Plots saved in csvDump folder"

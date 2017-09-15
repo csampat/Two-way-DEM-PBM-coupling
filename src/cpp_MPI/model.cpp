@@ -446,7 +446,7 @@ int main(int argc, char *argv[])
     lData = liggghtsData::getInstance();
 
     if (!lData)
-        cout << "mpi_id = " << mpi_id << ", LIGGGHTS Data pointer is null" << endl;
+        cout << "mpi_id = " << mpi_id << ", fis null" << endl;
     lData->readLiggghtsDataFiles(coreVal, diaVal);
 
     vector<double> DEMDiameter = lData->getDEMParticleDiameters();

@@ -77,11 +77,11 @@ arrayOfDouble4D DEMDependentBreakageKernel(CompartmentIn compartmentIn, Compartm
     arrayOfDouble2D fAll = compartmentIn.fAll;
     vector<double> numberOfImpacts = compartmentDEMIn.DEMImpactData;
     vector<double> impactFrequency = compartmentDEMIn.DEMImpactData;   
-    double Ubreak = 0.0;
+    // double Ubreak = 0.0;
     //Impact Frequency (from 1D Number of Impacts)
     for (int s = 0; s < NUMBEROFFIRSTSOLIDBINS; s++)
         for (int ss = 0; ss < NUMBEROFSECONDSOLIDBINS; ss++)
-            for (int i = 0; i < NUMBEROFDEMBINS - 1; i++)
+            for (int i = 0; i < NUMBEROFDEMBINS; i++)
             {
                 if (fAll[s][ss] > 0.0)
                     //impactFrequency[s][ss] = (numberOfImpacts[i] * timeStep) / TIMESTEPDEM;
@@ -89,8 +89,11 @@ arrayOfDouble4D DEMDependentBreakageKernel(CompartmentIn compartmentIn, Compartm
             }
 
     // Critical velocity for breakage
-    Ubreak = (2 * CRITICALSTOKESDEFNUMBER / SOLIDDENSITY) * (9 / 8) * (pow((1 - INITIALPOROSITY),2) / pow(INITIALPOROSITY,2)) * (9 / 16) * (BINDERVISCOSITY / compartmentIn.diameter[0][0]); 
-    
+    //cout << "CRITICALSTOKESDEFNUMBER = " << (2 * CRITICALSTOKESDEFNUMBER / SOLIDDENSITY) << endl;
+    //cout << "last fraction = " << (BINDERVISCOSITY / compartmentIn.diameter[0][0]) << endl;  
+    //cout << "ratio of porosity = " << (pow((1 - INITIALPOROSITY),2) / pow(INITIALPOROSITY,2)) << endl;
+    double Ubreak = (2 * CRITICALSTOKESDEFNUMBER / SOLIDDENSITY) * (9 / 8.0) * (pow((1 - INITIALPOROSITY),2) / pow(INITIALPOROSITY,2)) * (9 / 16.0) * (BINDERVISCOSITY / compartmentIn.diameter[0][0]); 
+    //cout << "Ubreak = " << Ubreak << endl;
     liggghtsData* lData = liggghtsData::getInstance();
     vector<double> velocity = lData->getFinalDEMVelocity();
     if ((velocity).size() == 0)
@@ -115,13 +118,20 @@ arrayOfDouble4D DEMDependentBreakageKernel(CompartmentIn compartmentIn, Compartm
     
     stdDevVelocity = sqrt(varianceVelocity);
     double intVelocity = 0.0;
+    // cout << "Std Dev. of Velocity = " << stdDevVelocity << endl;
 
-    vector<double> probablityOfVelocity;
+    vector<double> probablityOfVelocity(size1, 0.0);
     for (int i = 0; i < size1; i++)
     {
      	probablityOfVelocity[i] = (1 / (velocity[i] * sqrt(2 * PI) * stdDevVelocity)) * exp(-((log(velocity[i]) - averageVelocity) / (2 * varianceVelocity)));
-     	if(velocity[i] > Ubreak)
-     		intVelocity += probablityOfVelocity[i] * velocity[i];
+     	// cout << "Probability at " << velocity[i] << "is " << probablityOfVelocity[i] << endl;
+    }
+
+    for (int i = 0; i < size1 - 1; ++i)
+    {
+    	if( (velocity[i] / 100.0) > Ubreak)
+     		intVelocity += ((probablityOfVelocity[i + 1] + probablityOfVelocity[i]) / 2) * (velocity[i + 1] - velocity[i]);
+    
     }
 
     //DUMP(impactFrequency);

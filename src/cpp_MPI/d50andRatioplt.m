@@ -17,8 +17,9 @@ lc = length(cores); ld = length(diameter);
             q = importdata(filen);
             dat = q.data();
             dat(isnan(dat))=0.0;
+            len = length(dat(1,:));
             figure
-            for m = 3:18
+            for m = 3:len
                 plot(dat(:,2),dat(:,m));
                 hold on;
             end
