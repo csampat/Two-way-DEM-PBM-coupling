@@ -1,0 +1,330 @@
+modify_timing     on
+atom_style     granular
+atom_modify     map array
+boundary     f f f
+newton     off
+communicate     single vel yes
+units     si
+processors 16 4 2
+region     reg block -0.01 0.450 -0.150 0.150 -0.080 0.100
+create_box     17 reg
+neighbor     0.0005 bin
+neigh_modify     delay 0 check yes page 1000000 one 30000
+
+timestep     0.0000005
+fix     gravi all gravity 9.81 vector 0.0 -1.0 0.0
+
+
+pair_style gran model hertz tangential history
+pair_coeff     * *
+#Material properties required for new pair styles
+fix     m1 all property/global youngsModulus peratomtype 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 8000000 999000000
+fix     m2 all property/global poissonsRatio peratomtype 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000 0.2000
+fix     m3 all property/global coefficientRestitution peratomtypepair 17 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 0.4000 
+fix     m4 all property/global coefficientFriction peratomtypepair 17 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 0.5000 
+fix     m5 all property/global coefficientRollingFriction peratomtypepair 17 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 0.0200 
+
+
+
+fix     cad1 all mesh/surface file impeller_coarse.stl element_exclusion_list read impeller heal auto_remove_duplicates precision 1e-9 type 17 scale 1e-3 curvature 1.0e-10
+fix     cad2 all mesh/surface file shell_closed.stl element_exclusion_list read shell heal auto_remove_duplicates precision 1e-9 type 17 scale 1e-3  curvature 1.0e-10
+
+
+fix     granulator all wall/gran model hertz tangential history mesh n_meshes 2 meshes cad2 cad1
+
+
+#Rotating the impeller
+variable w equal -2000
+fix     movecad1 all move/mesh mesh cad1 rotate/variable origin 0.193 0.00 0.00 axis 1. 0. 0. omega v_w
+
+
+#Region and insertion
+region     factory1 block 0.007 0.047 0.04 0.06 -0.02 0.02 units box
+
+
+#****************** THE GRID ******************
+
+#Grid Definition using loops: Creates a grid of 1x10x10. ie 100 gridbins
+#Grids numbered column wise --> column 1: 1-10 grids; column 2: 11-20 grids and so on
+
+variable     gridNo equal 0          #Grid-bin counter
+variable     Xdiff equal 4.38e-2     #X length of 1 grid-bin
+variable     i equal 0               #Outer loop counter
+variable     LoopGrid loop 10   #Loop for Grid creation
+
+#%%%%%%%% LOOP %%%%%%%%%
+label        LG_start
+variable     i equal $i+1
+variable     Xmin equal 0.0002+($i-1)*${Xdiff}
+variable     Xmax equal ${Xmin}+${Xdiff}
+variable     gridNo equal ${gridNo}+1
+
+region       GridBinNo${gridNo} block ${Xmin} ${Xmax} -0.164 0.01  -0.01 0.261 units box
+next         LoopGrid                  #Incrementing loop
+jump         SELF LG_start             #Go to start of loop
+#~~~~~~~~~~~~~~~~~~~ BIG BIN ~~~~~~~~~~~~~~~~
+region     GridBinBig block 0 0.443 -0.154 0 -0.06 0.06 units box
+#***************** END OF GRID ****************
+#Grouping
+group type1_ type 1
+ group type2_ type 2
+ group type3_ type 3
+ group type4_ type 4
+ group type5_ type 5
+ group type6_ type 6
+ group type7_ type 7
+ group type8_ type 8
+ group type9_ type 9
+ group type10_ type 10
+ group type11_ type 11
+ group type12_ type 12
+ group type13_ type 13
+ group type14_ type 14
+ group type15_ type 15
+ group type16_ type 16
+
+
+
+#Particle specification
+fix pts1 type1_ particletemplate/sphere 106373 atom_type 1 density constant 500 radius constant 0.001260000
+fix pts2 type2_ particletemplate/sphere 49669 atom_type 2 density constant 500 radius constant 0.001260000
+fix pts3 type3_ particletemplate/sphere 119677 atom_type 3 density constant 500 radius constant 0.001260000
+fix pts4 type4_ particletemplate/sphere 75377 atom_type 4 density constant 500 radius constant 0.001260000
+fix pts5 type5_ particletemplate/sphere 63607 atom_type 5 density constant 500 radius constant 0.001260000
+fix pts6 type6_ particletemplate/sphere 100313 atom_type 6 density constant 500 radius constant 0.001260000
+fix pts7 type7_ particletemplate/sphere 22153 atom_type 7 density constant 500 radius constant 0.001260000
+fix pts8 type8_ particletemplate/sphere 77863 atom_type 8 density constant 500 radius constant 0.001260000
+fix pts9 type9_ particletemplate/sphere 94063 atom_type 9 density constant 500 radius constant 0.001260000
+fix pts10 type10_ particletemplate/sphere 104543 atom_type 10 density constant 500 radius constant 0.001260000
+fix pts11 type11_ particletemplate/sphere 15803 atom_type 11 density constant 500 radius constant 0.001260000
+fix pts12 type12_ particletemplate/sphere 10433 atom_type 12 density constant 500 radius constant 0.001260000
+fix pts13 type13_ particletemplate/sphere 125063 atom_type 13 density constant 500 radius constant 0.001260000
+fix pts14 type14_ particletemplate/sphere 81853 atom_type 14 density constant 500 radius constant 0.001260000
+fix pts15 type15_ particletemplate/sphere 68099 atom_type 15 density constant 500 radius constant 0.001260000
+fix pts16 type16_ particletemplate/sphere 10597 atom_type 16 density constant 500 radius constant 0.001260000
+
+
+
+#Particle distribution for insertion
+fix pdd1 all particledistribution/discrete 69491 16 pts1 0.1548 pts2 0.1514 pts3 0.1417 pts4 0.1269 pts5 0.1088 pts6 0.0892 pts7 0.0700 pts8 0.0525 pts9 0.0377 pts10 0.0259 pts11 0.0171 pts12 0.0107 pts13 0.0065 pts14 0.0037 pts15 0.0021 pts16 0.0011 
+
+
+
+fix     ins1 all insert/rate/region seed 96269 distributiontemplate pdd1 nparticles INF massrate 4.166667e-03 insert_every 10000 overlapcheck yes vel constant 2.0 -1.0 -0.0001 region factory1 ntry_mc 1000
+
+
+
+# Collecting particle collision data
+fix   fppacc all property/atom fppacc scalar yes yes yes 0
+# Collecting particle-particle collision data
+compute cc_1 type1_ contact/atom
+compute cc_2 type2_ contact/atom
+compute cc_3 type3_ contact/atom
+compute cc_4 type4_ contact/atom
+compute cc_5 type5_ contact/atom
+compute cc_6 type6_ contact/atom
+compute cc_7 type7_ contact/atom
+compute cc_8 type8_ contact/atom
+compute cc_9 type9_ contact/atom
+compute cc_10 type10_ contact/atom
+compute cc_11 type11_ contact/atom
+compute cc_12 type12_ contact/atom
+compute cc_13 type13_ contact/atom
+compute cc_14 type14_ contact/atom
+compute cc_15 type15_ contact/atom
+compute cc_16 type16_ contact/atom
+# Calculating particle wall collisions
+compute pwc all wall/gran/local id # Calculates particle - wall collisions
+compute ppc all pair/gran/local id delta # Calculates pair-wise particle-particle interaction
+#apply nve integration to all particles that are inserted as single particles
+fix     integ all nve/sphere
+
+
+
+#************ End of Paritcle Insertion & Grouping *************
+#%%%%%% Start Variable LOOP %%%%%%
+#Start of variable LOOP
+variable     k equal 0
+variable     Var_loop loop 10
+label     Var_loop_start
+
+
+variable     k equal $k+1
+variable     t equal step
+variable     Noftype1_$k equal count(type1_,GridBinNo$k)
+variable     Noftype2_$k equal count(type2_,GridBinNo$k)
+variable     Noftype3_$k equal count(type3_,GridBinNo$k)
+variable     Noftype4_$k equal count(type4_,GridBinNo$k)
+variable     Noftype5_$k equal count(type5_,GridBinNo$k)
+variable     Noftype6_$k equal count(type6_,GridBinNo$k)
+variable     Noftype7_$k equal count(type7_,GridBinNo$k)
+variable     Noftype8_$k equal count(type8_,GridBinNo$k)
+variable     Noftype9_$k equal count(type9_,GridBinNo$k)
+variable     Noftype10_$k equal count(type10_,GridBinNo$k)
+variable     Noftype11_$k equal count(type11_,GridBinNo$k)
+variable     Noftype12_$k equal count(type12_,GridBinNo$k)
+variable     Noftype13_$k equal count(type13_,GridBinNo$k)
+variable     Noftype14_$k equal count(type14_,GridBinNo$k)
+variable     Noftype15_$k equal count(type15_,GridBinNo$k)
+variable     Noftype16_$k equal count(type16_,GridBinNo$k)
+variable     NofAtoms$k equal count(all,GridBinNo$k)
+variable     Xveltype1_$k equal vcm(type1_,x,GridBinNo$k)
+variable     Xveltype2_$k equal vcm(type2_,x,GridBinNo$k)
+variable     Xveltype3_$k equal vcm(type3_,x,GridBinNo$k)
+variable     Xveltype4_$k equal vcm(type4_,x,GridBinNo$k)
+variable     Xveltype5_$k equal vcm(type5_,x,GridBinNo$k)
+variable     Xveltype6_$k equal vcm(type6_,x,GridBinNo$k)
+variable     Xveltype7_$k equal vcm(type7_,x,GridBinNo$k)
+variable     Xveltype8_$k equal vcm(type8_,x,GridBinNo$k)
+variable     Xveltype9_$k equal vcm(type9_,x,GridBinNo$k)
+variable     Xveltype10_$k equal vcm(type10_,x,GridBinNo$k)
+variable     Xveltype11_$k equal vcm(type11_,x,GridBinNo$k)
+variable     Xveltype12_$k equal vcm(type12_,x,GridBinNo$k)
+variable     Xveltype13_$k equal vcm(type13_,x,GridBinNo$k)
+variable     Xveltype14_$k equal vcm(type14_,x,GridBinNo$k)
+variable     Xveltype15_$k equal vcm(type15_,x,GridBinNo$k)
+variable     Xveltype16_$k equal vcm(type16_,x,GridBinNo$k)
+variable     Yveltype1_$k equal vcm(type1_,y,GridBinNo$k)
+variable     Yveltype2_$k equal vcm(type2_,y,GridBinNo$k)
+variable     Yveltype3_$k equal vcm(type3_,y,GridBinNo$k)
+variable     Yveltype4_$k equal vcm(type4_,y,GridBinNo$k)
+variable     Yveltype5_$k equal vcm(type5_,y,GridBinNo$k)
+variable     Yveltype6_$k equal vcm(type6_,y,GridBinNo$k)
+variable     Yveltype7_$k equal vcm(type7_,y,GridBinNo$k)
+variable     Yveltype8_$k equal vcm(type8_,y,GridBinNo$k)
+variable     Yveltype9_$k equal vcm(type9_,y,GridBinNo$k)
+variable     Yveltype10_$k equal vcm(type10_,y,GridBinNo$k)
+variable     Yveltype11_$k equal vcm(type11_,y,GridBinNo$k)
+variable     Yveltype12_$k equal vcm(type12_,y,GridBinNo$k)
+variable     Yveltype13_$k equal vcm(type13_,y,GridBinNo$k)
+variable     Yveltype14_$k equal vcm(type14_,y,GridBinNo$k)
+variable     Yveltype15_$k equal vcm(type15_,y,GridBinNo$k)
+variable     Yveltype16_$k equal vcm(type16_,y,GridBinNo$k)
+variable     Zveltype1_$k equal vcm(type1_,z,GridBinNo$k)
+variable     Zveltype2_$k equal vcm(type2_,z,GridBinNo$k)
+variable     Zveltype3_$k equal vcm(type3_,z,GridBinNo$k)
+variable     Zveltype4_$k equal vcm(type4_,z,GridBinNo$k)
+variable     Zveltype5_$k equal vcm(type5_,z,GridBinNo$k)
+variable     Zveltype6_$k equal vcm(type6_,z,GridBinNo$k)
+variable     Zveltype7_$k equal vcm(type7_,z,GridBinNo$k)
+variable     Zveltype8_$k equal vcm(type8_,z,GridBinNo$k)
+variable     Zveltype9_$k equal vcm(type9_,z,GridBinNo$k)
+variable     Zveltype10_$k equal vcm(type10_,z,GridBinNo$k)
+variable     Zveltype11_$k equal vcm(type11_,z,GridBinNo$k)
+variable     Zveltype12_$k equal vcm(type12_,z,GridBinNo$k)
+variable     Zveltype13_$k equal vcm(type13_,z,GridBinNo$k)
+variable     Zveltype14_$k equal vcm(type14_,z,GridBinNo$k)
+variable     Zveltype15_$k equal vcm(type15_,z,GridBinNo$k)
+variable     Zveltype16_$k equal vcm(type16_,z,GridBinNo$k)
+variable     XvelAll_$k equal vcm(all,x,GridBinNo$k)
+variable     YvelAll_$k equal vcm(all,y,GridBinNo$k)
+variable     ZvelAll_$k equal vcm(all,z,GridBinNo$k)
+
+next     Var_loop
+jump     SELF Var_loop_start
+
+
+variable     Noftype1Big equal count(type1_,GridBinBig)
+variable     Noftype2Big equal count(type2_,GridBinBig)
+variable     Noftype3Big equal count(type3_,GridBinBig)
+variable     Noftype4Big equal count(type4_,GridBinBig)
+variable     Noftype5Big equal count(type5_,GridBinBig)
+variable     Noftype6Big equal count(type6_,GridBinBig)
+variable     Noftype7Big equal count(type7_,GridBinBig)
+variable     Noftype8Big equal count(type8_,GridBinBig)
+variable     Noftype9Big equal count(type9_,GridBinBig)
+variable     Noftype10Big equal count(type10_,GridBinBig)
+variable     Noftype11Big equal count(type11_,GridBinBig)
+variable     Noftype12Big equal count(type12_,GridBinBig)
+variable     Noftype13Big equal count(type13_,GridBinBig)
+variable     Noftype14Big equal count(type14_,GridBinBig)
+variable     Noftype15Big equal count(type15_,GridBinBig)
+variable     Noftype16Big equal count(type16_,GridBinBig)
+variable     NofAtomsBig equal count(all,GridBinBig)
+
+
+run      1
+dump myDump  all custom 50000 post/dump*.atom id type x y z ix iy iz vx vy vz fx fy fz c_cc_1 c_cc_2 c_cc_3 c_cc_4 c_cc_5 c_cc_6 c_cc_7 c_cc_8 c_cc_9 c_cc_10 c_cc_11 c_cc_12 c_cc_13 c_cc_14 c_cc_15 c_cc_16 f_fppacc radius
+dump myDump2 all local 50000 post/coll*.atom c_pwc[1] c_pwc[2] c_pwc[3]
+dump myDump3 all local 50000 post/pcoll*.atom c_ppc[1] c_ppc[2] c_ppc[3] c_ppc[4]
+dump dumpstl1 all mesh/stl 50000 post/dump*.stl
+restart 500000 restart/granulator.*.restart
+
+
+
+fix     Results1 all print 1000 "$t, ${Noftype1_1}, ${Noftype2_1}, ${Noftype3_1}, ${Noftype4_1}, ${Noftype5_1}, ${Noftype6_1}, ${Noftype7_1}, ${Noftype8_1}, ${Noftype9_1}, ${Noftype10_1}, ${Noftype11_1}, ${Noftype12_1}, ${Noftype13_1}, ${Noftype14_1}, ${Noftype15_1}, ${Noftype16_1}, ${NofAtoms1}, &
+ ${Xveltype1_1}, ${Xveltype2_1}, ${Xveltype3_1}, ${Xveltype4_1}, ${Xveltype5_1}, ${Xveltype6_1}, ${Xveltype7_1}, ${Xveltype8_1}, ${Xveltype9_1}, ${Xveltype10_1}, ${Xveltype11_1}, ${Xveltype12_1}, ${Xveltype13_1}, ${Xveltype14_1}, ${Xveltype15_1}, ${Xveltype16_1}, &
+ ${Yveltype1_1}, ${Yveltype2_1}, ${Yveltype3_1}, ${Yveltype4_1}, ${Yveltype5_1}, ${Yveltype6_1}, ${Yveltype7_1}, ${Yveltype8_1}, ${Yveltype9_1}, ${Yveltype10_1}, ${Yveltype11_1}, ${Yveltype12_1}, ${Yveltype13_1}, ${Yveltype14_1}, ${Yveltype15_1}, ${Yveltype16_1}, &
+ ${Zveltype1_1}, ${Zveltype2_1}, ${Zveltype3_1}, ${Zveltype4_1}, ${Zveltype5_1}, ${Zveltype6_1}, ${Zveltype7_1}, ${Zveltype8_1}, ${Zveltype9_1}, ${Zveltype10_1}, ${Zveltype11_1}, ${Zveltype12_1}, ${Zveltype13_1}, ${Zveltype14_1}, ${Zveltype15_1}, ${Zveltype16_1}, &
+ ${XvelAll_1}, ${YvelAll_1}, ${ZvelAll_1}" &
+ file CSVs/GridBinNo1.csv screen no title "GridBinNo1 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results2 all print 1000 "$t, ${Noftype1_2}, ${Noftype2_2}, ${Noftype3_2}, ${Noftype4_2}, ${Noftype5_2}, ${Noftype6_2}, ${Noftype7_2}, ${Noftype8_2}, ${Noftype9_2}, ${Noftype10_2}, ${Noftype11_2}, ${Noftype12_2}, ${Noftype13_2}, ${Noftype14_2}, ${Noftype15_2}, ${Noftype16_2}, ${NofAtoms2}, &
+ ${Xveltype1_2}, ${Xveltype2_2}, ${Xveltype3_2}, ${Xveltype4_2}, ${Xveltype5_2}, ${Xveltype6_2}, ${Xveltype7_2}, ${Xveltype8_2}, ${Xveltype9_2}, ${Xveltype10_2}, ${Xveltype11_2}, ${Xveltype12_2}, ${Xveltype13_2}, ${Xveltype14_2}, ${Xveltype15_2}, ${Xveltype16_2}, &
+ ${Yveltype1_2}, ${Yveltype2_2}, ${Yveltype3_2}, ${Yveltype4_2}, ${Yveltype5_2}, ${Yveltype6_2}, ${Yveltype7_2}, ${Yveltype8_2}, ${Yveltype9_2}, ${Yveltype10_2}, ${Yveltype11_2}, ${Yveltype12_2}, ${Yveltype13_2}, ${Yveltype14_2}, ${Yveltype15_2}, ${Yveltype16_2}, &
+ ${Zveltype1_2}, ${Zveltype2_2}, ${Zveltype3_2}, ${Zveltype4_2}, ${Zveltype5_2}, ${Zveltype6_2}, ${Zveltype7_2}, ${Zveltype8_2}, ${Zveltype9_2}, ${Zveltype10_2}, ${Zveltype11_2}, ${Zveltype12_2}, ${Zveltype13_2}, ${Zveltype14_2}, ${Zveltype15_2}, ${Zveltype16_2}, &
+ ${XvelAll_2}, ${YvelAll_2}, ${ZvelAll_2}" &
+ file CSVs/GridBinNo2.csv screen no title "GridBinNo2 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results3 all print 1000 "$t, ${Noftype1_3}, ${Noftype2_3}, ${Noftype3_3}, ${Noftype4_3}, ${Noftype5_3}, ${Noftype6_3}, ${Noftype7_3}, ${Noftype8_3}, ${Noftype9_3}, ${Noftype10_3}, ${Noftype11_3}, ${Noftype12_3}, ${Noftype13_3}, ${Noftype14_3}, ${Noftype15_3}, ${Noftype16_3}, ${NofAtoms3}, &
+ ${Xveltype1_3}, ${Xveltype2_3}, ${Xveltype3_3}, ${Xveltype4_3}, ${Xveltype5_3}, ${Xveltype6_3}, ${Xveltype7_3}, ${Xveltype8_3}, ${Xveltype9_3}, ${Xveltype10_3}, ${Xveltype11_3}, ${Xveltype12_3}, ${Xveltype13_3}, ${Xveltype14_3}, ${Xveltype15_3}, ${Xveltype16_3}, &
+ ${Yveltype1_3}, ${Yveltype2_3}, ${Yveltype3_3}, ${Yveltype4_3}, ${Yveltype5_3}, ${Yveltype6_3}, ${Yveltype7_3}, ${Yveltype8_3}, ${Yveltype9_3}, ${Yveltype10_3}, ${Yveltype11_3}, ${Yveltype12_3}, ${Yveltype13_3}, ${Yveltype14_3}, ${Yveltype15_3}, ${Yveltype16_3}, &
+ ${Zveltype1_3}, ${Zveltype2_3}, ${Zveltype3_3}, ${Zveltype4_3}, ${Zveltype5_3}, ${Zveltype6_3}, ${Zveltype7_3}, ${Zveltype8_3}, ${Zveltype9_3}, ${Zveltype10_3}, ${Zveltype11_3}, ${Zveltype12_3}, ${Zveltype13_3}, ${Zveltype14_3}, ${Zveltype15_3}, ${Zveltype16_3}, &
+ ${XvelAll_3}, ${YvelAll_3}, ${ZvelAll_3}" &
+ file CSVs/GridBinNo3.csv screen no title "GridBinNo3 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results4 all print 1000 "$t, ${Noftype1_4}, ${Noftype2_4}, ${Noftype3_4}, ${Noftype4_4}, ${Noftype5_4}, ${Noftype6_4}, ${Noftype7_4}, ${Noftype8_4}, ${Noftype9_4}, ${Noftype10_4}, ${Noftype11_4}, ${Noftype12_4}, ${Noftype13_4}, ${Noftype14_4}, ${Noftype15_4}, ${Noftype16_4}, ${NofAtoms4}, &
+ ${Xveltype1_4}, ${Xveltype2_4}, ${Xveltype3_4}, ${Xveltype4_4}, ${Xveltype5_4}, ${Xveltype6_4}, ${Xveltype7_4}, ${Xveltype8_4}, ${Xveltype9_4}, ${Xveltype10_4}, ${Xveltype11_4}, ${Xveltype12_4}, ${Xveltype13_4}, ${Xveltype14_4}, ${Xveltype15_4}, ${Xveltype16_4}, &
+ ${Yveltype1_4}, ${Yveltype2_4}, ${Yveltype3_4}, ${Yveltype4_4}, ${Yveltype5_4}, ${Yveltype6_4}, ${Yveltype7_4}, ${Yveltype8_4}, ${Yveltype9_4}, ${Yveltype10_4}, ${Yveltype11_4}, ${Yveltype12_4}, ${Yveltype13_4}, ${Yveltype14_4}, ${Yveltype15_4}, ${Yveltype16_4}, &
+ ${Zveltype1_4}, ${Zveltype2_4}, ${Zveltype3_4}, ${Zveltype4_4}, ${Zveltype5_4}, ${Zveltype6_4}, ${Zveltype7_4}, ${Zveltype8_4}, ${Zveltype9_4}, ${Zveltype10_4}, ${Zveltype11_4}, ${Zveltype12_4}, ${Zveltype13_4}, ${Zveltype14_4}, ${Zveltype15_4}, ${Zveltype16_4}, &
+ ${XvelAll_4}, ${YvelAll_4}, ${ZvelAll_4}" &
+ file CSVs/GridBinNo4.csv screen no title "GridBinNo4 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results5 all print 1000 "$t, ${Noftype1_5}, ${Noftype2_5}, ${Noftype3_5}, ${Noftype4_5}, ${Noftype5_5}, ${Noftype6_5}, ${Noftype7_5}, ${Noftype8_5}, ${Noftype9_5}, ${Noftype10_5}, ${Noftype11_5}, ${Noftype12_5}, ${Noftype13_5}, ${Noftype14_5}, ${Noftype15_5}, ${Noftype16_5}, ${NofAtoms5}, &
+ ${Xveltype1_5}, ${Xveltype2_5}, ${Xveltype3_5}, ${Xveltype4_5}, ${Xveltype5_5}, ${Xveltype6_5}, ${Xveltype7_5}, ${Xveltype8_5}, ${Xveltype9_5}, ${Xveltype10_5}, ${Xveltype11_5}, ${Xveltype12_5}, ${Xveltype13_5}, ${Xveltype14_5}, ${Xveltype15_5}, ${Xveltype16_5}, &
+ ${Yveltype1_5}, ${Yveltype2_5}, ${Yveltype3_5}, ${Yveltype4_5}, ${Yveltype5_5}, ${Yveltype6_5}, ${Yveltype7_5}, ${Yveltype8_5}, ${Yveltype9_5}, ${Yveltype10_5}, ${Yveltype11_5}, ${Yveltype12_5}, ${Yveltype13_5}, ${Yveltype14_5}, ${Yveltype15_5}, ${Yveltype16_5}, &
+ ${Zveltype1_5}, ${Zveltype2_5}, ${Zveltype3_5}, ${Zveltype4_5}, ${Zveltype5_5}, ${Zveltype6_5}, ${Zveltype7_5}, ${Zveltype8_5}, ${Zveltype9_5}, ${Zveltype10_5}, ${Zveltype11_5}, ${Zveltype12_5}, ${Zveltype13_5}, ${Zveltype14_5}, ${Zveltype15_5}, ${Zveltype16_5}, &
+ ${XvelAll_5}, ${YvelAll_5}, ${ZvelAll_5}" &
+ file CSVs/GridBinNo5.csv screen no title "GridBinNo5 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results6 all print 1000 "$t, ${Noftype1_6}, ${Noftype2_6}, ${Noftype3_6}, ${Noftype4_6}, ${Noftype5_6}, ${Noftype6_6}, ${Noftype7_6}, ${Noftype8_6}, ${Noftype9_6}, ${Noftype10_6}, ${Noftype11_6}, ${Noftype12_6}, ${Noftype13_6}, ${Noftype14_6}, ${Noftype15_6}, ${Noftype16_6}, ${NofAtoms6}, &
+ ${Xveltype1_6}, ${Xveltype2_6}, ${Xveltype3_6}, ${Xveltype4_6}, ${Xveltype5_6}, ${Xveltype6_6}, ${Xveltype7_6}, ${Xveltype8_6}, ${Xveltype9_6}, ${Xveltype10_6}, ${Xveltype11_6}, ${Xveltype12_6}, ${Xveltype13_6}, ${Xveltype14_6}, ${Xveltype15_6}, ${Xveltype16_6}, &
+ ${Yveltype1_6}, ${Yveltype2_6}, ${Yveltype3_6}, ${Yveltype4_6}, ${Yveltype5_6}, ${Yveltype6_6}, ${Yveltype7_6}, ${Yveltype8_6}, ${Yveltype9_6}, ${Yveltype10_6}, ${Yveltype11_6}, ${Yveltype12_6}, ${Yveltype13_6}, ${Yveltype14_6}, ${Yveltype15_6}, ${Yveltype16_6}, &
+ ${Zveltype1_6}, ${Zveltype2_6}, ${Zveltype3_6}, ${Zveltype4_6}, ${Zveltype5_6}, ${Zveltype6_6}, ${Zveltype7_6}, ${Zveltype8_6}, ${Zveltype9_6}, ${Zveltype10_6}, ${Zveltype11_6}, ${Zveltype12_6}, ${Zveltype13_6}, ${Zveltype14_6}, ${Zveltype15_6}, ${Zveltype16_6}, &
+ ${XvelAll_6}, ${YvelAll_6}, ${ZvelAll_6}" &
+ file CSVs/GridBinNo6.csv screen no title "GridBinNo6 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results7 all print 1000 "$t, ${Noftype1_7}, ${Noftype2_7}, ${Noftype3_7}, ${Noftype4_7}, ${Noftype5_7}, ${Noftype6_7}, ${Noftype7_7}, ${Noftype8_7}, ${Noftype9_7}, ${Noftype10_7}, ${Noftype11_7}, ${Noftype12_7}, ${Noftype13_7}, ${Noftype14_7}, ${Noftype15_7}, ${Noftype16_7}, ${NofAtoms7}, &
+ ${Xveltype1_7}, ${Xveltype2_7}, ${Xveltype3_7}, ${Xveltype4_7}, ${Xveltype5_7}, ${Xveltype6_7}, ${Xveltype7_7}, ${Xveltype8_7}, ${Xveltype9_7}, ${Xveltype10_7}, ${Xveltype11_7}, ${Xveltype12_7}, ${Xveltype13_7}, ${Xveltype14_7}, ${Xveltype15_7}, ${Xveltype16_7}, &
+ ${Yveltype1_7}, ${Yveltype2_7}, ${Yveltype3_7}, ${Yveltype4_7}, ${Yveltype5_7}, ${Yveltype6_7}, ${Yveltype7_7}, ${Yveltype8_7}, ${Yveltype9_7}, ${Yveltype10_7}, ${Yveltype11_7}, ${Yveltype12_7}, ${Yveltype13_7}, ${Yveltype14_7}, ${Yveltype15_7}, ${Yveltype16_7}, &
+ ${Zveltype1_7}, ${Zveltype2_7}, ${Zveltype3_7}, ${Zveltype4_7}, ${Zveltype5_7}, ${Zveltype6_7}, ${Zveltype7_7}, ${Zveltype8_7}, ${Zveltype9_7}, ${Zveltype10_7}, ${Zveltype11_7}, ${Zveltype12_7}, ${Zveltype13_7}, ${Zveltype14_7}, ${Zveltype15_7}, ${Zveltype16_7}, &
+ ${XvelAll_7}, ${YvelAll_7}, ${ZvelAll_7}" &
+ file CSVs/GridBinNo7.csv screen no title "GridBinNo7 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results8 all print 1000 "$t, ${Noftype1_8}, ${Noftype2_8}, ${Noftype3_8}, ${Noftype4_8}, ${Noftype5_8}, ${Noftype6_8}, ${Noftype7_8}, ${Noftype8_8}, ${Noftype9_8}, ${Noftype10_8}, ${Noftype11_8}, ${Noftype12_8}, ${Noftype13_8}, ${Noftype14_8}, ${Noftype15_8}, ${Noftype16_8}, ${NofAtoms8}, &
+ ${Xveltype1_8}, ${Xveltype2_8}, ${Xveltype3_8}, ${Xveltype4_8}, ${Xveltype5_8}, ${Xveltype6_8}, ${Xveltype7_8}, ${Xveltype8_8}, ${Xveltype9_8}, ${Xveltype10_8}, ${Xveltype11_8}, ${Xveltype12_8}, ${Xveltype13_8}, ${Xveltype14_8}, ${Xveltype15_8}, ${Xveltype16_8}, &
+ ${Yveltype1_8}, ${Yveltype2_8}, ${Yveltype3_8}, ${Yveltype4_8}, ${Yveltype5_8}, ${Yveltype6_8}, ${Yveltype7_8}, ${Yveltype8_8}, ${Yveltype9_8}, ${Yveltype10_8}, ${Yveltype11_8}, ${Yveltype12_8}, ${Yveltype13_8}, ${Yveltype14_8}, ${Yveltype15_8}, ${Yveltype16_8}, &
+ ${Zveltype1_8}, ${Zveltype2_8}, ${Zveltype3_8}, ${Zveltype4_8}, ${Zveltype5_8}, ${Zveltype6_8}, ${Zveltype7_8}, ${Zveltype8_8}, ${Zveltype9_8}, ${Zveltype10_8}, ${Zveltype11_8}, ${Zveltype12_8}, ${Zveltype13_8}, ${Zveltype14_8}, ${Zveltype15_8}, ${Zveltype16_8}, &
+ ${XvelAll_8}, ${YvelAll_8}, ${ZvelAll_8}" &
+ file CSVs/GridBinNo8.csv screen no title "GridBinNo8 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results9 all print 1000 "$t, ${Noftype1_9}, ${Noftype2_9}, ${Noftype3_9}, ${Noftype4_9}, ${Noftype5_9}, ${Noftype6_9}, ${Noftype7_9}, ${Noftype8_9}, ${Noftype9_9}, ${Noftype10_9}, ${Noftype11_9}, ${Noftype12_9}, ${Noftype13_9}, ${Noftype14_9}, ${Noftype15_9}, ${Noftype16_9}, ${NofAtoms9}, &
+ ${Xveltype1_9}, ${Xveltype2_9}, ${Xveltype3_9}, ${Xveltype4_9}, ${Xveltype5_9}, ${Xveltype6_9}, ${Xveltype7_9}, ${Xveltype8_9}, ${Xveltype9_9}, ${Xveltype10_9}, ${Xveltype11_9}, ${Xveltype12_9}, ${Xveltype13_9}, ${Xveltype14_9}, ${Xveltype15_9}, ${Xveltype16_9}, &
+ ${Yveltype1_9}, ${Yveltype2_9}, ${Yveltype3_9}, ${Yveltype4_9}, ${Yveltype5_9}, ${Yveltype6_9}, ${Yveltype7_9}, ${Yveltype8_9}, ${Yveltype9_9}, ${Yveltype10_9}, ${Yveltype11_9}, ${Yveltype12_9}, ${Yveltype13_9}, ${Yveltype14_9}, ${Yveltype15_9}, ${Yveltype16_9}, &
+ ${Zveltype1_9}, ${Zveltype2_9}, ${Zveltype3_9}, ${Zveltype4_9}, ${Zveltype5_9}, ${Zveltype6_9}, ${Zveltype7_9}, ${Zveltype8_9}, ${Zveltype9_9}, ${Zveltype10_9}, ${Zveltype11_9}, ${Zveltype12_9}, ${Zveltype13_9}, ${Zveltype14_9}, ${Zveltype15_9}, ${Zveltype16_9}, &
+ ${XvelAll_9}, ${YvelAll_9}, ${ZvelAll_9}" &
+ file CSVs/GridBinNo9.csv screen no title "GridBinNo9 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results10 all print 1000 "$t, ${Noftype1_10}, ${Noftype2_10}, ${Noftype3_10}, ${Noftype4_10}, ${Noftype5_10}, ${Noftype6_10}, ${Noftype7_10}, ${Noftype8_10}, ${Noftype9_10}, ${Noftype10_10}, ${Noftype11_10}, ${Noftype12_10}, ${Noftype13_10}, ${Noftype14_10}, ${Noftype15_10}, ${Noftype16_10}, ${NofAtoms10}, &
+ ${Xveltype1_10}, ${Xveltype2_10}, ${Xveltype3_10}, ${Xveltype4_10}, ${Xveltype5_10}, ${Xveltype6_10}, ${Xveltype7_10}, ${Xveltype8_10}, ${Xveltype9_10}, ${Xveltype10_10}, ${Xveltype11_10}, ${Xveltype12_10}, ${Xveltype13_10}, ${Xveltype14_10}, ${Xveltype15_10}, ${Xveltype16_10}, &
+ ${Yveltype1_10}, ${Yveltype2_10}, ${Yveltype3_10}, ${Yveltype4_10}, ${Yveltype5_10}, ${Yveltype6_10}, ${Yveltype7_10}, ${Yveltype8_10}, ${Yveltype9_10}, ${Yveltype10_10}, ${Yveltype11_10}, ${Yveltype12_10}, ${Yveltype13_10}, ${Yveltype14_10}, ${Yveltype15_10}, ${Yveltype16_10}, &
+ ${Zveltype1_10}, ${Zveltype2_10}, ${Zveltype3_10}, ${Zveltype4_10}, ${Zveltype5_10}, ${Zveltype6_10}, ${Zveltype7_10}, ${Zveltype8_10}, ${Zveltype9_10}, ${Zveltype10_10}, ${Zveltype11_10}, ${Zveltype12_10}, ${Zveltype13_10}, ${Zveltype14_10}, ${Zveltype15_10}, ${Zveltype16_10}, &
+ ${XvelAll_10}, ${YvelAll_10}, ${ZvelAll_10}" &
+ file CSVs/GridBinNo10.csv screen no title "GridBinNo10 TS, &
+ Noftype1, Noftype2, Noftype3, Noftype4, Noftype5, Noftype6, Noftype7, Noftype8, Noftype9, Noftype10, Noftype11, Noftype12, Noftype13, Noftype14, Noftype15, Noftype16,  TotAtoms, X_type1, X_type2, X_type3, X_type4, X_type5, X_type6, X_type7, X_type8, X_type9, X_type10, X_type11, X_type12, X_type13, X_type14, X_type15, X_type16, Y_type1, Y_type2, Y_type3, Y_type4, Y_type5, Y_type6, Y_type7, Y_type8, Y_type9, Y_type10, Y_type11, Y_type12, Y_type13, Y_type14, Y_type15, Y_type16, Z_type1, Z_type2, Z_type3, Z_type4, Z_type5, Z_type6, Z_type7, Z_type8, Z_type9, Z_type10, Z_type11, Z_type12, Z_type13, Z_type14, Z_type15, Z_type16,  X_all, Y_all, Z_all"
+fix     Results11 all print 1000 "$t, ${Noftype1Big}, ${Noftype2Big}, ${Noftype3Big}, ${Noftype4Big}, ${Noftype5Big}, ${Noftype6Big}, ${Noftype7Big}, ${Noftype8Big}, ${Noftype9Big}, ${Noftype10Big}, ${Noftype11Big}, ${Noftype12Big}, ${Noftype13Big}, ${Noftype14Big}, ${Noftype15Big}, ${Noftype16Big}, ${NofAtomsBig}" file CSVs/GridBinBig.csv screen no title "GridBinBig TS, Noftype1_, Noftype2_, Noftype3_, Noftype4_, Noftype5_, Noftype6_, Noftype7_, Noftype8_, Noftype9_, Noftype10_, Noftype11_, Noftype12_, Noftype13_, Noftype14_, Noftype15_, Noftype16_, TotAtoms"
+
+
+run     6000001 upto
+
+unfix     ins1
