@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
     MPI_Barrier(MPI_COMM_WORLD);
 
     //MPI HELLO World Test!
-    cout << "Hello, I am mpi process # = " << mpi_id << endl;
+    //cout << "Hello, I am mpi process # = " << mpi_id << endl;
 
     if (mpi_id == MASTER)
     {
@@ -85,8 +85,8 @@ int main(int argc, char *argv[])
 
     //MPI_Barrier(MPI_COMM_WORLD);
 
-    if (print == 1 && mpi_id == MASTER)
-        cout << "Start to fill load with values..." << endl;
+    //if (print == 1 && mpi_id == MASTER)
+    //   cout << "Start to fill load with values..." << endl;
 
     for (int i = 0; i < NUMBEROFCOMPARTMENTS; i++)
     {
@@ -103,8 +103,8 @@ int main(int argc, char *argv[])
 
     MPI_Barrier(MPI_COMM_WORLD);
 
-    if (print == 1)
-        cout << "Start 2nd part of load calcs..." << endl;
+    //if (print == 1)
+    //   cout << "Start 2nd part of load calcs..." << endl;
 
     for (int i = 0; i < num_mpi + 1; i++)
     {
@@ -113,8 +113,8 @@ int main(int argc, char *argv[])
             cout << "load_rev[" << num_mpi - i << "] = " << load_rev[num_mpi - i] << endl;
     }
 
-    if (print == 1)
-        cout << "Now copying load_rev into load..." << endl;
+    //if (print == 1)
+    //    cout << "Now copying load_rev into load..." << endl;
 
     load = load_rev;
     MPI_Barrier(MPI_COMM_WORLD);
@@ -130,8 +130,8 @@ int main(int argc, char *argv[])
 
     MPI_Barrier(MPI_COMM_WORLD);
     /*dist lower and upper chunks to cores*/
-    if (print && mpi_id == MASTER)
-        cout << "now distribute core_low and core_up to each process" << endl;
+    //if (print && mpi_id == MASTER)
+    //    cout << "now distribute core_low and core_up to each process" << endl;
 
     int core_low = 0, core_up = 0;
 

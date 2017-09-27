@@ -27,7 +27,7 @@ lc = length(cores); ld = length(diameter);
             title(filena)
             xlabel('Time (s)')
             ylabel('d-50 (mm)')
-            print(filena,'-dpdf','-fillpage')
+            print(filena,'-dpdf','-bestfit')
             close
         end
     end
