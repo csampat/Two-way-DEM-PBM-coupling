@@ -104,11 +104,8 @@ int main(int argc, char *argv[])
     MPI_Barrier(MPI_COMM_WORLD);
 
     //if (print == 1)
-<<<<<<< HEAD
     //   cout << "Start 2nd part of load calcs..." << endl;
-=======
     //    cout << "Start 2nd part of load calcs..." << endl;
->>>>>>> e7920025e5136001cdadc3e061ee7112c3c342dd
 
     for (int i = 0; i < num_mpi + 1; i++)
     {
@@ -118,11 +115,8 @@ int main(int argc, char *argv[])
     }
 
     //if (print == 1)
-<<<<<<< HEAD
     //    cout << "Now copying load_rev into load..." << endl;
-=======
     //   cout << "Now copying load_rev into load..." << endl;
->>>>>>> e7920025e5136001cdadc3e061ee7112c3c342dd
 
     load = load_rev;
     MPI_Barrier(MPI_COMM_WORLD);
