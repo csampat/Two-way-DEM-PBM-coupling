@@ -92,8 +92,8 @@ int main(int argc, char *argv[])
     {
         load[load_xi] += 1;
 
-        if (print_load == 1 && mpi_id == MASTER)
-            cout << "load[" << load_xi << "] = " << load[load_xi] << endl;
+        //if (print_load == 1 && mpi_id == MASTER)
+        //    cout << "load[" << load_xi << "] = " << load[load_xi] << endl;
 
         load_xi++;
 
@@ -104,17 +104,25 @@ int main(int argc, char *argv[])
     MPI_Barrier(MPI_COMM_WORLD);
 
     //if (print == 1)
+<<<<<<< HEAD
     //   cout << "Start 2nd part of load calcs..." << endl;
+=======
+    //    cout << "Start 2nd part of load calcs..." << endl;
+>>>>>>> e7920025e5136001cdadc3e061ee7112c3c342dd
 
     for (int i = 0; i < num_mpi + 1; i++)
     {
         load_rev[num_mpi - i] = load[i];
-        if (print_load && mpi_id == MASTER)
-            cout << "load_rev[" << num_mpi - i << "] = " << load_rev[num_mpi - i] << endl;
+        //if (print_load && mpi_id == MASTER)
+        //    cout << "load_rev[" << num_mpi - i << "] = " << load_rev[num_mpi - i] << endl;
     }
 
     //if (print == 1)
+<<<<<<< HEAD
     //    cout << "Now copying load_rev into load..." << endl;
+=======
+    //   cout << "Now copying load_rev into load..." << endl;
+>>>>>>> e7920025e5136001cdadc3e061ee7112c3c342dd
 
     load = load_rev;
     MPI_Barrier(MPI_COMM_WORLD);
@@ -124,8 +132,8 @@ int main(int argc, char *argv[])
         if (i != MASTER)
             load[i] = load[i] + load[i - 1];
 
-        if (print_load && mpi_id == MASTER)
-            cout << "load[" << i << "] = " << load[i] << endl;
+        //if (print_load && mpi_id == MASTER)
+            //cout << "load[" << i << "] = " << load[i] << endl;
     }
 
     MPI_Barrier(MPI_COMM_WORLD);
